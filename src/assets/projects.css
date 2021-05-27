@@ -6,7 +6,8 @@
 }
 
 .projects > div > div {
-    flex-basis: 42%;
+    flex-basis: 40%;
+
 }
 
 .projects > div > div{
@@ -16,8 +17,9 @@
 .projects > div > a{
     border-radius: 10px;
     flex-grow: 1 ;
-    flex-basis: 40%;
-    min-width: 7cm;
+    flex-basis: 60%;
+    min-width: 8cm;
+
 }
 
 .projects > div > a > img{
