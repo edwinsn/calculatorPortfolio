@@ -13,7 +13,7 @@ export let Contact = function () {
   let [sendButton, changeSendButton] = useState(<input type="submit" value="Send" key="1"/>)
 
   let messagesentStyle = messagesent ? { display: messagesent } : undefined
-
+  
   return (
     <section id="contact" className="contact">
       <div className="messageSent" style={messagesentStyle}>
@@ -63,7 +63,7 @@ let sendMessage = function (ev, messagesentDisplay, changeSendButton) {
   ev.preventDefault()
   console.log("sending")
   changeSendButton(<LoadingCircles />)
-  emailjs.sendForm('service_kjojome', 'template_nunwcy2', ev.target, 'user_c4k3ES8RjQalUaezoM6Lz')
+  emailjs.sendForm('service_kjojome', 'template_nunwcy2', ev.target, process.env.REACT_APP_EMAILJSUSERID)
     .then((result) => {
       ev.target.reset()
       changeSendButton(<input type="submit" value="Send" key="1"/>)
