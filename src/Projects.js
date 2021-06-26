@@ -27,7 +27,7 @@ export let Projects = function () {
                     <a className="projectTitle" href="https://miocid.herokuapp.com/" rel="noreferrer" target="_blank">MioCid</a>
                     <p className="projectDescription">If you have ever rescued an animal from the street, you will know what
                     loyalty and gratitude are. This application allows you to report where
-                    you saw a stray animal and how often, besides find it if you want to feed or
+                    you saw a stray animal, how often and lets you even upload a picture of it, so you can find it if you want to feed or
                 adopt it.</p>
                 </div>
                 <a href="https://miocid.herokuapp.com/" rel="noreferrer" target="_blank">
@@ -38,7 +38,7 @@ export let Projects = function () {
                 <div>
                     <a className="projectTitle" href="https://edwinsn.github.io/Search-NASA-images/" rel="noreferrer" target="_blank">NASA Multimedia Library clone</a>
                     <p className="projectDescription">This small application is a clone of the NASA Multimedia Library,
-                   it allows you to search,  in a time interval,  for images or audio from NASA.</p>
+                   it allows you to search,  setting a time interval,  for images or audio from NASA, besides it shows you a description of the entry you select.</p>
                 </div>
                 <a href="https://edwinsn.github.io/Search-NASA-images/" rel="noreferrer" target="_blank">
                     <img alt="Nasa Multimedia clone gif" src={naGif} />

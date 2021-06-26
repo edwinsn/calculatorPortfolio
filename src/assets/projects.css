@@ -24,7 +24,7 @@
 
 .projects > div > a > img{
     width: 100%;
-    height: 58vh;
+    max-height: 10.5cm;
 }
 
 .projectTitle{
