@@ -63,7 +63,7 @@ let sendMessage = function (ev, messagesentDisplay, changeSendButton) {
   ev.preventDefault()
   console.log("sending")
   changeSendButton(<LoadingCircles />)
-  emailjs.sendForm('service_kjojome', 'template_nunwcy2', ev.target, process.env.REACT_APP_EMAILJSUSERID||"user_c4k3ES8RjQalUaezoM6Lz")
+  emailjs.sendForm('service_h1epg1j', 'template_nunwcy2', ev.target, process.env.REACT_APP_EMAILJSUSERID||"user_c4k3ES8RjQalUaezoM6Lz")
     .then((result) => {
       ev.target.reset()
       changeSendButton(<input type="submit" value="Send" key="1"/>)
