@@ -31,7 +31,8 @@ export let MainPage = function () {
                         <a href="#contact"><button>Write me</button></a>
                     </div>
                 </div>
-                <div>
+                
+                <div >
                     <img className="edwinsPhoto" src={edwinsPhoto} alt="Edwin" />
                 </div>
             </div>
