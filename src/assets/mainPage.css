@@ -102,7 +102,7 @@ header {
   min-width: 5.5cm;
   display: flex;
   justify-content: center;
-  padding: 5% 0 0 5%;
+  padding: 5% 0 5% 0;
 }
 
 .presentation {
