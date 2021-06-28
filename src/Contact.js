@@ -10,10 +10,10 @@ let projectText = "Hi there, I have a project you may be interested in, is about
 export let Contact = function () {
 
   let [messagesent, messagesentDisplay] = useState("none")
-  let [sendButton, changeSendButton] = useState(<input type="submit" value="Send" key="1"/>)
+  let [sendButton, changeSendButton] = useState(<input type="submit" value="Send" key="1" />)
 
   let messagesentStyle = messagesent ? { display: messagesent } : undefined
-  
+
   return (
     <section id="contact" className="contact">
       <div className="messageSent" style={messagesentStyle}>
@@ -66,7 +66,7 @@ let sendMessage = function (ev, messagesentDisplay, changeSendButton) {
   emailjs.sendForm('service_h1epg1j', 'template_nunwcy2', ev.target, "user_c4k3ES8RjQalUaezoM6Lz")
     .then((result) => {
       ev.target.reset()
-      changeSendButton(<input type="submit" value="Send" key="1"/>)
+      changeSendButton(<input type="submit" value="Send" key="1" />)
       messagesentDisplay("flex")
       setTimeout(() => {
         messagesentDisplay(undefined)

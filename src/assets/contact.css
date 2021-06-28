@@ -26,6 +26,7 @@ input {
     align-items: center;
     justify-content: center;
     padding: 0 9%;
+    position: relative;
 
 }
 
@@ -91,15 +92,17 @@ input {
 
 .messageSent{
     justify-content: center;
-    align-items: center;
-    color: black;
-    border:2px solid black;
-    background-color: white;
+    align-items: center;    
+    background-color: #7299C6;
     border-radius: 10px;
     min-height: 1.5cm;
-    width: 100%;
+    width: 40%;
+    min-width: 7.5cm;
     display: none;
     font-size: 1.2em;
+    font-weight: bolder;
+    position: absolute;
+    top:5%;
 }
 
 .sendForm{
