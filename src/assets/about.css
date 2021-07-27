@@ -1,4 +1,65 @@
-.about
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+.about {
+    position: relative;
+    color: white;
+}
+
+.contactBtns {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contactBtns>button {
+    width: 10vw;
+    min-width: 65px;
+    height: 6vw;
+    min-height: 40px;
+    margin-right: 20px;
+    background-color: var(--background);
+}
+
+.github-icon {
+    height: 70%;
+}
+
+.mail-icon {
+    height: 45%;
+}
+
+.title {
+    margin-top: 10vh;
+    font-size: var(--title-font);
+}
+
+.about .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .container>* {
+    flex-grow: 1;
+    min-width: var(--min-text-width);
+}
+
+.about-text {
+    font-size: var(--font);
+    flex-grow: 1;
+    flex-basis: 53%;
+}
+
+.auxEscher{
+    flex-basis: 45%;
+}
+
+.skills {
+    flex-basis: 45%;
+    height: 45vh;
+    background-color: var(--background);
+    border: 2px solid white;
+    border-radius: var(--border-radius);
+}
+
+/*.about
 {
     display: flex;
     flex-wrap: wrap;
@@ -65,4 +126,4 @@ img{
     bottom: 100%;
     font-size: 2rem;
     margin: 0;
-}
+}*/

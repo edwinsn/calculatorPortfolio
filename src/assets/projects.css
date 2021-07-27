@@ -1,10 +1,35 @@
-.projects > div{
+.title {
+    font-size: var(--title-font);
+    text-decoration: none;
+    color: inherit;
+}
+
+.description {
+    font-size: var(--font);
+}
+
+.projects>div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 8%;
+    justify-content: space-between;
+    margin-top: 20vh;
+    width: 100%;
 }
 
+.projects>div>*{
+    flex-grow: 1;
+}
+
+.projects>div>*:nth-child(1) {
+    flex-basis: 40%;
+}
+.projects>div>a:nth-child(2){
+    flex-basis: 55%;
+    height:80vh;
+}
+
+/*
 .projects > div > div {
     flex-basis: 40%;
 
@@ -37,4 +62,4 @@
     font-family: 'Roboto';
     font-size: 1.2rem;
     color: white;
-}
+}*/

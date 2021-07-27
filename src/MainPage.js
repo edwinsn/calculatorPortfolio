@@ -1,10 +1,39 @@
 
-import githubIcon from './assets/images/githubIcon.svg'
-import mailIcon from './assets/images/mailIcon.svg'
-import edwinsPhoto from './assets/images/edwinsPhoto.jpg'
+import edIcon from './assets/images/edIcon.svg'
+import faceIcon from './assets/images/faceIcon.svg'
+import { About } from './About'
+import { Projects } from './Projects'
 
 export let MainPage = function () {
+
     return (
+        <section>
+            <header>
+                <img className="edIcon" src={edIcon} alt="edwin portfolio" />
+                <div className="solarPanel">
+                    <div>A</div>
+                    <div>P</div>
+                    <div>C</div>
+                </div>
+            </header>
+            {/*<progress className="progress progress1" />*/}
+            {/*<progress className="progress progress2" />*/}
+            <div className="calcScreen">
+                <div className="calcText">
+                    <div>Hi, I'm Edwin</div>
+                    <div>I can solve your problems almost as fast as a calculator, beep.</div>
+                </div>
+                <img src={faceIcon} className="top-z-index pixelated-face" alt="Edwin pixelated face" />
+                <div className="reflex"></div>
+            </div>
+            <div className="buttons-place">
+                <About />
+                <Projects />
+            </div>
+        </section>
+    )
+
+    /*return (
         <section id="main" className="mainPage">
             <header>
                 <div className="headerSpace"></div>
@@ -39,5 +68,5 @@ export let MainPage = function () {
 
         </section>
 
-    )
+    )*/
 }

@@ -1,4 +1,87 @@
-body{
+@font-face {
+  font-family: "calc";
+  src: url("./PocketCalculator-qjd.ttf") format("truetype");
+}
+
+@media (max-width:600px) {
+  :root {
+    --min-text-width: 5cm;
+  }
+}
+
+@media (min-width:600px) {
+  :root {
+    --min-text-width: 10cm;
+  }
+}
+
+@media (max-width:800px) {
+  :root {
+    --font: 1.2em;
+  }
+  .pixelated-face {
+    height: 45%;
+  }
+  .calcText div:nth-child(1) {
+    font-size: 3.5em;
+  }
+  .calcText div:nth-child(2) {
+    font-size: 1.9em;
+  }
+  .contactBtns>button {
+    border: none;
+    box-shadow: 0 -1px white, 3px 1px black, -1px 0 black;
+  }
+  .buttons-place {
+    padding: 27px 23px;
+  }
+  .contactBtns>button {
+    border-radius: 5px;
+  }
+}
+
+@media (min-width:800px) {
+  :root {
+    --font: 1.65em;
+  }
+  .pixelated-face {
+    height: 90%;
+  }
+  .calcText div:nth-child(1) {
+    font-size: 7.5em;
+    line-height: 1em;
+  }
+  .calcText div:nth-child(2) {
+    font-size: 3em;
+  }
+  .contactBtns>button {
+    border: none;
+    box-shadow: 0 -1px white, 5px 3px black, -2px 0 black;
+  }
+  .buttons-place {
+    padding: 8vh;
+  }
+  .contactBtns>button {
+    border-radius: 5px;
+  }
+}
+
+:root {
+  --background: hsl(216, 76%, 17%);
+  --border-radius: 25px;
+  --width: 90%;
+  --title-font: 40px;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.top-z-index {
+  z-index: 2;
+}
+
+/*body{
   margin: 0;
   color: white;
 }
@@ -99,4 +182,4 @@ section:nth-child(5) > div{
   flex-grow: 50;
   min-width: 234px;
   flex-basis: 1fr;
-}
+}*/

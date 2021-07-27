@@ -1,4 +1,4 @@
-import './assets/contact.css'
+//import './assets/contact.css'
 import emailjs from 'emailjs-com'
 import { useState } from 'react'
 import { LoadingCircles } from './Loading'
