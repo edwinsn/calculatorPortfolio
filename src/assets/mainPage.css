@@ -28,8 +28,7 @@ section {
 }
 
 .buttons-place {
-  background-color: hsl(216, 81%, 10%);
-  bottom: 5vh;
+  background-color: hsl(217, 85%, 11%);
   width: 90%;
   margin-top: 6vh;
   border-radius: var(--border-radius);
@@ -40,7 +39,7 @@ section {
 }
 
 .calcScreen {
-  background-color: hsl(88, 43%, 73%);
+  background-color: var(--screen-color) ;
   display: flex;
   align-items: center;
   justify-content: center;

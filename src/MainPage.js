@@ -3,6 +3,7 @@ import edIcon from './assets/images/edIcon.svg'
 import faceIcon from './assets/images/faceIcon.svg'
 import { About } from './About'
 import { Projects } from './Projects'
+import { Contact } from './Contact'
 
 export let MainPage = function () {
 
@@ -29,6 +30,7 @@ export let MainPage = function () {
             <div className="buttons-place">
                 <About />
                 <Projects />
+                <Contact />
             </div>
         </section>
     )

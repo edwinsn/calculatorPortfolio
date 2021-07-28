@@ -2,43 +2,59 @@
 import emailjs from 'emailjs-com'
 import { useState } from 'react'
 import { LoadingCircles } from './Loading'
+import './assets/contact.css'
 
 let contractText = "Hello, I would like to tell you about a job offer, you can find more info here: \n\nwrite me back by email."
 let freelancerText = "Hello, I would like to commission you a project,\nis about \n\n...\n\nwrite me back by email."
 let projectText = "Hi there, I have a project you may be interested in, is about\n\n..."
 
 export let Contact = function () {
+  //repo rt in the window the sent status
+  let [messagesent1, setMessagesent1] = useState(false)
+  let [messagesent2, setMessagesent2] = useState(false)
+  let [sendButton1, changeSendButton1] = useState(<input type="submit" value="Send" key="1" />)
+  let [sendButton2, changeSendButton2] = useState(<input type="submit" value="Send" key="2" />)
 
-  let [messagesent, messagesentDisplay] = useState("none")
-  let [sendButton, changeSendButton] = useState(<input type="submit" value="Send" key="1" />)
-
-  let messagesentStyle = messagesent ? { display: messagesent } : undefined
 
   return (
-    <section id="contact" className="contact">
-      <div className="messageSent" style={messagesentStyle}>
-        <span>Right! I'll write you back soon.</span>
-      </div>
-      <p>Contact me</p>
-      <form onSubmit={(ev) => { sendMessage(ev, messagesentDisplay, changeSendButton) }} className="contactform" id="contactForm">
-        <div className="inputsContainer">
-          <input type="text" placeholder="Name" name="name" required />
-          <input type="email" placeholder="Email" name="email" required />
-        </div>
-        <div className="message">
-          <textarea placeholder="Message" name="message" required></textarea>
-          <div>
-            <input type="submit" onClick={(ev) => { fillMessage(ev, 1) }} form="contactForm" value="I want to hired you..." />
-            <input type="submit" onClick={(ev) => { fillMessage(ev, 2) }} value="I have a work for you..." />
-            <input type="submit" onClick={(ev) => { fillMessage(ev, 3) }} value="I have an idea..." />
+    <div className="contactContainer">
+      <p className="title">Contact</p>
+      <h1>Send me a link</h1>
+      <form className="sendLikn"
+        onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
+        <div>
+          <input type="text" placeholder={messagesent1 ? "...right, I'll check out the link, thank you." : "link"}
+            name="link" required ></input>
+          <div className="submit-container">
+            {sendButton1}
           </div>
         </div>
-        <div className="sendForm">
-          {sendButton}
+        <div></div>
+      </form>
+      <h1>Or write me</h1>
+      <form className="contact tittle"
+        onSubmit={(ev) => { sendMessage(ev, setMessagesent2, changeSendButton2) }}>
+        <div className="screens">
+
+          <div className="data">
+            <input placeholder="Name" name="name" required></input>
+            <input placeholder="Email" name="email" required></input>
+          </div>
+          <textarea  name="message" placeholder={messagesent2 ? "... right, I'll get back to you in the next few days." : "message"} required></textarea>
+
+        </div>
+        <div className="btns">
+          <button onClick={(ev) => { fillMessage(ev, 1) }} >Hire me</button>
+          <button onClick={(ev) => { fillMessage(ev, 2) }} >Freelancing</button>
+          <button onClick={(ev) => { fillMessage(ev, 3) }} >Share ideas</button>
+          <div>
+            {sendButton2}
+          </div>
         </div>
       </form>
-    </section>
+    </div>
   )
+
 }
 
 let fillMessage = function (ev, n) {
@@ -59,7 +75,7 @@ let fillMessage = function (ev, n) {
 }
 
 
-let sendMessage = function (ev, messagesentDisplay, changeSendButton) {
+let sendMessage = function (ev, setMessagesent, changeSendButton) {
   ev.preventDefault()
   console.log("sending")
   changeSendButton(<LoadingCircles />)
@@ -67,11 +83,11 @@ let sendMessage = function (ev, messagesentDisplay, changeSendButton) {
     .then((result) => {
       ev.target.reset()
       changeSendButton(<input type="submit" value="Send" key="1" />)
-      messagesentDisplay("flex")
+      setMessagesent(true)
       setTimeout(() => {
-        messagesentDisplay(undefined)
-      }, 3000)
-      console.log(result)
+        setMessagesent(false)
+      }, 4000)
+      //console.log(result)
 
     }, (error) => {
       changeSendButton(<input type="submit" value="Send" key="1" />)

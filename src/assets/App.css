@@ -6,18 +6,23 @@
 @media (max-width:600px) {
   :root {
     --min-text-width: 5cm;
+    --input-size: 1.1em;
   }
 }
 
 @media (min-width:600px) {
   :root {
     --min-text-width: 10cm;
+    --input-size: 18px;
   }
 }
 
 @media (max-width:800px) {
   :root {
     --font: 1.2em;
+    --h2-line-height: 15px;
+    --project-height:47vh;
+    --project-btn-height:80%;
   }
   .pixelated-face {
     height: 45%;
@@ -43,6 +48,9 @@
 @media (min-width:800px) {
   :root {
     --font: 1.65em;
+    --h2-line-height: 28px;
+    --project-height:75vh;
+    --project-btn-height:65%;
   }
   .pixelated-face {
     height: 90%;
@@ -67,10 +75,11 @@
 }
 
 :root {
-  --background: hsl(216, 76%, 17%);
+  --background: hsl(215, 77%, 17%);
   --border-radius: 25px;
   --width: 90%;
   --title-font: 40px;
+  --screen-color: hsl(88, 43%, 73%);
 }
 
 body {

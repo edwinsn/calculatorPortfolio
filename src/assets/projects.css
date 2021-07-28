@@ -12,54 +12,22 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top: 20vh;
     width: 100%;
 }
 
 .projects>div>*{
     flex-grow: 1;
+    min-width: var(--min-text-width);
 }
 
 .projects>div>*:nth-child(1) {
     flex-basis: 40%;
+    max-width: 15.7cm;
 }
 .projects>div>a:nth-child(2){
     flex-basis: 55%;
-    height:80vh;
+    max-width: 19cm;
+    height:var(--project-height);
 }
-
-/*
-.projects > div > div {
-    flex-basis: 40%;
-
-}
-
-.projects > div > div{
-    flex-grow: 1 ;
-}
-
-.projects > div > a{
-    border-radius: 10px;
-    flex-grow: 1 ;
-    flex-basis: 60%;
-    min-width: 8cm;
-
-}
-
-.projects > div > a > img{
-    width: 100%;
-    max-height: 10.5cm;
-}
-
-.projectTitle{
-    font-size: 1.4rem;
-    color: rgb(255, 187, 0);
-    font-family: 'Pattaya', sans-serif;
-}
-
-.projectDescription{
-    font-family: 'Roboto';
-    font-size: 1.2rem;
-    color: white;
-}*/

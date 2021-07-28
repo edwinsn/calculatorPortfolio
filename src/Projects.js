@@ -8,8 +8,6 @@ import { CalcBtn } from './CalcBtn'
 
 export let Projects = function () {
 
-    console.log(chessJar)
-
     return (
         <section className="projects" id="projects">
             <div>
@@ -26,7 +24,7 @@ export let Projects = function () {
                         histograms so you can analyze how you are spending throughout the time,
                         in different categories and in what range of prices you put your money.</p>
                 </div>
-
+                
                 <CalcBtn
                     img={paGif}
                     alt={"an aplication to save your purchases info"}
@@ -67,7 +65,7 @@ export let Projects = function () {
                         rel="noreferrer"
                         target="_blank">Chess Game</a>
                     <p className="description">Maybe no the most beautiful but the function
-                        that decides the best move for the computer use recursion.
+                        that decides the best move for the computer use recursion (you shall need the java virtual machine to run it).
                     </p>
                 </div>
                 <CalcBtn
