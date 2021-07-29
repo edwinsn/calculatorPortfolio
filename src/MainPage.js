@@ -12,9 +12,9 @@ export let MainPage = function () {
             <header>
                 <img className="edIcon" src={edIcon} alt="edwin portfolio" />
                 <div className="solarPanel">
-                    <div>A</div>
-                    <div>P</div>
-                    <div>C</div>
+                    <a href="#about" title="About">A</a>
+                    <a href="#projects" title="Projects">P</a>
+                    <a href="#contact" title="Contact">C</a>
                 </div>
             </header>
             {/*<progress className="progress progress1" />*/}
@@ -22,10 +22,9 @@ export let MainPage = function () {
             <div className="calcScreen">
                 <div className="calcText">
                     <div>Hi, I'm Edwin</div>
-                    <div>I can solve your problems almost as fast as a calculator, beep.</div>
+                    <div>I can solve your problems as precisely as a calculator, beep.</div>
                 </div>
                 <img src={faceIcon} className="top-z-index pixelated-face" alt="Edwin pixelated face" />
-                <div className="reflex"></div>
             </div>
             <div className="buttons-place">
                 <About />

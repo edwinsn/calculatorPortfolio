@@ -10,6 +10,7 @@ export let Projects = function () {
 
     return (
         <section className="projects" id="projects">
+            <p className="title bold">Projects</p>
             <div>
                 <div>
                     <a className="title"
@@ -24,7 +25,7 @@ export let Projects = function () {
                         histograms so you can analyze how you are spending throughout the time,
                         in different categories and in what range of prices you put your money.</p>
                 </div>
-                
+
                 <CalcBtn
                     img={paGif}
                     alt={"an aplication to save your purchases info"}

@@ -36,7 +36,6 @@
     background-color: rgb(172, 172, 172);
     border-radius: var(--border-radius);
     overflow: hidden;
-    border: 2px solid black;
     width: 100%;
     height: var(--project-btn-height);
 }
@@ -58,8 +57,9 @@
 
 .project {
     padding: 0 27px;
-    background: radial-gradient(50% 50% at 50% 50%, #696060 0%, #363030 0.01%, #111010 100%);;
+    background: rgb(39, 39, 39);
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
+    min-height: 8cm;
 }

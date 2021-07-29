@@ -1,3 +1,8 @@
+hr{
+    margin-top: 12vh;
+    max-width: 30cm;
+}
+
 .contact {
     align-items: stretch;
     display: flex;
@@ -11,18 +16,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 100px 20px 0 20px;
+    padding: 0 20px 0 20px;
     box-sizing: border-box;
     margin-bottom: 5vh;
-    
 }
 
-.contactContainer .title{
+.contactContainer .title {
     width: 100%;
     text-align: center;
 }
 
-.contactContainer h1{
+.contactContainer h1 {
     line-height: var(--h2-line-height);
 }
 
@@ -74,6 +78,8 @@
     width: 100%;
     min-height: 0.8cm;
     border-bottom: 1px solid white;
+    font-size: var(--btns-font);
+    white-space: nowrap;
 }
 
 .contact>.btns>*:hover {
@@ -105,9 +111,9 @@
 }
 
 .screens>textarea, .screens>div>* {
-    background-color: var(--screen-color);
     border-radius: 5px;
     margin: 5px;
+    background-color: hsl(88, 43%, 73%);
 }
 
 .screens textarea {
@@ -156,10 +162,11 @@
 .sendLikn input[type="text"] {
     width: 73%;
     padding-left: 10px;
-    background-color: var(--screen-color);
+    background-color: hsl(88, 43%, 73%);
     box-sizing: border-box;
     border-radius: 5px 0 0 5px;
     margin-left: 5px;
+    min-height: 1.1cm;
 }
 
 .sendLikn input[type="submit"], .contact>.btns input[type="submit"] {
@@ -176,7 +183,7 @@
     border: none;
     z-index: 4;
     box-sizing: border-box;
-    font-size: 1.1em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;

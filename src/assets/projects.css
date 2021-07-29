@@ -4,6 +4,12 @@
     color: inherit;
 }
 
+.subtitle{
+    font-size: var(--subtitle-font);
+    color: white;
+    text-decoration: none;
+}
+
 .description {
     font-size: var(--font);
 }
@@ -13,7 +19,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-between;
-    margin-top: 20vh;
+    margin-top: 8vh;
     width: 100%;
 }
 
@@ -24,7 +30,8 @@
 
 .projects>div>*:nth-child(1) {
     flex-basis: 40%;
-    max-width: 15.7cm;
+    max-width: 19cm;
+    padding-right: var(--pading-projec-text);
 }
 .projects>div>a:nth-child(2){
     flex-basis: 55%;

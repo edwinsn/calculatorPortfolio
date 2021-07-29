@@ -17,13 +17,16 @@ export let Contact = function () {
 
 
   return (
-    <div className="contactContainer">
+    <> 
+    <hr />
+    <div className="contactContainer" >
       <p className="title">Contact</p>
-      <h1>Send me a link</h1>
-      <form className="sendLikn"
+      <h1>Send me a link</h1 >
+      <form className="sendLikn" id="contact"
         onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
-        <div>
-          <input type="text" placeholder={messagesent1 ? "...right, I'll check out the link, thank you." : "link"}
+        <div >
+          <input type="text" className="green"
+            placeholder={messagesent1 ? "...right, I'll check out the link, thank you." : "link"}
             name="link" required ></input>
           <div className="submit-container">
             {sendButton1}
@@ -40,12 +43,12 @@ export let Contact = function () {
             <input placeholder="Name" name="name" required></input>
             <input placeholder="Email" name="email" required></input>
           </div>
-          <textarea  name="message" placeholder={messagesent2 ? "... right, I'll get back to you in the next few days." : "message"} required></textarea>
+          <textarea name="message" placeholder={messagesent2 ? "... right, I'll get back to you in the next few days." : "message"} required></textarea>
 
         </div>
         <div className="btns">
           <button onClick={(ev) => { fillMessage(ev, 1) }} >Hire me</button>
-          <button onClick={(ev) => { fillMessage(ev, 2) }} >Freelancing</button>
+          <button onClick={(ev) => { fillMessage(ev, 2) }} >Freelancer</button>
           <button onClick={(ev) => { fillMessage(ev, 3) }} >Share ideas</button>
           <div>
             {sendButton2}
@@ -53,6 +56,7 @@ export let Contact = function () {
         </div>
       </form>
     </div>
+    </>
   )
 
 }
