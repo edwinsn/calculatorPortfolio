@@ -18,7 +18,8 @@ export let Projects = function () {
                         rel="noreferrer"
                         target="_blank">
                         Purchase Analysis</a>
-                    <p className="description">Throughout the month we usually spend our money according to what
+                    <p className="description">
+                        Throughout the month we usually spend our money according to what
                         is needed at the moment and by the end of the month, we don't
                         remember if all our purchases were smart or really necessary.
                         This app lets you save your purchase online data and shows you some

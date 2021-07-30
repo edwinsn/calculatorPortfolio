@@ -56,7 +56,7 @@ export let About = function () {
                     <div>{copyEmail}</div>
                 </button>
             </div>
-            <div className="container">
+            <div className="container" >
                 <div className="about-text">
                     <p className="title">About</p>
                     <p>

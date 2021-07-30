@@ -35,25 +35,39 @@ section {
   color: white;
   font-family: 'Caladea', serif;
   box-sizing: border-box;
-  margin-bottom: 7vh;
+  margin-bottom: 5vh;
 }
 
 .calcScreen {
-  background: var(--screen-color) ;
+  background: var(--screen-color);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap-reverse;
-  font-family: "calc","Calibri";
+  font-family: "calc", "Calibri";
   width: var(--width);
   overflow: hidden;
   padding: 5%;
   position: relative;
   box-sizing: border-box;
-  border: 3px solid black;
+  border: 2px solid black;
   /*border: 5px solid black;*/
   border-radius: var(--border-radius);
   height: var(--screen-height);
+}
+
+.contactref {
+  border: 1px dashed black;
+  border-width: 3px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 8px;
+  display: table;
+  width: 2cm;
+  align-self: center;
+  color: black;
+  text-decoration: none;
+  margin-top: 1.5vh;
 }
 
 .edIcon {
@@ -61,10 +75,8 @@ section {
 }
 
 .pixelated-face {
-  width: 30%;
   flex-grow: 1;
   min-width: 3cm;
-  margin: 0 20px;
   background-color: url(./images/faceIcon.svg);
 }
 
@@ -88,7 +100,6 @@ section {
 .reflex {
   position: absolute;
   top: 0;
-
   right: -29%;
   height: 200%;
   width: 30%;
@@ -102,7 +113,7 @@ section {
   color: white;
 }
 
-.solarPanel>div, .solarPanel > a {
+.solarPanel>div, .solarPanel>a {
   background-color: hsl(10, 50%, 25%);
   display: flex;
   align-items: center;
@@ -112,8 +123,20 @@ section {
   height: 5vw;
   min-height: 1cm;
   margin-left: 1vw;
-  border: 2px solid black;
+  border: 1.5px solid black;
   font-size: 1.5em;
   color: white;
   text-decoration: none;
+}
+
+.up {
+  position: fixed;
+  width: 8vh;
+  z-index: 3;
+  transition: bottom 800ms;
+  padding: 15px;
+}
+
+.up>img {
+  width: 100%;
 }

@@ -4,12 +4,28 @@ import faceIcon from './assets/images/faceIcon.svg'
 import { About } from './About'
 import { Projects } from './Projects'
 import { Contact } from './Contact'
+import up from './assets/images/up.svg'
+import { useEffect, useState } from 'react'
+
 
 export let MainPage = function () {
 
+    const [showUp, setShowUp] = useState(false)
+
+    useEffect(() => {
+        window.onscroll = () => {
+            if ((window.pageYOffset || document.documentElement.scrollTop) > 600) {
+                setShowUp(true)
+            }
+            else {
+                setShowUp(false)
+            }
+        }
+    }, [])
+
     return (
-        <section>
-            <header>
+        <section id="main">
+            <header >
                 <img className="edIcon" src={edIcon} alt="edwin portfolio" />
                 <div className="solarPanel">
                     <a href="#about" title="About">A</a>
@@ -19,19 +35,31 @@ export let MainPage = function () {
             </header>
             {/*<progress className="progress progress1" />*/}
             {/*<progress className="progress progress2" />*/}
-            <div className="calcScreen">
+            <div className="calcScreen" >
                 <div className="calcText">
                     <div>Hi, I'm Edwin</div>
-                    <div>I can solve your problems as precisely as a calculator, beep.</div>
+                    <div>You need a fast website that tells your story accurately.</div>
+                    <a href="#contact" className="contactref">Contact</a>
                 </div>
                 <img src={faceIcon} className="top-z-index pixelated-face" alt="Edwin pixelated face" />
-            </div>
+            </div >
             <div className="buttons-place">
                 <About />
                 <Projects />
                 <Contact />
             </div>
-        </section>
+            <a href="#main"
+                className="up"
+                style={{
+                    bottom: showUp ? "5vh" : "-10vh",
+                    right: "7%"
+                }}
+            >
+                <img
+                    alt="beginning" src={up}
+                />
+            </a>
+        </section >
     )
 
     /*return (

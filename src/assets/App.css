@@ -13,7 +13,7 @@
 @media (min-width:600px) {
   :root {
     --min-text-width: 10cm;
-    --input-size: 18px;
+    --input-size: 14px;
   }
 }
 
@@ -34,14 +34,17 @@
     --btns-font: 0.8em;
     ;
   }
+
   .pixelated-face {
     height: 45%;
+    width: 35%;
   }
   .calcText div:nth-child(1) {
-    font-size: 3.5em;
+    font-size: 3.3em;
   }
   .calcText div:nth-child(2) {
-    font-size: 1.9em;
+    font-size: 1.8em;
+    line-height: 0.9em;
   }
   .contactBtns>button, .contactBtns>a {
     border: none;
@@ -55,7 +58,7 @@
 
 @media (min-width:800px) {
   :root {
-    --font: 1.4em;
+    --font: 1.3em;
     --small-font: 23px;
     --h2-line-height: 28px;
     --project-height: 75vh;
@@ -66,18 +69,19 @@
     --screen-height: 65vh;
     --margin-top-tiltte: 10vh;
     --screen-color: linear-gradient(130deg, hsl(88, 43%, 73%) 75%, hsl(88, 62%, 80%) 75%);
-    --btns-font: 1.1em;
+    --btns-font: 0.9em;
     ;
   }
   .pixelated-face {
     height: 90%;
+    width: 20%;
   }
   .calcText div:nth-child(1) {
-    font-size: 7.5em;
+    font-size: 7em;
     line-height: 1em;
   }
-  .calcText div:nth-child(2) {
-    font-size: 3em;
+  .calcText div:nth-child(2), .calcText div:nth-child(3) {
+    font-size: 2.2em;
   }
   .contactBtns>button, .contactBtns>a {
     border: none;
@@ -93,9 +97,13 @@
   --background: rgb(10, 38, 77);
   --border-radius: 25px;
   --width: 90%;
-  --title-font: 40px;
+  --title-font: 35px;
   --subtitle-font: 30px;
 }
+
+  html {
+    scroll-behavior: smooth;
+  }
 
 body {
   background-color: var(--background);

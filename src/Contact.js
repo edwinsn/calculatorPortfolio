@@ -17,45 +17,45 @@ export let Contact = function () {
 
 
   return (
-    <> 
-    <hr />
-    <div className="contactContainer" >
-      <p className="title">Contact</p>
-      <h1>Send me a link</h1 >
-      <form className="sendLikn" id="contact"
-        onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
-        <div >
-          <input type="text" className="green"
-            placeholder={messagesent1 ? "...right, I'll check out the link, thank you." : "link"}
-            name="link" required ></input>
-          <div className="submit-container">
-            {sendButton1}
+    <>
+      <hr />
+      <div className="contactContainer" >
+        <p className="title" id="#contact">Contact</p>
+        <h2>Send me a link</h2>
+        <form className="sendLikn" id="contact"
+          onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
+          <div >
+            <input type="text" className="green"
+              placeholder={messagesent1 ? "...right, I'll check out the link, thank you." : "link"}
+              name="link" required ></input>
+            <div className="submit-container">
+              {sendButton1}
+            </div>
           </div>
-        </div>
-        <div></div>
-      </form>
-      <h1>Or write me</h1>
-      <form className="contact tittle"
-        onSubmit={(ev) => { sendMessage(ev, setMessagesent2, changeSendButton2) }}>
-        <div className="screens">
+          <div></div>
+        </form>
+        <h2>Or write me</h2>
+        <form className="contact tittle"
+          onSubmit={(ev) => { sendMessage(ev, setMessagesent2, changeSendButton2) }}>
+          <div className="screens">
 
-          <div className="data">
-            <input placeholder="Name" name="name" required></input>
-            <input placeholder="Email" name="email" required></input>
-          </div>
-          <textarea name="message" placeholder={messagesent2 ? "... right, I'll get back to you in the next few days." : "message"} required></textarea>
+            <div className="data">
+              <input placeholder="Name" name="name" required></input>
+              <input placeholder="Email" name="email" required></input>
+            </div>
+            <textarea name="message" placeholder={messagesent2 ? "... right, I'll get back to you in the next few days." : "message"} required></textarea>
 
-        </div>
-        <div className="btns">
-          <button onClick={(ev) => { fillMessage(ev, 1) }} >Hire me</button>
-          <button onClick={(ev) => { fillMessage(ev, 2) }} >Freelancer</button>
-          <button onClick={(ev) => { fillMessage(ev, 3) }} >Share ideas</button>
-          <div>
-            {sendButton2}
           </div>
-        </div>
-      </form>
-    </div>
+          <div className="btns">
+            <button onClick={(ev) => { fillMessage(ev, 1) }} >Hire me</button>
+            <button onClick={(ev) => { fillMessage(ev, 2) }} >Freelancer</button>
+            <button onClick={(ev) => { fillMessage(ev, 3) }} >Share ideas</button>
+            <div>
+              {sendButton2}
+            </div>
+          </div>
+        </form>
+      </div>
     </>
   )
 
