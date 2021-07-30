@@ -85,6 +85,7 @@ h2{
     border-bottom: 1px solid white;
     font-size: var(--btns-font);
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .contact>.btns>*:hover {
@@ -184,6 +185,7 @@ h2{
     border: none;
     color: white;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .sendLikn .submit-container {
