@@ -84,7 +84,7 @@ export let About = function () {
                             aux = true
                         }}
                     >
-                        <div style={{ right: showSkill2 ? undefined : "5%", bottom: showSkill2 ? undefined : "5%" }}>
+                        <div style={{ right: showSkill2 ? undefined : "5%", top: showSkill2 ? undefined : "12%" }}>
                             <img src={axis} className="axis" alt="" />
                             <div>
                                 <img src={css} alt="" />
