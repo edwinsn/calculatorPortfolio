@@ -3,7 +3,7 @@ hr {
     max-width: 23cm;
 }
 
-h2{
+h2 {
     font-size: 21px;
     font-weight: 100;
 }
@@ -171,7 +171,7 @@ h2{
 .sendLikn input[type="text"] {
     width: 73%;
     padding-left: 10px;
-    background-color: hsl(88, 43%, 73%);
+    background-color: #13c0bd;
     box-sizing: border-box;
     border-radius: 5px 0 0 5px;
     margin-left: 5px;
