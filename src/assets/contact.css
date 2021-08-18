@@ -171,7 +171,7 @@ h2 {
 .sendLikn input[type="text"] {
     width: 73%;
     padding-left: 10px;
-    background-color: #13c0bd;
+    background-color: hsl(88, 43%, 73%);
     box-sizing: border-box;
     border-radius: 5px 0 0 5px;
     margin-left: 5px;
