@@ -4,7 +4,7 @@ import react from './assets/images/react.svg'
 import css from './assets/images/css.svg'
 import gitHub from './assets/images/githubIcon.svg'
 import mailIcon from './assets/images/mailIcon.svg'
-import cv from "./assets/files/Edwin's cv.pdf"
+import cv from "./assets/files/Edwin'sCV(web developer).pdf"
 import { useState } from 'react'
 import java from './assets/images/java.svg'
 import mongodb from './assets/images/mongodb.svg'
