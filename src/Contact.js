@@ -19,8 +19,8 @@ export let Contact = function () {
   return (
     <>
       <hr />
-      <div className="contactContainer" >
-        <p className="title" id="#contact">Contact</p>
+      <div className="contactContainer" id="#contact">
+        <p className="title">Contact</p>
         <h2>Send me a link</h2>
         <form className="sendLikn" id="contact"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
