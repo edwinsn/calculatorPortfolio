@@ -20,11 +20,10 @@ export let Projects = function () {
                         Purchase Analysis</a>
                     <p className="description">
                         Throughout the month we usually spend our money according to what
-                        is needed at the moment and by the end of the month, we don't
+                        is needed at the moment and by the end, we don't
                         remember if all our purchases were smart or really necessary.
-                        This app lets you save your purchase online data and shows you some
-                        histograms so you can analyze how you are spending throughout the time,
-                        in different categories and in what range of prices you put your money.</p>
+                        This app lets you organize your purchase data in one site and shows you some
+                        histograms so you can know how you are spending your money.</p>
                 </div>
 
                 <CalcBtn

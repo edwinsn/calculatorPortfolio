@@ -11,6 +11,7 @@ import mongodb from './assets/images/mongodb.svg'
 import sql from './assets/images/sql.svg'
 import node from './assets/images/node.svg'
 import axis from './assets/images/axis.svg'
+import cvIcon from './assets/images/Edwin_Sánchez-cv.png'
 
 let firstShow = false
 let aux = false
@@ -57,59 +58,61 @@ export let About = function () {
                 </button>
             </div>
             <div className="container" >
-                <div className="about-text">
-                    <p className="title">About</p>
+
+                <div id="about-text">
+                    <p className="title">About Me</p>
                     <p>
-                        When I was a child, there was a boy who was extremely good at
-                        calculations, once in a math class, we worked together and
-                        I discovered that by giving him a possible solution to the problem
-                        we were working, he could quickly implement it and in this way, after
-                        rehearsing a couple of alternatives, we came up with an idea whose
-                        result was a logical answer , unfortunately we were wrong. Nonetheless
-                        I think that the combination of the power of calculation of machines
-                        and human creativity can do great things.
+                        Hi, i'm Edwin, i like to <span className="highlight">solve problems</span >,
+                        all kind of problems: <span className="highlight">programing</span>, <span className="highlight">design </span>
+                        and even some <span className="highlight">mathematical</span> problems.
+                    </p>
+                    <p>
+                        I know how to work collaboratively to build intuitive,
+                        beautiful and reliable solutions that convince your <span className="highlight">clients</span>.
                     </p>
 
-                    <p className="cv"><a href={cv}  download={true}>Download VC</a></p>
                 </div>
-                <div>
-                    <p className="title">Skills</p>
-                    <div className="skills"
-                        onMouseLeave={() => { if (showSkill2) { setShowSkill2(false) }; aux = false }}
-                        onMouseEnter={() => { setShowSkill2(true) }}
-                        onClick={() => {
-                            if (aux) {
-                                setShowSkill2(!showSkill2)
-                            }
-                            aux = true
-                        }}
-                    >
-                        <div style={{ right: showSkill2 ? undefined : "5%", top: showSkill2 ? undefined : "12%" }}>
-                            <img src={axis} className="axis" alt="" />
-                            <div>
-                                <img src={css} alt="" />
-                                <img src={js} alt="" />
-                                <img src={react} alt="" />
-                                <img src={html} alt="" />
-                            </div>
-                        </div>
-                        <div style={{
-                            animationName: showSkill2 && !firstShow ? undefined : "toggle2",
-                            animationDuration: showSkill2 ? "1400ms" : "1200ms",
-                            animationFillMode: "forwards"
-                        }}>
-                            <img src={axis} className="axis" alt="" />
-                            <div>
-                                <img src={node} alt="" />
-                                <img src={mongodb} alt="" />
-                                <img src={sql} alt="" />
-                                <img src={java} alt="" />
-                            </div>
-                        </div>
+                <div className="centered">
+                    <a href={cv} id="cv" className="rotate-hover" download={true}>
+                        <img src={cvIcon} alt="Edwin Sánchez cv"/>
+                    </a>
+                </div>
+
+            </div>
+            
+            <p className="title">Skills</p>
+            <div className="skills"
+                onMouseLeave={() => { if (showSkill2) { setShowSkill2(false) }; aux = false }}
+                onMouseEnter={() => { setShowSkill2(true) }}
+                onClick={() => {
+                    if (aux) {
+                        setShowSkill2(!showSkill2)
+                    }
+                    aux = true
+                }}
+            >
+                <div style={{ right: showSkill2 ? undefined : "5%", top: showSkill2 ? undefined : "12%" }}>
+                    <img src={axis} className="axis" alt="" />
+                    <div>
+                        <img src={css} alt="" />
+                        <img src={js} alt="" />
+                        <img src={react} alt="" />
+                        <img src={html} alt="" />
                     </div>
                 </div>
-
-
+                <div style={{
+                    animationName: showSkill2 && !firstShow ? undefined : "toggle2",
+                    animationDuration: showSkill2 ? "1400ms" : "1200ms",
+                    animationFillMode: "forwards"
+                }}>
+                    <img src={axis} className="axis" alt="" />
+                    <div>
+                        <img src={node} alt="" />
+                        <img src={mongodb} alt="" />
+                        <img src={sql} alt="" />
+                        <img src={java} alt="" />
+                    </div>
+                </div>
             </div>
 
         </div >

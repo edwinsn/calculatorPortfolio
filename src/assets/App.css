@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
   font-family: "calc";
   src: url("./PocketCalculator-qjd.ttf") format("truetype");
@@ -34,8 +35,7 @@
     --btns-font: 0.8em;
     ;
   }
-
-  .pixelated-face {
+  #pixelated-face {
     height: 45%;
     width: 35%;
   }
@@ -68,11 +68,13 @@
     --skills-gap: 35px;
     --screen-height: 65vh;
     --margin-top-tiltte: 10vh;
-    --screen-color: linear-gradient(130deg, hsl(88, 43%, 73%) 75%, hsl(88, 62%, 80%) 75%);
+    --green: #8fd6b1;
+    --light-green: #99e5be;
+    --screen-color: linear-gradient(130deg, var(--green) 75%, var(--light-green) 75%);
     --btns-font: 0.9em;
     ;
   }
-  .pixelated-face {
+  #pixelated-face {
     height: 90%;
     width: 20%;
   }
@@ -94,20 +96,31 @@
 }
 
 :root {
-  --background: rgb(10, 38, 77);
+  --background: #0A264D;
+  --secundary-background: #031634;
   --border-radius: 25px;
   --width: 90%;
-  --title-font: 35px;
+  --title-font: 40px;
   --subtitle-font: 30px;
+  --font-color: #b3bbd3;
 }
 
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--background);
   margin: 0;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
 }
 
 .bold {
@@ -115,6 +128,24 @@ body {
   font-weight: bolder;
 }
 
+.highlight {
+  color: aqua;
+}
+
+.rotate-hover {
+  transition: transform 100ms;
+}
+
+.rotate-hover:hover {
+  transform: rotate(12deg);
+}
+
 .top-z-index {
   z-index: 2;
+}
+
+.title {
+  font-size: var(--title-font);
+  text-decoration: none;
+  color: #d6def8;
 }

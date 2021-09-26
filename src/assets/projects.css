@@ -1,12 +1,8 @@
-.title {
-    font-size: var(--title-font);
-    text-decoration: none;
-    color: inherit;
-}
+
 
 .subtitle {
     font-size: var(--subtitle-font);
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
 }
 

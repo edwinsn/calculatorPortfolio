@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 .about {
     position: relative;
-    color: white;
 }
 
 .contactBtns {
@@ -31,7 +30,6 @@
 
 .title {
     margin-top: var(--margin-top-tiltte);
-    font-size: var(--title-font);
 }
 
 .about .container {
@@ -44,7 +42,7 @@
     min-width: var(--min-text-width);
 }
 
-.about-text {
+#about-text {
     font-size: var(--font);
     flex-grow: 1;
     flex-basis: 53%;
@@ -75,7 +73,6 @@
     width: 100%;
     height: 100%;
     top: 100%;
-    background-color: rgba(0, 55, 128, 0.637);
     position: absolute;
     transition: top 400ms;
     display: flex;
@@ -164,6 +161,17 @@
     top: 5%;
     left: 0%;
 }
+
+#cv {
+    height: 60vh;
+}
+
+#cv>img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+
 
 @keyframes toggle {
     50% {

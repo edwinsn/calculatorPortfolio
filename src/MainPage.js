@@ -5,6 +5,9 @@ import { About } from './About'
 import { Projects } from './Projects'
 import { Contact } from './Contact'
 import up from './assets/images/up.svg'
+import contactIcon from './assets/images/contactIcon.svg'
+import userIcon from './assets/images/userIcon.svg'
+import portfolioIcon from './assets/images/portfolioIcon.svg'
 import { useEffect, useState } from 'react'
 
 
@@ -28,9 +31,15 @@ export let MainPage = function () {
             <header >
                 <img className="edIcon" src={edIcon} alt="edwin portfolio" />
                 <div className="solarPanel">
-                    <a href="#about" title="About">A</a>
-                    <a href="#projects" title="Projects">P</a>
-                    <a href="#contact" title="Contact">C</a>
+                    <a href="#about" title="About">
+                        <img src={userIcon} />
+                    </a>
+                    <a href="#projects" title="Projects">
+                        <img id="project-img" src={portfolioIcon} />
+                    </a>
+                    <a href="#contact" title="Contact">
+                        <img src={contactIcon} />
+                    </a>
                 </div>
             </header>
             {/*<progress className="progress progress1" />*/}
@@ -41,7 +50,9 @@ export let MainPage = function () {
                     <div>You need a fast website that tells your story accurately.</div>
                     <a href="#contact" className="contactref">Contact</a>
                 </div>
-                <img src={faceIcon} className="top-z-index pixelated-face" alt="Edwin pixelated face" />
+                <a href="#about" id="pixelated-face" className="top-z-index rotate-hover">
+                    <img src={faceIcon} alt="About" />
+                </a>
             </div >
             <div className="buttons-place">
                 <About />

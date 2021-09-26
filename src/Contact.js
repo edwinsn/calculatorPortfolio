@@ -20,7 +20,7 @@ export let Contact = function () {
     <>
       <hr />
       <div className="contactContainer" id="#contact">
-        <p className="title">Contact</p>
+        <p className="title" >Contact</p>
         <h2>Send me a link</h2>
         <form className="sendLikn" id="contact"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
