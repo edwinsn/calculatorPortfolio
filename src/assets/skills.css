@@ -1,0 +1,15 @@
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5em;
+   
+    margin-bottom:15vh;
+}
+
+#skills > div{
+    display: flex;
+    flex-direction: column;
+    min-width:250px;
+    flex-grow: 1;
+}

@@ -9,6 +9,7 @@ import contactIcon from './assets/images/contactIcon.svg'
 import userIcon from './assets/images/userIcon.svg'
 import portfolioIcon from './assets/images/portfolioIcon.svg'
 import { useEffect, useState } from 'react'
+import Skills from './Skills'
 
 
 export let MainPage = function () {
@@ -32,13 +33,13 @@ export let MainPage = function () {
                 <img className="edIcon" src={edIcon} alt="edwin portfolio" />
                 <div className="solarPanel">
                     <a href="#about" title="About">
-                        <img src={userIcon} />
+                        <img src={userIcon} alt="about link" />
                     </a>
-                    <a href="#projects" title="Projects">
-                        <img id="project-img" src={portfolioIcon} />
+                    <a href="#projects" title="Projects" >
+                        <img id="project-img" src={portfolioIcon} alt="projects link" />
                     </a>
                     <a href="#contact" title="Contact">
-                        <img src={contactIcon} />
+                        <img src={contactIcon} alt="contact link" />
                     </a>
                 </div>
             </header>
@@ -56,6 +57,7 @@ export let MainPage = function () {
             </div >
             <div className="buttons-place">
                 <About />
+                <Skills />
                 <Projects />
                 <Contact />
             </div>

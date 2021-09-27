@@ -69,7 +69,7 @@
 }
 
 .email div {
-    color: white;
+    color: rgb(37, 37, 37);
     width: 100%;
     height: 100%;
     top: 100%;
@@ -80,6 +80,7 @@
     align-items: center;
     font-size: var(--small-font);
     font-weight: bolder;
+    background-color: var(--green);
 }
 
 .email:hover div {

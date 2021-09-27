@@ -4,6 +4,19 @@
   src: url("./PocketCalculator-qjd.ttf") format("truetype");
 }
 
+:root {
+  --animation-time: 300ms;
+  --background: #0A264D;
+  --secundary-background: #031634;
+  --border-radius: 25px;
+  --width: 90%;
+  --title-font: 40px;
+  --subtitle-font: 35px;
+  --font-color: #b3bbd3;
+  --green: #8fd6b1;
+  --light-green: #99e5be;
+}
+
 @media (max-width:600px) {
   :root {
     --min-text-width: 5cm;
@@ -31,7 +44,7 @@
     --skills-gap: 20px;
     --screen-height: 60vh;
     --margin-top-tiltte: 5.5vh;
-    --screen-color: linear-gradient(105deg, hsl(88, 43%, 73%) 70%, hsl(88, 62%, 80%) 70%);
+    --screen-color: linear-gradient(105deg, var(--green) 70%, var(--light-green) 70%);
     --btns-font: 0.8em;
     ;
   }
@@ -68,8 +81,6 @@
     --skills-gap: 35px;
     --screen-height: 65vh;
     --margin-top-tiltte: 10vh;
-    --green: #8fd6b1;
-    --light-green: #99e5be;
     --screen-color: linear-gradient(130deg, var(--green) 75%, var(--light-green) 75%);
     --btns-font: 0.9em;
     ;
@@ -95,16 +106,6 @@
   }
 }
 
-:root {
-  --background: #0A264D;
-  --secundary-background: #031634;
-  --border-radius: 25px;
-  --width: 90%;
-  --title-font: 40px;
-  --subtitle-font: 30px;
-  --font-color: #b3bbd3;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -121,6 +122,7 @@ p {
 .centered {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .bold {
@@ -140,12 +142,20 @@ p {
   transform: rotate(12deg);
 }
 
+.subtitle {
+    font-size: var(--subtitle-font);
+    color: var(--font-color);
+    text-decoration: none;
+    color: #D6DEF8;
+}
+
 .top-z-index {
   z-index: 2;
 }
 
 .title {
   font-size: var(--title-font);
-  text-decoration: none;
+  text-decoration:underline wavy;
+  text-decoration-color: aqua;
   color: #d6def8;
 }

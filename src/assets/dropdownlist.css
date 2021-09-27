@@ -1,0 +1,56 @@
+.drop-icon {
+    height: 2vh;
+    animation-fill-mode: forwards;
+    animation-duration: var(--animation-time);
+    place-self: right;
+    position: absolute;
+    right: 5%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: bolder;
+    cursor: pointer;
+    max-width: 12cm;
+}
+
+.header>p {
+    margin-left: 1em;
+}
+
+.items {
+    overflow: hidden;
+    transition: height 300ms;
+    margin: 0;
+    font-size: 0.8em;
+   
+}
+
+.list-icon {
+    height: 7vh;
+}
+
+.turn {
+    animation-name: turn;
+}
+
+@keyframes turn {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.return {
+    animation-name: return;
+}
+
+@keyframes return {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}

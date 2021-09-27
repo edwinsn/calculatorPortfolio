@@ -1,6 +1,5 @@
 import { useState } from "react"
 import './assets/calc-btn.css'
-import arrow from './assets/images/arrow.svg'
 
 
 let handleMove, mouseOut, mouseDown, mouseUp
@@ -11,7 +10,7 @@ export let CalcBtn = (props) => {
 
 
     return (
-        <a className="project"
+        <a className="project centered"
             draggable={false}
             href={props.href}
             rel="noreferrer"
@@ -24,12 +23,7 @@ export let CalcBtn = (props) => {
                 onMouseOut={() => { mouseOut(setTransform) }}
                 onMouseDown={() => { mouseDown(setTransform) }}
                 onMouseUp={() => { mouseUp(setTransform) }}>
-                <img className="arrow" src={arrow} alt="" />
-                <img className="arrow" src={arrow} alt="" />
-                <img className="arrow" src={arrow} alt="" />
-                <img className="arrow" src={arrow} alt="" />
                 <img src={props.img} alt={props.alt} />
-                <div></div>
             </div>
         </a>
     )
