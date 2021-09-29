@@ -8,12 +8,15 @@ export default function SecondaryProject(props) {
     let { name, img, url, description, githubLink } = props
 
     return (
-        <div href={url}
-            className="secondary-project flex"
-            target="_blank"
-            rel="noreferrer">
+        <div
+            className="secondary-project flex">
 
-            <img src={img} alt={name} />
+            <a href={url}
+                target="_blank"
+                rel="noreferrer"
+            >
+                <img src={img} alt={name} />
+            </a>
             <div className="column project-decription centered">
                 <span className="secondary-projec-title">{name}</span>
                 <p>{description}</p>

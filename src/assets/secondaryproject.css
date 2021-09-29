@@ -4,7 +4,7 @@
         --image-height: 100%;
         --image-width: 100%;
     }
-    .secondary-project>img {
+    .secondary-project>a>img {
         position: absolute;
         z-index: -1;
     }
@@ -65,9 +65,15 @@
     filter: brightness(0) saturate(100%) invert(84%) sepia(83%) saturate(1821%) hue-rotate(102deg) brightness(110%) contrast(101%);
 }
 
-.secondary-project>img {
+.secondary-project>a {
     align-self: center;
     width: var(--image-width) !important;
     height: var(--image-height);
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.secondary-project a>img{
+    height: 100%;
+    width: 100%;
 }

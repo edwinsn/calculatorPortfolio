@@ -6,8 +6,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import groupsImg from './assets/images/groups.jpg'
 import arrowIcon from './assets/images/deployIcon.svg'
-import csGif from './assets/images/cs.gif'
-import naGif from './assets/images/na.gif'
+import csGif from './assets/images/cs.png'
+import naGif from './assets/images/na.jpg'
 
 
 export default function MoreProjects() {
