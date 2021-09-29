@@ -12,6 +12,7 @@
         color: white;
         background-color: rgba(34, 34, 34, 0.671);
         opacity: 1;
+        min-width: 100%;
     }
     .project-decription>* {
         width: 80%;
