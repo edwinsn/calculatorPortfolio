@@ -9,12 +9,14 @@
   --background: #0A264D;
   --secundary-background: #031634;
   --border-radius: 25px;
+  
   --width: 90%;
   --title-font: 40px;
   --subtitle-font: 35px;
   --font-color: #b3bbd3;
   --green: #8fd6b1;
   --light-green: #99e5be;
+  --phone-view: 600px;
 }
 
 @media (max-width:600px) {
@@ -119,15 +121,23 @@ p {
   line-height: 1.5em;
 }
 
+.bold {
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
 .centered {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bold {
-  margin-bottom: 0;
-  font-weight: bolder;
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
 }
 
 .highlight {
@@ -143,10 +153,10 @@ p {
 }
 
 .subtitle {
-    font-size: var(--subtitle-font);
-    color: var(--font-color);
-    text-decoration: none;
-    color: #D6DEF8;
+  font-size: var(--subtitle-font);
+  color: var(--font-color);
+  text-decoration: none;
+  color: #D6DEF8;
 }
 
 .top-z-index {
@@ -155,7 +165,7 @@ p {
 
 .title {
   font-size: var(--title-font);
-  text-decoration:underline wavy;
+  text-decoration: underline wavy;
   text-decoration-color: aqua;
   color: #d6def8;
 }

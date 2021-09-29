@@ -1,12 +1,9 @@
-import naGif from './assets/images/na.gif'
 import paGif from './assets/images/pa.gif'
 import mcGif from './assets/images/mc.gif'
-import csGif from './assets/images/cs.gif'
 import paIcon from './assets/images/paIcon.svg'
 import mcIcon from './assets/images/mcIcon.svg'
-import chessJar from './assets/files/chess.jar'
 import './assets/projects.css'
-import { CalcBtn } from './CalcBtn'
+
 import Project from './Project'
 
 
@@ -39,36 +36,6 @@ export let Projects = function () {
                 repo="https://github.com/edwinsn/purchase-analysis"
             />
 
-            <div >
-                <div>
-                    <a className="title" href="https://edwinsn.github.io/Search-NASA-images/" rel="noreferrer" target="_blank">NASA Multimedia Library clone</a>
-                    <p className="description">This small application is a clone of the NASA Multimedia Library,
-                        it allows you to search,  setting a time interval,  for images or audio from NASA, besides it shows you a description of the entry you select.</p>
-                </div>
-                <CalcBtn
-                    img={naGif}
-                    href="https://edwinsn.github.io/Search-NASA-images/"
-                    alt={"a gif of the app"} />
-            </div>
-            <div>
-                <div>
-                    <a className="title"
-                        href="https://edwinsn.github.io/Search-NASA-images/"
-                        rel="noreferrer"
-                        target="_blank">Chess Game</a>
-                    <p className="description">Maybe no the most beautiful but the function
-                        that decides the best move for the computer use recursion (you shall need the java virtual machine to run it).
-                    </p>
-                </div>
-                <CalcBtn
-                    img={csGif}
-                    href={chessJar}
-                    alt={"A gif of the chess game "}
-                    download={true}
-                />
-
-
-            </div>
         </div>
     )
 

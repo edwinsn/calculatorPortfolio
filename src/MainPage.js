@@ -10,6 +10,7 @@ import userIcon from './assets/images/userIcon.svg'
 import portfolioIcon from './assets/images/portfolioIcon.svg'
 import { useEffect, useState } from 'react'
 import Skills from './Skills'
+import MoreProjects from './MoreProjects'
 
 
 export let MainPage = function () {
@@ -59,6 +60,7 @@ export let MainPage = function () {
                 <About />
                 <Skills />
                 <Projects />
+                <MoreProjects />
                 <Contact />
             </div>
             <a href="#main"
