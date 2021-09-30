@@ -9,14 +9,15 @@ export let About = function () {
     const [copyEmail, setcopy] = useState("Copy email")
 
     return (
-        <div className="about" id="about">
-            <div className="contactBtns">
+        <div id="about">
+            <div id="contactBtns">
                 <a href="https://github.com/edwinsn"
-                    rel="noreferrer"
-                    target="_blank">
-                    <img className="github-icon" alt="edwin's githuub account" src={gitHub} />
+                    rel="noreferrer noopener"
+                    target="_blank"
+                    className="centered">
+                    <img id="github-icon" alt="edwin's githuub account" src={gitHub} />
                 </a>
-                <button className="email"
+                <button className="email centered"
                     onClick={() => {
                         setcopy("Copied!")
                         setTimeout(() => { setcopy("Copy email") }, 3000)
@@ -40,11 +41,11 @@ export let About = function () {
                             });
                         }
                     }}>
-                    <img className="mail-icon" alt="edwin mail" src={mailIcon} />
-                    <div>{copyEmail}</div>
+                    <img id="mail-icon" alt="copy edwin mail" src={mailIcon} />
+                    <div className="centered">{copyEmail}</div>
                 </button>
             </div>
-            <div className="container" >
+            <div className="wrap" >
 
                 <div id="about-text">
                     <p className="title">About Me</p>
@@ -59,11 +60,10 @@ export let About = function () {
                     </p>
 
                 </div>
-                <div className="centered">
-                    <a href={cv} id="cv" className="rotate-hover" download={true}>
-                        <img src={cvIcon} alt="Edwin Sánchez cv" />
-                    </a>
-                </div>
+
+                <a href={cv} id="cv" className="rotate-hover centered" download={true}>
+                    <img src={cvIcon} alt="Edwin Sánchez cv" />
+                </a>
 
             </div>
         </div>

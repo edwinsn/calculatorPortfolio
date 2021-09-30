@@ -31,23 +31,21 @@ export let MainPage = function () {
     return (
         <section id="main">
             <header >
-                <img className="edIcon" src={edIcon} alt="edwin portfolio" />
-                <div className="solarPanel">
-                    <a href="#about" title="About">
+                <img id="edIcon" src={edIcon} alt="" />
+                <div id="solarPanel" className="flex">
+                    <a href="#about" title="About" className="centered">
                         <img src={userIcon} alt="about link" />
                     </a>
-                    <a href="#projects" title="Projects" >
+                    <a href="#projects" title="Projects" className="centered">
                         <img id="project-img" src={portfolioIcon} alt="projects link" />
                     </a>
-                    <a href="#contact" title="Contact">
+                    <a href="#contact" title="Contact" className="centered">
                         <img src={contactIcon} alt="contact link" />
                     </a>
                 </div>
             </header>
-            {/*<progress className="progress progress1" />*/}
-            {/*<progress className="progress progress2" />*/}
-            <div className="calcScreen" >
-                <div className="calcText">
+            <div id="calcScreen" className="centered">
+                <div className="calcText centered">
                     <div>Hi, I'm Edwin</div>
                     <div>You need a fast website that tells your story accurately.</div>
                     <a href="#contact" className="contactref">Contact</a>
@@ -76,41 +74,4 @@ export let MainPage = function () {
             </a>
         </section >
     )
-
-    /*return (
-        <section id="main" className="mainPage">
-            <header>
-                <div className="headerSpace"></div>
-                <div className="headerLinks">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </header>
-            <div>
-
-                <div className="introduction">
-                    <div>
-                        <div>
-                            <a href="https://github.com/edwinsn" target="_blank" rel="noreferrer">
-                                <img alt="github" className="icon" src={githubIcon}></img>
-                            </a>
-                            <a href="mailto:edwinsanchez750@gmail.com" alt="email" target="_blank" rel="noreferrer">
-                                <img alt="mail" className="icon" src={mailIcon}></img>
-                            </a>
-                        </div>
-                        <div>Hi, I'm <span className="name">Edwin Sáchez</span>,<br /> web developer.</div>
-                        <div className="presentation" >I think we can make a <span className="yellow">big</span> impact through code.</div>
-                        <a href="#contact"><button>Write me</button></a>
-                    </div>
-                </div>
-                
-                <div >
-                    <img className="edwinsPhoto" src={edwinsPhoto} alt="Edwin" />
-                </div>
-            </div>
-
-        </section>
-
-    )*/
 }

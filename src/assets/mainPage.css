@@ -1,12 +1,9 @@
 .calcText {
-  display: flex;
   text-align: center;
-  justify-content: center;
   flex-grow: 4;
   width: 5cm;
   min-width: 8cm;
   flex-direction: column;
-  z-index: 2;
   max-height: 90%;
 }
 
@@ -17,14 +14,7 @@ header {
   padding: 0 5%;
   width: 100%;
   height: 17vh;
-  min-height: 2cm;
   box-sizing: border-box;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .buttons-place {
@@ -38,11 +28,8 @@ section {
   margin-bottom: 5vh;
 }
 
-.calcScreen {
+#calcScreen {
   background: var(--screen-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap-reverse;
   font-family: "calc", "Calibri";
   width: var(--width);
@@ -51,7 +38,6 @@ section {
   position: relative;
   box-sizing: border-box;
   border: 2px solid black;
-  /*border: 5px solid black;*/
   border-radius: var(--border-radius);
   height: var(--screen-height);
   color: rgb(20, 20, 20);
@@ -63,7 +49,6 @@ section {
   font-size: 1.5em;
   border-radius: 5px;
   padding: 8px;
-  display: table;
   width: 2cm;
   align-self: center;
   color: rgb(20, 20, 20);
@@ -71,14 +56,13 @@ section {
   margin-top: 1.5vh;
 }
 
-.edIcon {
+#edIcon {
   height: 70%;
 }
 
 #pixelated-face {
   flex-grow: 1;
   min-width: 3cm;
-  background-color: url(./images/faceIcon.svg);
   text-align: center;
 }
 
@@ -86,61 +70,22 @@ section {
   height: 100%;
 }
 
-.progress {
-  transform: rotate(90deg);
-  transform-origin: top right;
-  position: absolute;
-  bottom: -20px;
-  z-index: 2;
-  width: 105vh;
-}
+/*ampliar screen*/
 
-.progress1 {
-  right: 0cm;
-}
-
-.progress2 {
-  right: 98vw;
-}
-
-.reflex {
-  position: absolute;
-  top: 0;
-  right: -29%;
-  height: 200%;
-  width: 30%;
-  min-width: 3cm;
-  transform: rotate(40deg);
-  transform-origin: top left;
-}
-
-.solarPanel {
-  display: flex;
-}
-
-.solarPanel>div, .solarPanel>a {
+#solarPanel>div, #solarPanel>a {
   background-color: hsl(10, 50%, 25%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 5vw;
   min-width: 1cm;
   height: 5vw;
   min-height: 1cm;
   margin-left: 1vw;
-  border: 1.5px solid black;
-  font-size: 1.5em;
-  text-decoration: none;
+  border: 1.5px solid rgb(0, 0, 0);
   box-sizing: border-box;
   border-radius: 5px;
 }
 
-.solarPanel>a>img {
+#solarPanel>a>img {
   height: 40%;
-}
-
-#project-img {
-  height: 45%;
 }
 
 .up {

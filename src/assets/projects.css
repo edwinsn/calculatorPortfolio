@@ -2,36 +2,33 @@
     font-size: var(--font);
 }
 
-.projects>div {
+#projects>div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 8vh;
-    width: 100%;
 }
 
-.projects>div>* {
+#projects>div>* {
     flex-grow: 1;
     min-width: var(--min-text-width);
     box-sizing: border-box;
 }
 
-.projects>div>*:nth-child(1) {
+#projects>div>*:nth-child(1) {
     flex-basis: 45%;
     max-width: 19cm;
     padding-right: var(--pading-projec-text);
 }
 
-.projects>div>a:nth-child(2) {
+#projects>div>a:nth-child(2) {
     flex-basis: 50%;
     max-width: 19cm;
 }
 
 .project-icon {
     height: 7vh;
-    position: relative;
-    top: 1.5vh;
     margin-left: 1vh;
 }
 

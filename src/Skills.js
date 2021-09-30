@@ -10,7 +10,7 @@ export default function Skills() {
     return (
         <div>
             <p className="title">My Skills</p>
-            <div id="skills">
+            <div id="skills" className="centered wrap">
                 <div>
                     <DropDownList title="Frontend" icon={frontendIcon} items={["React", "Html", "css", "redux"]} />
                     <DropDownList title="Backend" icon={backendIcon} items={["Node", "express", "MongoDb"]} />

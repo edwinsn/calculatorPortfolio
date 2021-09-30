@@ -9,7 +9,6 @@
   --background: #0A264D;
   --secundary-background: #031634;
   --border-radius: 25px;
-  
   --width: 90%;
   --title-font: 40px;
   --subtitle-font: 35px;
@@ -22,7 +21,7 @@
 @media (max-width:600px) {
   :root {
     --min-text-width: 5cm;
-    --input-size: 1.1em;
+    --input-size: 15px;
   }
 }
 
@@ -61,7 +60,7 @@
     font-size: 1.8em;
     line-height: 0.9em;
   }
-  .contactBtns>button, .contactBtns>a {
+  #contactBtns>button, #contactBtns>a {
     border: none;
     box-shadow: 0 -1px white, 3px 1px black, -1px 0 black;
     border-radius: 5px;
@@ -98,7 +97,7 @@
   .calcText div:nth-child(2), .calcText div:nth-child(3) {
     font-size: 2.2em;
   }
-  .contactBtns>button, .contactBtns>a {
+  #contactBtns>button, #contactBtns>a {
     border: none;
     box-shadow: 0 -1px white, 5px 3px black, -2px 0 black;
     border-radius: 5px;
@@ -119,6 +118,12 @@ body {
 
 p {
   line-height: 1.5em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bold {
@@ -168,4 +173,10 @@ p {
   text-decoration: underline wavy;
   text-decoration-color: aqua;
   color: #d6def8;
+  margin-top: var(--margin-top-tiltte);
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
 }

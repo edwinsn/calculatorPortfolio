@@ -3,14 +3,13 @@ import mcGif from './assets/images/mc.gif'
 import paIcon from './assets/images/paIcon.svg'
 import mcIcon from './assets/images/mcIcon.svg'
 import './assets/projects.css'
-
 import Project from './Project'
 
 
 export let Projects = function () {
 
     return (
-        <div className="projects" id="projects">
+        <div id="projects" >
             <p className="title">Some of my Projects</p>
 
             <Project title="Animalcoords"

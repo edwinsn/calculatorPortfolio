@@ -19,12 +19,12 @@ export let Contact = function () {
   return (
     <>
       <hr />
-      <div className="contactContainer" id="#contact">
+      <div id="contact-container" className="flex"> 
         <p className="title" >Contact</p>
         <h2>Send me a link</h2>
         <form className="sendLikn" id="contact"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
-          <div >
+          <div>
             <input type="text" className="green"
               placeholder={messagesent1 ? "...right, I'll check out the link, thank you." : "link"}
               name="link" required ></input>
@@ -35,11 +35,11 @@ export let Contact = function () {
           <div></div>
         </form>
         <h2>Or write me</h2>
-        <form className="contact tittle"
+        <form className="contact wrap centered tittle"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent2, changeSendButton2) }}>
           <div className="screens">
 
-            <div className="data">
+            <div className="data wrap">
               <input placeholder="Name" name="name" required></input>
               <input placeholder="Email" name="email" required></input>
             </div>
