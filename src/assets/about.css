@@ -4,6 +4,10 @@
     justify-content: flex-start;
 }
 
+#contactBtns img {
+    filter: brightness(0) invert(1);
+}
+
 #contactBtns>a, #contactBtns>button {
     width: 10vw;
     min-width: 65px;
@@ -14,7 +18,7 @@
 }
 
 #github-icon {
-    height: 60%;
+    height: 50%;
 }
 
 #mail-icon {

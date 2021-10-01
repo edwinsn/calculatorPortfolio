@@ -1,9 +1,23 @@
 #skills {
     font-size: 1.5em;
-    margin-bottom:15vh;
+    margin-bottom: 15vh;
 }
 
-#skills > div{
-    min-width:50%;
+#skills li::before {
+    content: ">";
+    color: aqua;
+    font-size: var(--fz-sm);
+    line-height: 12px;
+    width: 2em;
+    font-size: 0.8em;
+    margin-right: 0.4em;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills>div {
+    min-width: 50%;
     flex-grow: 1;
 }

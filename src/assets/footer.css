@@ -1,0 +1,34 @@
+#links a {
+    background-color: aqua;
+    border-radius: 50%;
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links img {
+    height: 50%;
+}
+
+#links {
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 15cm;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+#footer-container hr {
+    margin-bottom: 10vh;
+}
+
+#footer-container>p:nth-child(2) {
+    color: white;
+}
+
+#footer-container>p:nth-child(4) {
+    float: right;
+    margin: 7vh 0 0vh 0;
+}

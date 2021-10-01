@@ -12,8 +12,8 @@ export default function Skills() {
             <p className="title">My Skills</p>
             <div id="skills" className="centered wrap">
                 <div>
-                    <DropDownList title="Frontend" icon={frontendIcon} items={["React", "Html", "css", "redux"]} />
-                    <DropDownList title="Backend" icon={backendIcon} items={["Node", "express", "MongoDb"]} />
+                    <DropDownList title="Frontend" icon={frontendIcon} items={["React", "Html", "Css", "Redux"]} />
+                    <DropDownList title="Backend" icon={backendIcon} items={["Node", "Express", "MongoDb"]} />
                 </div>
                 <div>
                     <DropDownList title="Design" icon={designIcon} items={["Figma"]} />

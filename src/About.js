@@ -1,4 +1,4 @@
-import gitHub from './assets/images/githubIcon.svg'
+import gitHub from './assets/images/githubLink.svg'
 import mailIcon from './assets/images/mailIcon.svg'
 import cv from "./assets/files/Edwin'sCV(web developer).pdf"
 import { useState } from 'react'

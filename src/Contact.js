@@ -20,9 +20,9 @@ export let Contact = function () {
     <>
       <hr />
       <div id="contact-container" className="flex"> 
-        <p className="title" >Contact</p>
+        <p className="title" id="contact">Contact</p>
         <h2>Send me a link</h2>
-        <form className="sendLikn" id="contact"
+        <form className="sendLikn" 
           onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
           <div>
             <input type="text" className="green"

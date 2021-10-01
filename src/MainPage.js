@@ -11,6 +11,7 @@ import portfolioIcon from './assets/images/portfolioIcon.svg'
 import { useEffect, useState } from 'react'
 import Skills from './Skills'
 import MoreProjects from './MoreProjects'
+import Footer from './Footer'
 
 
 export let MainPage = function () {
@@ -60,6 +61,7 @@ export let MainPage = function () {
                 <Projects />
                 <MoreProjects />
                 <Contact />
+                <Footer />
             </div>
             <a href="#main"
                 className="up"
