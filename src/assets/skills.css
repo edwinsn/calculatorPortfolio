@@ -17,7 +17,7 @@
     list-style: none;
 }
 
-#skills>div {
+#skills>div {   
     min-width: 50%;
     flex-grow: 1;
 }
