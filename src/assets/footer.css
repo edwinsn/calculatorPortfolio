@@ -1,8 +1,20 @@
+@media (max-width:600px) {
+    :root {
+        --footer-links-width: 6vh;
+    }
+}
+
+@media (min-width:600px) {
+    :root {
+        --footer-links-width: 8vh;
+    }
+}
+
 #links a {
     background-color: aqua;
     border-radius: 50%;
-    width: 8vh;
-    height: 8vh;
+    width: var(--footer-links-width);
+    height: var(--footer-links-width);
     display: flex;
     justify-content: center;
     align-items: center;

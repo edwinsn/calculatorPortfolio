@@ -36,10 +36,6 @@
     padding-right: var(--pading-projec-text);
 }
 
-#cv {
-    margin-top: 5vh;
-}
-
 .email {
     position: relative;
     overflow: hidden;
@@ -63,10 +59,15 @@
 }
 
 #cv {
-    height: 60vh;
+    max-height: 60vh;
+    margin-top: 5vh;
+    max-width: 100%;
+    min-width: var(--min-cv-width);
+    flex-basis: 30%;
 }
 
 #cv>img {
-    height: 100%;
+    max-height: 100%;
     border-radius: 5px;
+    max-width: 100%;
 }

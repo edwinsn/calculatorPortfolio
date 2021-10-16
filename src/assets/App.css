@@ -16,7 +16,9 @@
   --green: #8fd6b1;
   --light-green: #99e5be;
   --phone-view: 600px;
+  --min-cv-width:4.2cm
 }
+
 
 @media (max-width:600px) {
   :root {
