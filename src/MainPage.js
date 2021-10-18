@@ -32,8 +32,8 @@ export let MainPage = function () {
     return (
         <section id="main">
             <header >
-                <img id="edIcon" src={edIcon} alt="" />
-                <div id="solarPanel" className="flex">
+                <img id="edIcon" className="apear" src={edIcon} alt="" />
+                <div id="solarPanel" className="flex get-down">
                     <a href="#about" title="About" className="centered">
                         <img src={userIcon} alt="about link" />
                     </a>
@@ -45,17 +45,17 @@ export let MainPage = function () {
                     </a>
                 </div>
             </header>
-            <div id="calcScreen" className="centered">
-                <div className="calcText centered">
+            <div id="calcScreen" className="get-up">
+                <div className="calcText">
                     <div>Hi, I'm Edwin</div>
                     <div>You need a fast website that tells your story accurately.</div>
                     <a href="#contact" className="contactref">Contact</a>
                 </div>
-                <a href="#about" id="pixelated-face" className="top-z-index rotate-hover">
+                <a href="#about" id="pixelated-face" className="top-z-index rotate-hover centered ">
                     <img src={faceIcon} alt="About" />
                 </a>
             </div >
-            <div className="buttons-place">
+            <div className="buttons-place get-fastly-up">
                 <About />
                 <Skills />
                 <Projects />

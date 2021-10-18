@@ -28,7 +28,7 @@ export let Contact = function () {
             <input type="text" className="green"
               placeholder={messagesent1 ? "...right, I'll check out the link, thank you." : "link"}
               name="link" required ></input>
-            <div className="submit-container">
+            <div className="submit-container centered">
               {sendButton1}
             </div>
           </div>
@@ -50,7 +50,7 @@ export let Contact = function () {
             <button onClick={(ev) => { fillMessage(ev, 1) }} >Hire me</button>
             <button onClick={(ev) => { fillMessage(ev, 2) }} >Freelancer</button>
             <button onClick={(ev) => { fillMessage(ev, 3) }} >Share ideas</button>
-            <div>
+            <div className="centered">
               {sendButton2}
             </div>
           </div>
