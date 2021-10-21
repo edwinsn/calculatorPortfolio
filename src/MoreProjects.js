@@ -8,11 +8,12 @@ import groupsImg from './assets/images/groups.jpg'
 import arrowIcon from './assets/images/deployIcon.svg'
 import csGif from './assets/images/cs.png'
 import naGif from './assets/images/na.jpg'
+import ShowUp from './ShowUp';
 
 
 export default function MoreProjects() {
     return (
-        <div>
+        <ShowUp>
             <p className="title">More Projects</p>
             <Carousel emulateTouch
                 infiniteLoop showThumbs={false}
@@ -44,6 +45,6 @@ export default function MoreProjects() {
                     description="This site is a clone of the NASA Multimedia Library for searching
                      multimedia from NASA library." />
             </Carousel>
-        </div >
+        </ShowUp >
     )
 }

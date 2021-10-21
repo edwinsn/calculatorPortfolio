@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com'
 import { useState } from 'react'
 import { LoadingCircles } from './Loading'
 import './assets/contact.css'
+import ShowUp from './ShowUp'
 
 let contractText = "Hello, I would like to tell you about a job offer, you can find more info here: \n\nwrite me back by email."
 let freelancerText = "Hello, I would like to commission you a project,\nis about \n\n...\n\nwrite me back by email."
@@ -17,12 +18,12 @@ export let Contact = function () {
 
 
   return (
-    <>
+    <ShowUp>
       <hr />
-      <div id="contact-container" className="flex"> 
+      <div id="contact-container" className="flex">
         <p className="title" id="contact">Contact</p>
         <h2>Send me a link</h2>
-        <form className="sendLikn" 
+        <form className="sendLikn"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
           <div>
             <input type="text" className="green"
@@ -56,7 +57,7 @@ export let Contact = function () {
           </div>
         </form>
       </div>
-    </>
+    </ShowUp>
   )
 
 }

@@ -4,30 +4,16 @@ import faceIcon from './assets/images/faceIcon.svg'
 import { About } from './About'
 import { Projects } from './Projects'
 import { Contact } from './Contact'
-import up from './assets/images/up.svg'
 import contactIcon from './assets/images/contactIcon.svg'
 import userIcon from './assets/images/userIcon.svg'
 import portfolioIcon from './assets/images/portfolioIcon.svg'
-import { useEffect, useState } from 'react'
 import Skills from './Skills'
 import MoreProjects from './MoreProjects'
 import Footer from './Footer'
+import Up from './Up'
 
 
 export let MainPage = function () {
-
-    const [showUp, setShowUp] = useState(false)
-
-    useEffect(() => {
-        window.onscroll = () => {
-            if ((window.pageYOffset || document.documentElement.scrollTop) > 600) {
-                setShowUp(true)
-            }
-            else {
-                setShowUp(false)
-            }
-        }
-    }, [])
 
     return (
         <section id="main">
@@ -63,17 +49,7 @@ export let MainPage = function () {
                 <Contact />
                 <Footer />
             </div>
-            <a href="#main"
-                className="up"
-                style={{
-                    bottom: showUp ? "5vh" : "-10vh",
-                    right: "7%"
-                }}
-            >
-                <img
-                    alt="beginning" src={up}
-                />
-            </a>
+            <Up />
         </section >
     )
 }

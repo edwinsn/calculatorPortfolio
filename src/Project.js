@@ -2,10 +2,11 @@ import React from 'react'
 import { CalcBtn } from './CalcBtn'
 import githubLink from './assets/images/githubLink.svg'
 import goto from './assets/images/goto.svg'
+import ShowUp from './ShowUp'
 
 export default function Project(props) {
     return (
-        <div>
+        <ShowUp>
             <div>
                 <div className="flex">
                     <a className="subtitle"
@@ -35,6 +36,7 @@ export default function Project(props) {
                 alt={props.alt}
                 href={props.href}
             />
-        </div>
+
+        </ShowUp>
     )
 }

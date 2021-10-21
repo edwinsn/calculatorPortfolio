@@ -23,7 +23,7 @@
   :root {
     --min-text-width: 5cm;
     --input-size: 15px;
-    --pixelated-face-padding:1vh;
+    --pixelated-face-padding: 1vh;
   }
   .calcText {
     justify-content: flex-start;
@@ -35,7 +35,7 @@
     --min-text-width: 10cm;
     --input-size: 14px;
     --pixelated-face-background: white;
-    --pixelated-face-padding:2vw;
+    --pixelated-face-padding: 2vw;
   }
   #calcScreen {
     align-items: center;
@@ -191,15 +191,33 @@ section {
   position: relative;
 }
 
+.get-slowly-up {
+  animation: get-slowly-up 700ms;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
 @keyframes get-up {
   0% {
-    top: 20px;
+    top: 25px;
     opacity: 0;
   }
   50% {
-    top: 20px;
+    top: 25px;
     opacity: 0;
   }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes get-slowly-up {
+  0% {
+    top: 35px;
+    opacity: 0;
+  }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -225,6 +243,7 @@ section {
     opacity: 1;
   }
 }
+
 .get-fastly-up {
   animation: get-fastly-up 900ms;
   position: relative;
@@ -274,6 +293,10 @@ section {
   text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
+}
+
+.transparent {
+  opacity: 0;
 }
 
 .wrap {

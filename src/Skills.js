@@ -5,10 +5,11 @@ import frontendIcon from './assets/images/frontendIcon.svg'
 import designIcon from './assets/images/designIcon.svg'
 import othersIcon from './assets/images/othersIcon.svg'
 import './assets/skills.css'
+import ShowUp from './ShowUp'
 
 export default function Skills() {
     return (
-        <div>
+        <ShowUp>
             <p className="title">My Skills</p>
             <div id="skills" className="centered wrap">
                 <div>
@@ -20,6 +21,6 @@ export default function Skills() {
                     <DropDownList title="Others" icon={othersIcon} items={["Jest", "Git"]} />
                 </div>
             </div>
-        </div>
+        </ShowUp>
     )
 }
