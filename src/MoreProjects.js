@@ -8,6 +8,7 @@ import groupsImg from './assets/images/groups.jpg'
 import arrowIcon from './assets/images/deployIcon.svg'
 import csGif from './assets/images/cs.png'
 import naGif from './assets/images/na.jpg'
+import sv from './assets/images/savesolar.png'
 import ShowUp from './ShowUp';
 
 
@@ -23,6 +24,12 @@ export default function MoreProjects() {
                 renderArrowPrev={(handler) => { return <div onClick={handler} className="arrow left centered"><img alt="" src={arrowIcon} /></div> }}
                 renderArrowNext={(handler) => { return <div onClick={handler} className="arrow right centered"><img alt="" src={arrowIcon} /></div> }}
             >
+
+                <SecondaryProject name="Save Solar Redesign"
+                    url="https://www.figma.com/file/3XzgN9Kv5KfUfJFqFK2nNz/Untitled?node-id=0%3A1"
+                    img={sv}
+                    description="A modern and fresh redesign of the savesolar page, more userfriendly and impactfull"
+                />
                 <SecondaryProject name="Chess Game"
                     url={chessJar}
                     img={csGif}

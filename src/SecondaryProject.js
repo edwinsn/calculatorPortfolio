@@ -21,9 +21,9 @@ export default function SecondaryProject(props) {
                 <span className="secondary-projec-title">{name}</span>
                 <p>{description}</p>
                 <div className="flex centered">
-                    <a href={githubLink} target="_blank" rel="noreferrer">
+                    {githubLink&&<a href={githubLink} target="_blank" rel="noreferrer">
                         <button><img src={githubIcon} alt="github link" /></button>
-                    </a>
+                    </a>}
                     <a href={url} target="_blank" rel="noreferrer">
                         <button><img src={gotoIcon} alt="live version" /></button>
                     </a>
