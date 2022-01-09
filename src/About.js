@@ -51,8 +51,9 @@ export let About = function () {
                         alt="Edwin Sánchez cv"
                         onMouseEnter={() => { setCvImage(cvIconColored) }}
                         onMouseLeave={() => { setCvImage(cvIcon) }}
-                        onTouchMove={() => { setCvImage(cvIconColored) }}
-                        onTouchEnd={() => { setCvImage(cvIcon) }} />
+                        onTouchStart={() => { setCvImage(cvIconColored) }}
+                        onTouchEnd={() => { setCvImage(cvIcon) }}
+                        />
                 </a>
             </ShowUp>
 
