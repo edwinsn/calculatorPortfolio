@@ -20,13 +20,13 @@ export let MainPage = function () {
             <header >
                 <img id="edIcon" className="apear" src={edIcon} alt="" />
                 <div id="solarPanel" className="flex get-down">
-                    <a href="#about" title="About" className="centered">
+                    <a href="#about" title="About" className="centered grow-on-hover">
                         <img src={userIcon} alt="about link" />
                     </a>
-                    <a href="#projects" title="Projects" className="centered">
+                    <a href="#projects" title="Projects" className="centered grow-on-hover">
                         <img id="project-img" src={portfolioIcon} alt="projects link" />
                     </a>
-                    <a href="#contact" title="Contact" className="centered">
+                    <a href="#contact" title="Contact" className="centered grow-on-hover">
                         <img src={contactIcon} alt="contact link" />
                     </a>
                 </div>

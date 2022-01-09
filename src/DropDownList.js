@@ -10,6 +10,8 @@ export default function DropDownList(props) {
     })
 
 
+    let height = (window.innerWidth<480? 1.2*props.items.length : 5.5) + "em" 
+
     return (
         <div className="drop-down-list">
             <div
@@ -23,7 +25,7 @@ export default function DropDownList(props) {
 
             <ul
                 className={"items"}
-                style={deployed ? { height: 4.4 + "em" } : { height: 0 }}>
+                style={deployed ? { height} : { height: 0 }}>
                 {items}
             </ul>
         </div>

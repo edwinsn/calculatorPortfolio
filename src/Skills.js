@@ -13,12 +13,12 @@ export default function Skills() {
             <p className="title">My Skills</p>
             <div id="skills" className="centered wrap">
                 <div>
-                    <DropDownList title="Frontend" icon={frontendIcon} items={["React", "Html", "Css", "Redux"]} />
-                    <DropDownList title="Backend" icon={backendIcon} items={["Node", "Express", "MongoDb"]} />
+                    <DropDownList title="Frontend" icon={frontendIcon} items={["React", "Html", "Css", "Redux", "Styled-componets"]} />
+                    <DropDownList title="Backend" icon={backendIcon} items={["Nodejs", "Express", "MongoDb"]} />
                 </div>
                 <div>
-                    <DropDownList title="Design" icon={designIcon} items={["Figma"]} />
-                    <DropDownList title="Others" icon={othersIcon} items={["Jest", "Git"]} />
+                    <DropDownList title="Design" icon={designIcon} items={["UI design", "Figma"]} />
+                    <DropDownList title="Others" icon={othersIcon} items={["Git", "Jest", "Firebase"]} />
                 </div>
             </div>
         </ShowUp>

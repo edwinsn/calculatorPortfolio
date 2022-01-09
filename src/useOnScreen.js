@@ -12,7 +12,6 @@ export default function useOnScreen(ref, onScreen) {
                 if (entry.isIntersecting) {
                     onScreen()
                     observer.current.disconnect()
-                    console.log("-----")
                 }
             })
     }, [onScreen])

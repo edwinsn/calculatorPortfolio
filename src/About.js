@@ -3,11 +3,13 @@ import mailIcon from './assets/images/mailIcon.svg'
 import cv from "./assets/files/Edwin's_cv(Full stack developer).pdf"
 import { useState } from 'react'
 import cvIcon from './assets/images/Edwin_Sánchez-cv.png'
+import cvIconColored from './assets/images/Edwin_Sánchez-cv-colored.png'
 import ShowUp from './ShowUp'
 
 export let About = function () {
 
     const [copyEmail, setcopy] = useState("Copy email")
+    const [cvImage, setCvImage] = useState(cvIcon)
 
     return (
 
@@ -41,8 +43,16 @@ export let About = function () {
 
                 </div>
 
-                <a href={cv} id="cv" className="rotate-hover centered" download={true}>
-                    <img src={cvIcon} alt="Edwin Sánchez cv" />
+                <a href={cv} id="cv"
+                    className="centered"
+                    download={true}
+                >
+                    <img src={cvImage}
+                        alt="Edwin Sánchez cv"
+                        onMouseEnter={() => { setCvImage(cvIconColored) }}
+                        onMouseLeave={() => { setCvImage(cvIcon) }}
+                        onTouchMove={() => { setCvImage(cvIconColored) }}
+                        onTouchEnd={() => { setCvImage(cvIcon) }} />
                 </a>
             </ShowUp>
 
