@@ -14,11 +14,11 @@ export default function Skills() {
             <div id="skills" className="centered wrap">
                 <div>
                     <DropDownList title="Frontend" icon={frontendIcon} items={["React", "Html", "Css", "Redux", "Styled-componets"]} />
-                    <DropDownList title="Backend" icon={backendIcon} items={["Nodejs", "Express", "MongoDb"]} />
+                    <DropDownList title="Backend" icon={backendIcon} items={["Nodejs", "Express", "MongoDb", "SQL"]} />
                 </div>
                 <div>
                     <DropDownList title="Design" icon={designIcon} items={["UI design", "Figma"]} />
-                    <DropDownList title="Others" icon={othersIcon} items={["Git", "Jest", "Firebase"]} />
+                    <DropDownList title="Others" icon={othersIcon} items={["Git", "Jest", "JsDoc", "Firebase"]} />
                 </div>
             </div>
         </ShowUp>
