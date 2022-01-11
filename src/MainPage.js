@@ -38,7 +38,9 @@ export let MainPage = function () {
                     <a href="#contact" className="contactref">Contact</a>
                 </div>
                 <a href="#about" id="pixelated-face" className="top-z-index rotate-hover centered ">
-                    <img src={faceIcon} alt="About" />
+                    <div>
+                        <img src={faceIcon} alt="About" />
+                    </div>
                 </a>
             </div >
             <div className="buttons-place get-fastly-up">

@@ -57,11 +57,10 @@
     --margin-top-tiltte: 5.5vh;
     --screen-color: linear-gradient(105deg, var(--green) 70%, var(--light-green) 70%);
     --btns-font: 0.8em;
+    --pixelated-face-height: 45%;
+    --pixelated-face-width: 35%
   }
-  #pixelated-face {
-    height: 45%;
-    width: 35%;
-  }
+ 
   .calcText div:nth-child(1) {
     font-size: 3.3em;
   }
@@ -93,12 +92,11 @@
     --margin-top-tiltte: 10vh;
     --screen-color: linear-gradient(130deg, var(--green) 75%, var(--light-green) 75%);
     --btns-font: 0.9em;
+    --pixelated-face-height: 90%;
+    --pixelated-face-width: 20%
     ;
   }
-  #pixelated-face {
-    height: 90%;
-    width: 20%;
-  }
+
   .calcText {
     justify-content: center;
   }
