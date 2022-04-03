@@ -1,11 +1,11 @@
 import React from 'react'
-import DropDownList from './DropDownList'
-import backendIcon from './assets/images/backendIcon.svg'
-import frontendIcon from './assets/images/frontendIcon.svg'
-import designIcon from './assets/images/designIcon.svg'
-import othersIcon from './assets/images/othersIcon.svg'
-import './assets/skills.css'
-import ShowUp from './ShowUp'
+import DropDownList from '../components/DropDownList'
+import backendIcon from '../../assets/images/backendIcon.svg'
+import frontendIcon from '../../assets/images/frontendIcon.svg'
+import designIcon from '../../assets/images/designIcon.svg'
+import othersIcon from '../../assets/images/othersIcon.svg'
+import './skills.css'
+import ShowUp from '../components/ShowUp'
 
 export default function Skills() {
     return (

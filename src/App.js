@@ -1,7 +1,7 @@
 import './assets/App.css';
-import './assets/mainPage.css'
-import './assets/about.css'
-import { MainPage } from './MainPage'
+import './pages/mainpage/mainPage.css'
+import './pages/about/about.css'
+import { MainPage } from './pages/mainpage/MainPage'
 
 function App() {
   console.log("Main Page rendened!")

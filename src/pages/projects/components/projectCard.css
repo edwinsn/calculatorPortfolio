@@ -1,0 +1,147 @@
+@media (max-width:600px) {
+    :root {
+        --arrows-position: 0;
+        --arrows-width: 3.5vh;
+        --arrows-pading: 1.5vh
+    }
+}
+
+@media (min-width:600px) {
+    :root {
+        --arrows-position: 0%;
+        --arrows-width: 4vh;
+    }
+}
+
+.arrow {
+    width: var(--arrows-width);
+    padding: var(--arrows-pading);
+    position: absolute;
+    z-index: 2;
+    height: 10%;
+    cursor: pointer;
+    box-sizing: content-box !important;
+    position: absolute;
+    top: 0;
+    opacity: 0.2;
+}
+
+.arrow:hover {
+    opacity: 0.8;
+}
+
+.arrow.left {
+    left: var(--arrows-position);
+}
+
+.arrow.right {
+    right: var(--arrows-position);
+    transform: rotate(0deg);
+}
+
+.arrow.left img {
+    transform: rotate(90deg);
+}
+
+.arrow.right img {
+    transform: rotate(-90deg);
+}
+
+.project-card {
+    overflow: hidden;
+    width: var(--project-card-width);
+    color: var(--secundary-background);
+}
+
+.card {
+    height: var(--project-card-height);
+    border-radius: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-root, .carousel-root div, .carousel-root img, .slider {
+    height: 100%;
+}
+
+.dot {
+    padding: 5px;
+    box-sizing: content-box;
+    background-color: var(--secundary-background) !important;
+    opacity: 0.6 !important;
+}
+
+.dot.selected {
+    background-color: #8FD6B1 !important;
+    opacity: 1 !important;
+}
+
+.project-actions {
+    width: 60%;
+    margin-top: 3%;
+    justify-content: space-evenly;
+}
+
+.project-actions>* {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: var(--background);
+    border-radius: var(--border-radius-small);
+    height: 2.2em;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0;
+}
+
+.project-actions img{
+    height: 100%;
+}
+
+.project-body {
+    height: 62%;
+    padding: 0 8%;
+    box-sizing: border-box;
+}
+
+.project-carousel {
+    height: 38%;
+}
+
+.project-card .shadow {
+    border-radius: 50%;
+    height: 2px;
+    width: 70%;
+    margin-top: 2vh;
+}
+
+.project-description{
+    font-size: 1.2em ;
+    line-height: 1.2em ;
+}
+
+.project-github-link{
+    background-color: transparent;
+    border: 3px solid var(--background);
+}
+
+.project-github-link:hover{
+    background-color: var(--background);
+}
+
+.project-github-link:hover img {
+    filter: brightness(0) invert(100%);
+}
+
+.project-icon {
+    height: 3em;
+    margin-left: 5%;
+}
+
+.project-tittle {
+    font-size: 1.8em;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+
+}

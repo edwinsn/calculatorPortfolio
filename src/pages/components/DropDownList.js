@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import deployIcon from './assets/images/deployIcon.svg'
-import './assets/dropdownlist.css'
+import deployIcon from '../../assets/images/deployIcon.svg'
+import './dropdownlist.css'
 
 export default function DropDownList(props) {
 

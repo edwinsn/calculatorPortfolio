@@ -1,9 +1,9 @@
 //import './assets/contact.css'
 import emailjs from 'emailjs-com'
 import { useState } from 'react'
-import { LoadingCircles } from './Loading'
-import './assets/contact.css'
-import ShowUp from './ShowUp'
+import { LoadingCircles } from '../components/Loading'
+import './contact.css'
+import ShowUp from '../components/ShowUp'
 
 let contractText = "Hello, I would like to tell you about a job offer, you can find more info here: \n\nwrite me back by email."
 let freelancerText = "Hello, I would like to commission you a project,\nis about \n\n...\n\nwrite me back by email."

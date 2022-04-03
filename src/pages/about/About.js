@@ -1,10 +1,14 @@
-import gitHub from './assets/images/githubLink.svg'
-import mailIcon from './assets/images/mailIcon.svg'
-import cv from "./assets/files/Edwin's_cv(Full stack developer).pdf"
+
 import { useState } from 'react'
-import cvIcon from './assets/images/Edwin_Sánchez-cv.png'
-import cvIconColored from './assets/images/Edwin_Sánchez-cv-colored.png'
-import ShowUp from './ShowUp'
+import cvIcon from '../../assets/images/Edwin_Sánchez-cv.png'
+import cvIconColored from '../../assets/images/Edwin_Sánchez-cv-colored.png'
+import ShowUp from '../components/ShowUp'
+import './about.css'
+import gitHub from '../../assets/images/githubLink.svg'
+import mailIcon from '../../assets/images/mailIcon.svg'
+import cv from "../../assets/files/Edwin's_cv(Full stack developer).pdf"
+
+
 
 export let About = function () {
 

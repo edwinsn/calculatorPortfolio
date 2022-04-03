@@ -1,16 +1,16 @@
 
-import edIcon from './assets/images/edIcon.svg'
-import faceIcon from './assets/images/faceIcon.svg'
-import { About } from './About'
-import { Projects } from './Projects'
-import { Contact } from './Contact'
-import contactIcon from './assets/images/contactIcon.svg'
-import userIcon from './assets/images/userIcon.svg'
-import portfolioIcon from './assets/images/portfolioIcon.svg'
-import Skills from './Skills'
-import MoreProjects from './MoreProjects'
-import Footer from './Footer'
-import Up from './Up'
+import edIcon from '../../assets/images/edIcon.svg'
+import faceIcon from '../../assets/images/faceIcon.svg'
+import { About } from '../about/About'
+import { Projects } from '../projects/Projects'
+import { Contact } from '../contact/Contact'
+import contactIcon from '../../assets/images/contactIcon.svg'
+import userIcon from '../../assets/images/userIcon.svg'
+import portfolioIcon from '../../assets/images/portfolioIcon.svg'
+import Skills from '../sills/Skills'
+import Footer from '../footer/Footer'
+import Up from '../components/Up'
+import './mainPage.css'
 
 
 export let MainPage = function () {
@@ -47,7 +47,6 @@ export let MainPage = function () {
                 <About />
                 <Skills />
                 <Projects />
-                <MoreProjects />
                 <Contact />
                 <Footer />
             </div>

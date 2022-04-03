@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import useOnScreen from './useOnScreen'
-import './assets/show-up.css'
+import './show-up.css'
 
 export default function ShowUp({ children, className }) {
 

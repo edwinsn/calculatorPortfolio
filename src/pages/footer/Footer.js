@@ -1,9 +1,9 @@
 import React from 'react'
-import mailIcon from './assets/images/mailIcon.svg'
-import tIcon from './assets/images/tIcon.svg'
-import linkedinIcon from './assets/images/linkedinIcon.svg'
-import githubIcon from './assets/images/githubIcon.svg'
-import './assets/footer.css'
+import mailIcon from '../../assets/images/mailIcon.svg'
+import tIcon from '../../assets/images/tIcon.svg'
+import linkedinIcon from '../../assets/images/linkedinIcon.svg'
+import githubIcon from '../../assets/images/githubIcon.svg'
+import './footer.css'
 
 export default function Footer() {
     return (
