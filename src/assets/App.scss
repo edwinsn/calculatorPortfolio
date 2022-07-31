@@ -21,6 +21,8 @@
   --light-green: #99e5be;
   --phone-view: 800px;
   --min-cv-width: 4.5cm;
+  --white: #F8F8F6;
+  --min-project-card-width: 230px;
 }
 
 @media (max-width:600px) {
@@ -43,7 +45,7 @@
     --input-size: 14px;
     --pixelated-face-background: white;
     --pixelated-face-padding: 2vw;
-    --project-card-width: 15vw;
+    --project-card-width: 16.5vw;
     --project-card-height: 26vw;
   }
 
@@ -208,6 +210,11 @@ section {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+  flex-direction: column;
+}
+
 .get-up {
   animation: get-up 1.6s;
   position: relative;
@@ -337,6 +344,10 @@ section {
   text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
+}
+
+.text-white {
+  color: var(--white);
 }
 
 .text-centered {

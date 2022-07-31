@@ -17,6 +17,9 @@
   --green: #8fd6b1;
   --light-green: #99e5be;
   --phone-view: 800px;
+  --min-cv-width: 4.5cm;
+  --white: #F8F8F6;
+  --min-project-card-width: 230px;
 }
 
 @media (max-width: 600px) {
@@ -40,7 +43,7 @@
     --input-size: 14px;
     --pixelated-face-background: white;
     --pixelated-face-padding: 2vw;
-    --project-card-width: 15vw;
+    --project-card-width: 16.5vw;
     --project-card-height: 26vw;
   }
   #calcScreen {
@@ -237,6 +240,16 @@ section {
   display: flex;
 }
 
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .get-up {
   -webkit-animation: get-up 1.6s;
           animation: get-up 1.6s;
@@ -427,6 +440,10 @@ section {
           text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
+}
+
+.text-white {
+  color: var(--white);
 }
 
 .text-centered {
