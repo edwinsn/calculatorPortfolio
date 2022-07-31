@@ -46,10 +46,10 @@ export let MainPage = function () {
             <div className="buttons-place get-fastly-up">
                 <About />
                 <Skills />
-                <Projects />
-                <Contact />
-                <Footer />
             </div>
+            <Projects />
+            <Contact />
+            <Footer />
             <Up />
         </section >
     )
