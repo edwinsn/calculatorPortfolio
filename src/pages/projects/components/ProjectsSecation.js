@@ -20,35 +20,38 @@ export let ProjectsSection = function ({ projects, tittle, description, tags }) 
   />
 
   const isDesktopView = width > 950
+  const isMediumView = width < 1244
 
   //If screen width is too small center the description text
-  const descriptionClass = isDesktopView ? "" : "text-centered "
+  const descriptionClass = !isMediumView ? "" : "text-centered "
 
   //If screen width is too small center the tags section
   const tagsClass = isDesktopView ? "" : " centered "
 
-  const tagsList = tags.map(tag => <span className='project-tag'>{tag}</span>)
+  const tagsList = tags.map(tag => <span className='project-tag text-white'>{tag}</span>)
 
 
   return (
-    <div  className='project-section'>
-      <p className="project-section-tittle">{isDesktopView ? "What can I do" : tittle}</p>
-      <div className='flex wrap centered projects-section-body'>
+    <div className='project-section'>
+      <p className="project-section-tittle text-white">{isDesktopView ? "What I can do" : tittle}</p>
+      <div className='flex wrap projects-section-body'>
         <div className='flex projects-list centered'>
           {projectsList}
         </div>
-        <div className='project-section-text'>
+        <div className={`project-section-text`}>
           {isDesktopView &&
-            <h1 className={' section-tittle '}>
+            <h1 className={` section-tittle text-white ${isMediumView && ' centered '}`}>
               {tittle}
             </h1>
           }
-          <p className={descriptionClass + " section-description "}>
+          <p className={`${descriptionClass} section-description text-white `}>
             {description}
           </p>
-          {isDesktopView && <div className={" project-section-tags " + tagsClass}>
-            {tagsList}
-          </div>}
+          <br />
+          {isDesktopView &&
+            <div className={` project-section-tags tagsClass ${isMediumView && ' centered '}`} >
+              {tagsList}
+            </div>}
           <div></div>
         </div>
       </div>

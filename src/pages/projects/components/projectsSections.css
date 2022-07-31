@@ -1,9 +1,10 @@
 @media (min-width: 800px) {
   :root {
-    --project-section-tittle-font: 2.5em;
-    --project-section-tittle-height: 3em;
+    --project-section-tittle-font: 3.4em;
+    --project-section-tittle-height: 3.9em;
     --project-section-margin-top: 4%;
     --project-section-tittle-align: left;
+    --project-section-tittle-margin-left: 1.3em;
     --project-section-tittle-margin-bottom: 0;
     --project-section-body-height: calc(100% - 2*var(--project-section-tittle-height) - 2*var(--project-section-margin-top));
     --project-section-body-align-items: center;
@@ -16,7 +17,8 @@
     --project-section-tittle-height: 3.5em;
     --project-section-margin-top: 0%;
     --project-section-tittle-align: center;
-    --project-section-tittle-margin-bottom: 5%;
+    --project-section-tittle-margin-left: 0;
+    --project-section-tittle-margin-bottom: 1em;
     --project-section-body-height: calc(100% - 1.1*var(--project-section-tittle-height) - var(--project-section-tittle-margin-bottom));
     --project-section-body-align-items: none;
   }
@@ -25,24 +27,28 @@
 .project-tag {
   border: 1px solid white;
   border-radius: 12px;
-  padding: 3px 1em;
+  padding: 5px 1em;
   cursor: pointer;
 }
 
 .project-tag:hover {
-  background-color: aqua;
+  background-color: var(--white);
   color: var(--background);
-  border-color: aqua;
+  border-color: var(--white);
 }
 
 .project-section {
   height: 100vh;
+  width: 100vw;
   margin-top: 200px;
 }
 
 .projects-section-body {
   gap: 10%;
   row-gap: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: var(--project-section-body-height);
   -webkit-box-align: var(--project-section-body-align-items);
       -ms-flex-align: var(--project-section-body-align-items);
@@ -52,9 +58,6 @@
 .project-section-text {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .project-section-tittle {
@@ -62,19 +65,20 @@
   max-height: var(--project-section-tittle-height);
   margin-top: var(--project-section-margin-top);
   margin-bottom: var(--project-section-tittle-margin-bottom);
+  margin-left: var(--project-section-tittle-margin-left);
   text-align: var(--project-section-tittle-align);
   padding: 0;
 }
 
 .projects-list {
   gap: 8%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  margin: 3em 0;
+  min-width: calc(2*var(--min-project-card-width) + 8%);
 }
 
 .section-description {
   font-size: 1.5em;
+  margin-top: 0;
 }
 
 .project-section-tags {
@@ -88,5 +92,6 @@
 .section-tittle {
   font-size: 2.8em;
   margin-top: 0;
+  margin-bottom: '1rem';
 }
 /*# sourceMappingURL=projectsSections.css.map */

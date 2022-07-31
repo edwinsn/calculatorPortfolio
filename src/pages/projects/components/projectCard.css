@@ -51,12 +51,15 @@
     overflow: hidden;
     width: var(--project-card-width);
     color: var(--secundary-background);
+    min-width: var(--min-project-card-width);
+    min-height: 400px;
+    height: var(--project-card-height);
 }
 
 .card {
-    height: var(--project-card-height);
     border-radius: 40px;
     overflow: hidden;
+    height: 100%;
     width: 100%;
 }
 
@@ -92,11 +95,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px 0;
+    padding: 4px 0;
 }
 
 .project-actions img{
     height: 100%;
+}
+
+.project-link-icon{
+    padding: 3.5%;
 }
 
 .project-body {
@@ -135,13 +142,17 @@
 }
 
 .project-icon {
-    height: 3em;
+    height: 2.5em;
     margin-left: 5%;
 }
 
 .project-tittle {
     font-size: 1.8em;
     letter-spacing: 0.06em;
-    font-weight: 900;
+    font-weight: bolder;
+}
 
+.tittle-section{
+    width: 100%;
+    text-align: center;
 }

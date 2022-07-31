@@ -22,7 +22,7 @@ export default function ProjectCard({
 
   const { width } = useWindowDimensions()
 
-  const issmallView = width < 500
+  const issmallView = width < 950
 
 
   const projectImgs = imgs?.map((img, index) => {
@@ -66,6 +66,7 @@ export default function ProjectCard({
           {issmallView && <p className='text-centered project-description' >{shortDescription}</p>}
           <div className='project-actions flex'>
             <a href={href}
+            className='project-link-icon'
               target="_blank"
               rel="noreferrer">
               <img src={linkIcon} alt='' />
