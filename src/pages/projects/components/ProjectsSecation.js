@@ -3,7 +3,7 @@ import useWindowDimensions from '../../components/useWindowDimensions'
 import './projectsSections.css'
 
 
-export let ProjectsSection = function ({ projects, tittle, description, tags }) {
+export let ProjectsSection = function ({ projects, tittle, description, tags, number }) {
 
   const { width } = useWindowDimensions()
 
@@ -30,7 +30,7 @@ export let ProjectsSection = function ({ projects, tittle, description, tags }) 
 
   const tagsList = tags.map(tag => <span className='project-tag text-white'>{tag}</span>)
 
-
+ 
   return (
     <div className='project-section'>
       <p className="project-section-tittle text-white">{isDesktopView ? "What I can do" : tittle}</p>

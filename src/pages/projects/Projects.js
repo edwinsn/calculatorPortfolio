@@ -3,6 +3,7 @@ import mcGif from '../../assets/images/mc.gif'
 import paIcon from '../../assets/images/paIcon.svg'
 import mcIcon from '../../assets/images/mcIcon.svg'
 import './projects.css'
+//import './components/horizontal-scroll.css'
 import { ProjectsSection } from './components/ProjectsSecation'
 
 
@@ -12,7 +13,7 @@ export let Projects = function () {
         {
             tittle: "Meal prep",
             description: "A modern and fresh redesign of the savesolar page, more userfriendly ot impactful.",
-            shortDescription:"Solar energy landscape redesign",
+            shortDescription: "Solar energy landscape redesign",
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [paGif, mcGif, mcIcon],
@@ -23,7 +24,7 @@ export let Projects = function () {
         {
             tittle: "Save solar",
             description: "A modern and fresh redesign of the savesolar page, more userfriendly ot impactful.",
-            shortDescription:"Solar energy landscape redesign",
+            shortDescription: "Solar energy landscape redesign",
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [mcGif],
@@ -34,7 +35,7 @@ export let Projects = function () {
         {
             tittle: "Requio",
             description: "A web app where you can store secrely your expenses data",
-            shortDescription:"Solar energy landscape redesign",
+            shortDescription: "Solar energy landscape redesign",
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [paGif, mcGif, mcIcon],
@@ -45,7 +46,7 @@ export let Projects = function () {
         {
             tittle: "Animalcoords",
             description: "We all can help to stray animals! you cand find and report them here",
-            shortDescription:"Solar energy landscape redesign",
+            shortDescription: "Solar energy landscape redesign",
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [mcGif],
@@ -55,7 +56,7 @@ export let Projects = function () {
         }, {
             tittle: "Root planner",
             description: "I maintained this powerful system for route planning and managment",
-            shortDescription:"Solar energy landscape redesign",
+            shortDescription: "Solar energy landscape redesign",
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [paGif, mcGif, mcIcon],
@@ -66,7 +67,7 @@ export let Projects = function () {
         {
             tittle: "Chess",
             description: "A chess game with all its complex rules and movements.",
-            shortDescription:"Solar energy landscape redesign",
+            shortDescription: "Solar energy landscape redesign",
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [mcGif],
@@ -77,7 +78,7 @@ export let Projects = function () {
     ]
 
     return (
-        <>
+        <div>
             <ProjectsSection projects={projects.slice(0, 2)}
                 tittle="Trustful interfaces"
                 description="We can generate trust and an uniqueness feeling building intuitive, fast, beautiful and responsive intefaces."
@@ -93,7 +94,8 @@ export let Projects = function () {
                 description="If it is online it will be attacked, we can secure our systems with data encryption, authentication policies, certified data access among other techniques."
                 tags={["react", 'css', 'html']}
             />
-        </>
+            
+        </div>
     )
 
 }
