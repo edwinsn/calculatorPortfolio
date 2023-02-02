@@ -80,6 +80,7 @@ header {
 
 #pixelated-face>div>img {
   max-height: 100%;
+  height: 100%;
   box-sizing: border-box;
   border-radius: 40px;
   border: 2px dashed black;
