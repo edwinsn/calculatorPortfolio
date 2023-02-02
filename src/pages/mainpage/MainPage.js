@@ -1,6 +1,6 @@
 
 import edIcon from '../../assets/images/edIcon.svg'
-import faceIcon from '../../assets/images/faceIcon.svg'
+import faceIcon from '../../assets/images/faceIcon.png'
 import { About } from '../about/About'
 import { Projects } from '../projects/Projects'
 import { Contact } from '../contact/Contact'
@@ -34,7 +34,7 @@ export let MainPage = function () {
             <div id="calcScreen" className="get-up">
                 <div className="calcText">
                     <div>Hi, I'm Edwin</div>
-                    <div>You need a fast website that tells your story accurately.</div>
+                    <div>Creative web developer</div>
                     <a href="#contact" className="contactref">Contact</a>
                 </div>
                 <a href="#about" id="pixelated-face" className="top-z-index rotate-hover centered ">
@@ -42,7 +42,7 @@ export let MainPage = function () {
                         <img src={faceIcon} alt="About" />
                     </div>
                 </a>
-            </div >
+            </div>
             <div className="buttons-place get-fastly-up">
                 <About />
                 <Skills />
@@ -51,6 +51,6 @@ export let MainPage = function () {
             <Contact />
             <Footer />
             <Up />
-        </section >
+        </section>
     )
 }
