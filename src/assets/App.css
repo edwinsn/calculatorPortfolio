@@ -408,4 +408,12 @@ section {
 .wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+.white {
+  color: #D6DEF8;
+}
+
+.w-70 {
+  width: 70%;
 }/*# sourceMappingURL=App.css.map */
