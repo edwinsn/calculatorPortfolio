@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 @font-face {
   font-family: "calc";
   src: url("./fonts/PocketCalculator-qjd.ttf") format("truetype");
@@ -30,10 +31,11 @@
     --project-card-width: 31vh;
     --project-card-height: 55vh;
   }
+
   .calcText {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
 
@@ -46,10 +48,11 @@
     --project-card-width: 16.5vw;
     --project-card-height: 26vw;
   }
+
   #calcScreen {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -71,20 +74,24 @@
     --pixelated-face-height: 45%;
     --pixelated-face-width: 35%;
   }
+
   .calcText div:nth-child(1) {
     font-size: 3.3em;
   }
+
   .calcText div:nth-child(2) {
     font-size: 1.8em;
     line-height: 0.9em;
   }
-  #contactBtns > button,
-  #contactBtns > a {
+
+  #contactBtns>button,
+  #contactBtns>a {
     border: none;
     -webkit-box-shadow: 0 -1px white, 3px 1px black, -1px 0 black;
-            box-shadow: 0 -1px white, 3px 1px black, -1px 0 black;
+    box-shadow: 0 -1px white, 3px 1px black, -1px 0 black;
     border-radius: 5px;
   }
+
   .buttons-place {
     padding: 27px 23px;
   }
@@ -107,26 +114,31 @@
     --pixelated-face-height: 90%;
     --pixelated-face-width: 20%;
   }
+
   .calcText {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   .calcText div:nth-child(1) {
     font-size: 7em;
     line-height: 1em;
   }
+
   .calcText div:nth-child(2),
   .calcText div:nth-child(3) {
     font-size: 2.2em;
   }
-  #contactBtns > button,
-  #contactBtns > a {
+
+  #contactBtns>button,
+  #contactBtns>a {
     border: none;
     -webkit-box-shadow: 0 -1px white, 5px 3px black, -2px 0 black;
-            box-shadow: 0 -1px white, 5px 3px black, -2px 0 black;
+    box-shadow: 0 -1px white, 5px 3px black, -2px 0 black;
     border-radius: 5px;
   }
+
   .buttons-place {
     padding: 8vh;
   }
@@ -151,22 +163,23 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .apear {
   -webkit-animation: apear 600ms;
-          animation: apear 600ms;
+  animation: apear 600ms;
 }
 
 @-webkit-keyframes apear {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -176,6 +189,7 @@ section {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -191,32 +205,34 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .delay-apareance {
   -webkit-animation: delay-apareance 1.4s;
-          animation: delay-apareance 1.4s;
+  animation: delay-apareance 1.4s;
 }
 
 @-webkit-keyframes delay-apareance {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -226,9 +242,11 @@ section {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -246,21 +264,21 @@ section {
   display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .get-up {
   -webkit-animation: get-up 1.6s;
-          animation: get-up 1.6s;
+  animation: get-up 1.6s;
   position: relative;
 }
 
 .get-slowly-up {
   -webkit-animation: get-slowly-up 700ms;
-          animation: get-slowly-up 700ms;
+  animation: get-slowly-up 700ms;
   -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
   position: relative;
 }
 
@@ -269,10 +287,12 @@ section {
     top: 25px;
     opacity: 0;
   }
+
   50% {
     top: 25px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -284,10 +304,12 @@ section {
     top: 25px;
     opacity: 0;
   }
+
   50% {
     top: 25px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -299,6 +321,7 @@ section {
     top: 35px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -310,6 +333,7 @@ section {
     top: 35px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -318,7 +342,7 @@ section {
 
 .get-down {
   -webkit-animation: get-down 900ms;
-          animation: get-down 900ms;
+  animation: get-down 900ms;
   position: relative;
 }
 
@@ -327,10 +351,12 @@ section {
     top: -12px;
     opacity: 0;
   }
+
   50% {
     top: -12px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -342,10 +368,12 @@ section {
     top: -12px;
     opacity: 0;
   }
+
   50% {
     top: -12px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -354,7 +382,7 @@ section {
 
 .get-fastly-up {
   -webkit-animation: get-fastly-up 900ms;
-          animation: get-fastly-up 900ms;
+  animation: get-fastly-up 900ms;
   position: relative;
 }
 
@@ -363,10 +391,12 @@ section {
     top: 12px;
     opacity: 0;
   }
+
   50% {
     top: 12px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -378,10 +408,12 @@ section {
     top: 12px;
     opacity: 0;
   }
+
   50% {
     top: 12px;
     opacity: 0;
   }
+
   100% {
     top: 0px;
     opacity: 1;
@@ -412,13 +444,13 @@ section {
 
 .rotate-hover:hover {
   -webkit-transform: rotate(12deg);
-          transform: rotate(12deg);
+  transform: rotate(12deg);
 }
 
 .space-evenly {
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .subtitle {
@@ -435,9 +467,9 @@ section {
 .title {
   font-size: var(--title-font);
   -webkit-text-decoration: underline wavy;
-          text-decoration: underline wavy;
+  text-decoration: underline wavy;
   -webkit-text-decoration-color: aqua;
-          text-decoration-color: aqua;
+  text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
 }
@@ -459,6 +491,15 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
+
+.white {
+  color: #d6def8;
+}
+
+.w-70{
+  width: 70%;
+}
+
 /*# sourceMappingURL=App.css.map */

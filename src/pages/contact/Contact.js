@@ -18,11 +18,11 @@ export let Contact = function () {
 
 
   return (
-    <ShowUp>
+    <ShowUp className='w-100'>
       <hr />
       <div id="contact-container" className="flex">
         <p className="title" id="contact">Contact</p>
-        <h2>Send me a link</h2>
+        <h2 className='white'>Send me a link</h2>
         <form className="sendLikn"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>
           <div>
@@ -35,7 +35,9 @@ export let Contact = function () {
           </div>
           <div></div>
         </form>
-        <h2>Or write me</h2>
+        <h2 className='white'>
+          Or write me
+        </h2>
         <form className="contact wrap centered tittle"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent2, changeSendButton2) }}>
           <div className="screens">
