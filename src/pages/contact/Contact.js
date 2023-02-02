@@ -18,7 +18,7 @@ export let Contact = function () {
 
 
   return (
-    <ShowUp className='w-100'>
+    <ShowUp className='w-70'>
       <hr />
       <div id="contact-container" className="flex">
         <p className="title" id="contact">Contact</p>

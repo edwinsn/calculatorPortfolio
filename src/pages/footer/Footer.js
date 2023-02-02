@@ -7,7 +7,7 @@ import './footer.css'
 
 export default function Footer() {
     return (
-        <div id="footer-container">
+        <div id="footer-container" className='w-70'>
             <hr />
             <p className="centered">You can reach me in:</p>
             <div id="links" className="centered">
