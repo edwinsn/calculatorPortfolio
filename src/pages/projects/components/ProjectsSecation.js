@@ -3,7 +3,7 @@ import useWindowDimensions from '../../components/useWindowDimensions'
 import './projectsSections.css'
 
 
-export let ProjectsSection = function ({ projects, tittle, description, tags, number }) {
+export let ProjectsSection = function ({ projects, tittle, description, tags, number, style, isLast }) {
 
   const { width } = useWindowDimensions()
 
@@ -25,14 +25,11 @@ export let ProjectsSection = function ({ projects, tittle, description, tags, nu
   //If screen width is too small center the description text
   const descriptionClass = !isMediumView ? "" : "text-centered "
 
-  //If screen width is too small center the tags section
-  const tagsClass = isDesktopView ? "" : " centered "
-
   const tagsList = tags.map(tag => <span className='project-tag text-white'>{tag}</span>)
 
- 
+
   return (
-    <div className='project-section'>
+    <div className='project-section' style={{ ...style, ...isLast && { width: "80vw", marginRight: '20vw' } }}>
       <p className="project-section-tittle text-white">{isDesktopView ? "What I can do" : tittle}</p>
       <div className='flex wrap projects-section-body'>
         <div className='flex projects-list centered'>
@@ -55,7 +52,8 @@ export let ProjectsSection = function ({ projects, tittle, description, tags, nu
           <div></div>
         </div>
       </div>
-    </div >
+      {isLast && <div style={{ border: '3px solid purple', height: "100vh", width: "100vw" }}></div>}
+    </div>
   )
 
 }
