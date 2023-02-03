@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
-import cvIcon from '../../assets/images/Edwin_Sánchez-cv.png'
-import cvIconColored from '../../assets/images/Edwin_Sánchez-cv-colored.png'
+import cvIcon from '../../assets/images/Edwin_Sánchez-cv.svg'
+import cvIconColored from '../../assets/images/Edwin_Sánchez-cv-colored.svg'
 import ShowUp from '../components/ShowUp'
 import './about.css'
 import gitHub from '../../assets/images/githubLink.svg'
@@ -57,7 +57,7 @@ export let About = function () {
                         onMouseLeave={() => { setCvImage(cvIcon) }}
                         onTouchStart={() => { setCvImage(cvIconColored) }}
                         onTouchEnd={() => { setCvImage(cvIcon) }}
-                        />
+                    />
                 </a>
             </ShowUp>
 
