@@ -36,7 +36,7 @@ header {
   font-family: "calc", "Calibri";
   width: var(--width);
   overflow: hidden;
-  padding: 5%;
+  padding: 5% 8%;
   position: relative;
   box-sizing: border-box;
   border: 2px solid black;
