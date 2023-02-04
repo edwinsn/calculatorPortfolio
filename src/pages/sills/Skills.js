@@ -40,11 +40,11 @@ export default function Skills() {
                         Frontend
                     </h2>
                     <div>
-                        <img src={reactIcon} alt="" />
-                        <img src={htmlIcon} alt="" />
-                        <img src={cssIcon} alt="" />
-                        <img src={reduxIcon} alt="" />
-                        <img src={reactQueryIcon} alt="" />
+                        <img src={reactIcon} alt="" title='react'/>
+                        <img src={htmlIcon} alt="" title='html'/>
+                        <img src={cssIcon} alt="" title='css'/>
+                        <img src={reduxIcon} alt="" title='redux'/>
+                        <img src={reactQueryIcon} alt="" title='react query'/>
                     </div>
                     <p>
                         React, the perfect ingredient for building amazing applications.
@@ -62,11 +62,11 @@ export default function Skills() {
                         Backend
                     </h2>
                     <div>
-                        <img src={nodeIcon} alt="" />
-                        <img src={sqlIcon} alt="" />
-                        <img src={awsIcon} alt="" />
-                        <img src={mongoIcon} alt="" />
-                        <img src={firebaseIcon} alt="" />
+                        <img src={nodeIcon} alt="" title='nodejs'/>
+                        <img src={sqlIcon} alt="" title='sql'/>
+                        <img src={awsIcon} alt="" title='aws'/>
+                        <img src={mongoIcon} alt="" title='mongodb'/>
+                        <img src={firebaseIcon} alt="" title='firebase'/>
                     </div>
 
                     <p>
@@ -86,8 +86,8 @@ export default function Skills() {
                         Design
                     </h2>
                     <div>
-                        <img src={figmaIcon} alt="" />
-                        <img src={gimpIcon} alt="" />
+                        <img src={figmaIcon} alt="" title='figma'/>
+                        <img src={gimpIcon} alt="" title='GIMP'/>
                     </div>
                     <p>
                         With Figma and GIMP in my toolbox, I bring a playful
@@ -103,8 +103,8 @@ export default function Skills() {
                         Others
                     </h2>
                     <div>
-                        <img src={gitIcon} alt="" />
-                        <img src={jestIcon} alt="" />
+                        <img src={gitIcon} alt="" title='git'/>
+                        <img src={jestIcon} alt="" title='jest'/>
                     </div>
                     <p>
                         Git and Jest? More like hit and the best! These tools
