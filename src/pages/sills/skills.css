@@ -1,23 +1,87 @@
 #skills {
-    font-size: 1.5em;
-    margin-bottom: 15vh;
+    font-size: var(--font);
+    max-width: 17cm;
+    color: var(--white);
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-#skills li::before {
-    content: ">";
-    color: aqua;
-    font-size: var(--fz-sm);
-    line-height: 12px;
-    width: 2em;
-    font-size: 0.8em;
-    margin-right: 0.4em;
+#skills div>img {
+    background-color: aliceblue;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    height: 1.3em;
+    margin: 0 .3em;
+    padding: .1em;
+    box-sizing: border-box;
 }
 
-#skills ul {
-    list-style: none;
+#skills-title {
+    align-self: flex-start;
+    font-size: var(--project-section-tittle-font);
+    max-height: var(--project-section-tittle-height);
 }
 
-#skills>div {   
-    min-width: 50%;
-    flex-grow: 1;
+.react-tabs__tab {
+    display: inline-flex !important;
+    flex-direction: column;
+}
+
+.react-tabs__tab img {
+    height: 2em;
+    z-index: 2;
+}
+
+.react-tabs__tab--selected {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.react-tabs__tab--selected::after {
+    background-color: transparent !important;
+}
+
+.react-tabs__tab--selected span {
+    animation: showImg 700ms;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.react-tabs__tab--selected>span {
+    background-color: var(--secundary-background);
+    color: aliceblue;
+    padding: .2em;
+    border-radius: 5px;
+
+}
+
+.react-tabs__tab span {
+    transform: scale(0);
+}
+
+.react-tabs__tab-list {
+    border: none !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*animation for showing an image (display block) from smaller to bigger*/
+@keyframes showImg {
+    0% {
+        transform: scale(0);
+        translate: 0 -100%;
+    }
+
+    80% {
+        transform: scale(1.1);
+        translate: 0 -30%;
+    }
+
+    100% {
+        transform: scale(1);
+        translate: 0 -30%;
+    }
 }
