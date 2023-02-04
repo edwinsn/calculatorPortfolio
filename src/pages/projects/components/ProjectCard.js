@@ -49,8 +49,8 @@ export default function ProjectCard({
           showStatus={false}
           autoPlay={false}
           className='project-carousel nonselectable'
-          renderArrowPrev={(handler) => carouselArrow(handler, 'right')}
-          renderArrowNext={(handler) => carouselArrow(handler, 'left')}
+          renderArrowPrev={(handler) => carouselArrow(handler, 'left')}
+          renderArrowNext={(handler) => carouselArrow(handler, 'right')}
         >
           {projectImgs}
         </Carousel>
