@@ -101,7 +101,7 @@ export let Projects = function () {
     const parent = { width: `100vw`, height: `100vh`, border: '1px solid red' }*/
 
     return (
-        <div>
+        <div id='projects'>
             {/*<HorizontalScroll
             style={parent}
             reverseScroll
