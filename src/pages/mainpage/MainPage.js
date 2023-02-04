@@ -45,8 +45,8 @@ export let MainPage = function () {
             </div>
             <div className="buttons-place get-fastly-up">
                 <About />
-                <Skills />
             </div>
+            <Skills />
             <Projects />
             <Contact />
             <Footer />

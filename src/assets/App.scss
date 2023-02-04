@@ -10,7 +10,7 @@
 :root {
   --animation-: 300ms;
   --background: #1D4F97;
-  --secundary-background: #031634;
+  --secundary-background: #06224B;
   --border-radius: 25px;
   --border-radius-small: 9px;
   --width: 90%;
@@ -367,6 +367,20 @@ section {
   color: #D6DEF8;
 }
 
-.w-70{
+.w-70 {
   width: 70%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-screen {
+  height: 100vh;
+  background: 100vw;
 }

@@ -52,9 +52,9 @@ export let Projects = function () {
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
-            tittle: "Requio",
-            description: "Securely manage expenses with this web app",
-            shortDescription: "Securely manage expenses with this web",
+            tittle: "ExpenseEyes",
+            description: "Money gone missing? This web app will solve the mystery",
+            shortDescription: "Money gone missing? This web app will solve the mystery",
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [purchase1, purchase2],
