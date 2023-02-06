@@ -48,16 +48,32 @@ header {
 
 
 .contactref {
-  border: 1px dashed black;
+  background:
+    linear-gradient(90deg, transparent 50%, black 0) repeat-x,
+    linear-gradient(90deg, transparent 50%, black 0) repeat-x,
+    linear-gradient(0deg, black 50%, transparent 0) repeat-y,
+    linear-gradient(0deg, black 50%, transparent 0) repeat-y;
+  cursor: pointer;
+  background-size: 16.1px 3px, 14.1px 3px, 3px 11.1px, 3px 11px;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
   border-width: 3px;
   font-size: 1.5em;
-  border-radius: 50px;
   padding: 8px 25%;
   width: 2cm;
   align-self: center;
   color: rgb(20, 20, 20);
   text-decoration: none;
   margin-top: 1.5vh;
+}
+
+.contactref:hover {
+  animation: serpienteAnimation .3s infinite linear;
+}
+
+@keyframes serpienteAnimation {
+  100% {
+      background-position: 16.1px 0, -16.1px 100%, 0 -16.1px, 100% 16.1px;
+  }
 }
 
 #edIcon {
@@ -89,7 +105,8 @@ header {
 
 /*ampliar screen*/
 
-#solarPanel>div, #solarPanel>a {
+#solarPanel>div,
+#solarPanel>a {
   width: 5vw;
   min-width: 1.3cm;
   height: 5vw;
@@ -98,9 +115,9 @@ header {
   box-sizing: border-box;
 }
 
-#solarPanel>a:hover>img{
+#solarPanel>a:hover>img {
   filter: invert(46%) sepia(70%) saturate(565%) hue-rotate(347deg) brightness(107%) contrast(89%);
-    filter: brightness(0) saturate(100%) invert(84%) sepia(83%) saturate(1821%) hue-rotate(102deg) brightness(110%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(84%) sepia(83%) saturate(1821%) hue-rotate(102deg) brightness(110%) contrast(101%);
 }
 
 
