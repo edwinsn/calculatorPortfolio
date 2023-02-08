@@ -19,7 +19,12 @@ import root1 from  '../../assets/images/projects/root1.jpg'
 import root2 from  '../../assets/images/projects/root2.jpg'
 import root3 from  '../../assets/images/projects/root3.jpg'
 import root4 from  '../../assets/images/projects/root4.jpg'
-import paIcon from '../../assets/images/paIcon.svg'
+import rootIcon from '../../assets/images/projects/icons/root.svg'
+import animalIcon from '../../assets/images/projects/icons/animal.svg' 
+import chainyIcon from '../../assets/images/projects/icons/chainy.svg'
+import chessIcon from '../../assets/images/projects/icons/chess.svg'
+import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg'
+import mealIcon from '../../assets/images/projects/icons/meal.svg'
 
 import './projects.css'
 //import HorizontalScroll from 'react-scroll-horizontal'
@@ -36,7 +41,7 @@ export let Projects = function () {
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [chainy1, chainy2, chainy3, chainy4],
-            icon: paIcon,
+            icon: chainyIcon,
             backgroundColor: '#EBEEFB',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
@@ -47,7 +52,7 @@ export let Projects = function () {
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [meal1, meal2, meal3],
-            icon: paIcon,
+            icon: mealIcon,
             backgroundColor: '#F1F5FD',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
@@ -58,7 +63,7 @@ export let Projects = function () {
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [purchase1, purchase2],
-            icon: paIcon,
+            icon: expensesEyesIcon,
             backgroundColor: '#D5F2C7',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
@@ -69,7 +74,7 @@ export let Projects = function () {
             href: "https://petfinder-b4ec4.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [animal1, animal2, animal3, animal4],
-            icon: paIcon,
+            icon: animalIcon,
             backgroundColor: '#F2EFE8',
             repo: "https://github.com/edwinsn/purchase-analysis",
         }, {
@@ -79,7 +84,7 @@ export let Projects = function () {
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [root1, root2, root3, root4],
-            icon: paIcon,
+            icon: rootIcon,
             backgroundColor: '#FAFAFA',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
@@ -90,7 +95,7 @@ export let Projects = function () {
             href: "https://purchase-analysis-23370.web.app/",
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [chess1, chess2, chess3, chess4],
-            icon: paIcon,
+            icon: chessIcon,
             backgroundColor: '#B05325',
             repo: "https://github.com/edwinsn/purchase-analysis",
         }
