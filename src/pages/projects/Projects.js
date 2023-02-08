@@ -42,7 +42,7 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [chainy1, chainy2, chainy3, chainy4],
             icon: chainyIcon,
-            backgroundColor: '#EBEEFB',
+            background: 'colorChainy',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -53,7 +53,7 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [meal1, meal2, meal3],
             icon: mealIcon,
-            backgroundColor: '#F1F5FD',
+            background: 'colorMealPrep',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -64,7 +64,7 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [purchase1, purchase2],
             icon: expensesEyesIcon,
-            backgroundColor: '#D5F2C7',
+            background: 'colorExpenseEyes',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -75,7 +75,7 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [animal1, animal2, animal3, animal4],
             icon: animalIcon,
-            backgroundColor: '#F2EFE8',
+            background: 'colorAnimalCoords',
             repo: "https://github.com/edwinsn/purchase-analysis",
         }, {
             tittle: "Root planner",
@@ -85,7 +85,7 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [root1, root2, root3, root4],
             icon: rootIcon,
-            backgroundColor: '#FAFAFA',
+            background: 'colorRootPlanner',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -96,7 +96,7 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [chess1, chess2, chess3, chess4],
             icon: chessIcon,
-            backgroundColor: '#B05325',
+            background: 'testuraChess',
             repo: "https://github.com/edwinsn/purchase-analysis",
         }
     ]

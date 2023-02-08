@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './projectCard.css'
+import "./assets/backgrounds.css"
 import { Carousel } from 'react-responsive-carousel';
 import arrowIcon from '../../../assets/images/deployIcon.svg'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -8,7 +9,7 @@ import ProjectDescription from './ProjectDescription';
 
 export default function ProjectCard({
   imgs,
-  backgroundColor,
+  background,
   className,
   tittle,
   icon,
@@ -34,9 +35,9 @@ export default function ProjectCard({
 
 
   return (
-    <div className={'project-card column centered ' + className}>
+    <div className={'project-card column centered ' + className} >
       <div className='card column'
-        style={{ backgroundColor }}
+        id={background}
       >
         <input id="menu" type="checkbox" checked={on} />
 

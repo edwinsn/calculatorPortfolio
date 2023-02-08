@@ -197,12 +197,12 @@ input:checked ~ .project-body .description-actions {
     opacity: 0;
     margin-left: 180px;
     top: -75px;
-    transition: margin-left 0.8s;
+    transition: margin-left 0.6s;
   
 }
 
 .project-body .description-actions {
-    transition: margin-left 0.8s;
+    transition: margin-left 0.6s;
    
 }
 
