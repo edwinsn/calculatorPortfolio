@@ -33,29 +33,25 @@ export default function ProjectDescription({
                 </span>
                 <img src={icon} alt='' className='project-icon' />
             </div>
-            {
-                !open &&
-                (
-                    <>
-                        {!issmallView && <p className='text-centered project-description' >{description}</p>}
-                        {issmallView && <p className='text-centered project-description' >{shortDescription}</p>}
-                        <div className='project-actions flex'>
-                            <a href={href}
-                                className='project-link-icon'
-                                target="_blank"
-                                rel="noreferrer">
-                                <img src={linkIcon} alt='' />
-                            </a>
-                            <a href={githubLink}
-                                className="project-github-link"
-                                target="_blank"
-                                rel="noreferrer">
-                                <img src={githubLinkIcon} alt='' />
-                            </a>
-                        </div>
-                    </>
-                )
-            }
+            <div className='description-actions column centered'>
+                {!issmallView && <p className='text-centered project-description' >{description}</p>}
+                {issmallView && <p className='text-centered project-description' >{shortDescription}</p>}
+                <div className='project-actions flex'>
+                    <a href={href}
+                        className='project-link-icon'
+                        target="_blank"
+                        rel="noreferrer">
+                        <img src={linkIcon} alt='' />
+                    </a>
+                    <a href={githubLink}
+                        className="project-github-link"
+                        target="_blank"
+                        rel="noreferrer">
+                        <img src={githubLinkIcon} alt='' />
+                    </a>
+                </div>
+            </div>
+
 
         </div>
     )

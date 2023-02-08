@@ -163,6 +163,8 @@
     text-align: center;
 }
 
+/*Animacion Desplazamiento Targeta Proyecto*/
+
 input {
     display: none;
 }
@@ -173,6 +175,7 @@ input:checked~.project-carousel {
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
+
 input:checked~.project-body {
     height: 25%;
     justify-content: flex-start;
@@ -184,11 +187,27 @@ input:checked~.project-carousel img {
     border-radius: 0 0 50px 50px;
 }
 
-input:checked~.project-body .iconUp {
+/*input:checked~.project-body .iconUp {
     height: 1.3rem;
     transition-duration: 0.4s;
+}*/
+
+input:checked ~ .project-body .description-actions {
+    position: relative;
+    opacity: 0;
+    margin-left: 180px;
+    top: -75px;
+    transition: margin-left 0.8s;
+  
 }
 
+.project-body .description-actions {
+    transition: margin-left 0.8s;
+   
+}
+
+
+/*Animacion de Icono en Targeta Proyecto*/
 
 .deploy-project-description {
     animation: up-and-down 1s infinite;
