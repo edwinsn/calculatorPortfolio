@@ -11,7 +11,6 @@
     --project-list-margin: 3em 0;
   }
 }
-
 @media (max-width: 800px) {
   :root {
     --project-section-tittle-font: 2.6em;
@@ -26,7 +25,6 @@
     --project-list-margin: 0 0 0 0;
   }
 }
-
 .project-tag {
   border: 1px solid white;
   border-radius: 12px;
@@ -49,21 +47,14 @@
 .projects-section-body {
   gap: 10%;
   row-gap: 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   height: var(--project-section-body-height);
-  -webkit-box-align: var(--project-section-body-align-items);
-      -ms-flex-align: var(--project-section-body-align-items);
-          align-items: var(--project-section-body-align-items);
+  align-items: var(--project-section-body-align-items);
 }
 
 .project-section-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  -webkit-box-flex: var(--project-section-grow);
-      -ms-flex-positive: var(--project-section-grow);
-          flex-grow: var(--project-section-grow);
+  flex-basis: 45%;
+  flex-grow: var(--project-section-grow);
 }
 
 .project-section-tittle {
@@ -79,7 +70,7 @@
 .projects-list {
   gap: 8%;
   margin: var(--project-list-margin);
-  min-width: calc(2*var(--min-project-card-width) + 8%);
+  min-width: calc(2 * var(--min-project-card-width) + 8%);
 }
 
 .section-description {
@@ -88,8 +79,6 @@
 }
 
 .project-section-tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2%;
   font-size: 1.2em;
@@ -98,6 +87,5 @@
 .section-tittle {
   font-size: 2.8em;
   margin-top: 0;
-  margin-bottom: '1rem';
-}
-/*# sourceMappingURL=projectsSections.css.map */
+  margin-bottom: "1rem";
+}/*# sourceMappingURL=projectsSections.css.map */

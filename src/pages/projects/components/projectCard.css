@@ -23,7 +23,7 @@
     box-sizing: content-box !important;
     position: absolute;
     top: 0;
-    opacity: 0.2;
+    opacity: 0.8;
 }
 
 .arrow:hover {
@@ -67,6 +67,10 @@
     height: 100%;
 }
 
+.carousel-root img{
+    object-fit: contain;
+}
+
 .dot {
     padding: 5px;
     box-sizing: content-box;
@@ -98,11 +102,11 @@
     padding: 4px 0;
 }
 
-.project-actions img{
+.project-actions img {
     height: 100%;
 }
 
-.project-link-icon{
+.project-link-icon {
     padding: 3.5%;
 }
 
@@ -114,7 +118,7 @@
 
 .project-carousel {
     height: 38%;
-    transition-duration: 0.4s ;
+    transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
@@ -125,17 +129,17 @@
     margin-top: 2vh;
 }
 
-.project-description{
-    font-size: 1.2em ;
-    line-height: 1.2em ;
+.project-description {
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
-.project-github-link{
+.project-github-link {
     background-color: transparent;
     border: 3px solid var(--background);
 }
 
-.project-github-link:hover{
+.project-github-link:hover {
     background-color: var(--background);
 }
 
@@ -154,35 +158,74 @@
     font-weight: bolder;
 }
 
-.tittle-section{
+.tittle-section {
     width: 100%;
     text-align: center;
 }
 
-.iconUp {
-    height: 0;
-    transition-duration: 0.4s;
-}
-
-input{
+input {
     display: none;
 }
 
-input:checked ~ .project-carousel {
+input:checked~.project-carousel {
     border-radius: 50px;
     height: 75%;
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
+input:checked~.project-body {
+    height: 25%;
+    justify-content: flex-start;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
 
-input:checked ~ .project-carousel img {
+input:checked~.project-carousel img {
     border-radius: 0 0 50px 50px;
 }
 
-input:checked ~ .project-body .iconUp {
+input:checked~.project-body .iconUp {
     height: 1.3rem;
     transition-duration: 0.4s;
 }
 
 
+.deploy-project-description {
+    animation: up-and-down 1s infinite;
+    padding: 12px;
+}
 
+.down {
+    transform: rotate(90deg);
+    animation: up-and-down-being-rotated 1s infinite;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.5rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes up-and-down-being-rotated {
+    0% {
+        transform: translateY(0) rotate(180deg);
+    }
+
+    50% {
+        transform: translateY(-0.5rem) rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(180deg);
+    }
+
+}

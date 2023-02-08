@@ -188,6 +188,10 @@ section {
   flex-direction: column;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .delay-apareance {
   animation: delay-apareance 1.4s;
 }

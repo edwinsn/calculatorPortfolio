@@ -72,7 +72,7 @@
     line-height: 0.9em;
   }
   #contactBtns > button,
-#contactBtns > a {
+  #contactBtns > a {
     border: none;
     box-shadow: 0 -1px white, 3px 1px black, -1px 0 black;
     border-radius: 5px;
@@ -106,11 +106,11 @@
     line-height: 1em;
   }
   .calcText div:nth-child(2),
-.calcText div:nth-child(3) {
+  .calcText div:nth-child(3) {
     font-size: 2.2em;
   }
   #contactBtns > button,
-#contactBtns > a {
+  #contactBtns > a {
     border: none;
     box-shadow: 0 -1px white, 5px 3px black, -2px 0 black;
     border-radius: 5px;
@@ -139,17 +139,7 @@ section {
 }
 
 .apear {
-  -webkit-animation: apear 600ms;
-          animation: apear 600ms;
-}
-
-@-webkit-keyframes apear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: apear 600ms;
 }
 
 @keyframes apear {
@@ -175,21 +165,12 @@ section {
   flex-direction: column;
 }
 
-.delay-apareance {
-  -webkit-animation: delay-apareance 1.4s;
-          animation: delay-apareance 1.4s;
+.cursor-pointer {
+  cursor: pointer;
 }
 
-@-webkit-keyframes delay-apareance {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.delay-apareance {
+  animation: delay-apareance 1.4s;
 }
 
 @keyframes delay-apareance {
@@ -213,32 +194,14 @@ section {
 }
 
 .get-up {
-  -webkit-animation: get-up 1.6s;
-          animation: get-up 1.6s;
+  animation: get-up 1.6s;
   position: relative;
 }
 
 .get-slowly-up {
-  -webkit-animation: get-slowly-up 700ms;
-          animation: get-slowly-up 700ms;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation: get-slowly-up 700ms;
+  animation-timing-function: ease-in;
   position: relative;
-}
-
-@-webkit-keyframes get-up {
-  0% {
-    top: 25px;
-    opacity: 0;
-  }
-  50% {
-    top: 25px;
-    opacity: 0;
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-  }
 }
 
 @keyframes get-up {
@@ -248,16 +211,6 @@ section {
   }
   50% {
     top: 25px;
-    opacity: 0;
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes get-slowly-up {
-  0% {
-    top: 35px;
     opacity: 0;
   }
   100% {
@@ -276,24 +229,8 @@ section {
   }
 }
 .get-down {
-  -webkit-animation: get-down 900ms;
-          animation: get-down 900ms;
+  animation: get-down 900ms;
   position: relative;
-}
-
-@-webkit-keyframes get-down {
-  0% {
-    top: -12px;
-    opacity: 0;
-  }
-  50% {
-    top: -12px;
-    opacity: 0;
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-  }
 }
 
 @keyframes get-down {
@@ -311,24 +248,8 @@ section {
   }
 }
 .get-fastly-up {
-  -webkit-animation: get-fastly-up 900ms;
-          animation: get-fastly-up 900ms;
+  animation: get-fastly-up 900ms;
   position: relative;
-}
-
-@-webkit-keyframes get-fastly-up {
-  0% {
-    top: 12px;
-    opacity: 0;
-  }
-  50% {
-    top: 12px;
-    opacity: 0;
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-  }
 }
 
 @keyframes get-fastly-up {
@@ -356,7 +277,6 @@ section {
 .nonselectable {
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -387,8 +307,7 @@ section {
   font-size: var(--title-font);
   -webkit-text-decoration: underline wavy;
           text-decoration: underline wavy;
-  -webkit-text-decoration-color: aqua;
-          text-decoration-color: aqua;
+  text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
 }
