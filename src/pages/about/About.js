@@ -18,21 +18,8 @@ export let About = function () {
     return (
 
         <div id="about">
-            <div id="contactBtns">
-                <a href="https://github.com/edwinsn"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    className="centered">
-                    <img id="github-icon" alt="edwin's githuub account" src={gitHub} />
-                </a>
-                <button className="email centered"
-                    onClick={() => { copymail(setcopy) }}>
-                    <img id="mail-icon" alt="copy edwin mail" src={mailIcon} />
-                    <div className="centered">{copyEmail}</div>
-                </button>
-            </div>
 
-            <ShowUp className="wrap">
+            <ShowUp className="wrap justify-around">
                 <div id="about-text">
                     <p className="title">About Me</p>
                     <p>
@@ -44,6 +31,19 @@ export let About = function () {
                         I know how to work collaboratively to build intuitive,
                         beautiful and reliable solutions that convince your <span className="highlight">clients</span>.
                     </p>
+                    <div id="contactBtns">
+                        <a href="https://github.com/edwinsn"
+                            rel="noreferrer noopener"
+                            target="_blank"
+                            className="centered">
+                            <img id="github-icon" alt="edwin's githuub account" src={gitHub} />
+                        </a>
+                        <button className="email centered"
+                            onClick={() => { copymail(setcopy) }}>
+                            <img id="mail-icon" alt="copy edwin mail" src={mailIcon} />
+                            <div className="centered">{copyEmail}</div>
+                        </button>
+                    </div>
 
                 </div>
 

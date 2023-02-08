@@ -15,12 +15,12 @@ import meal2 from '../../assets/images/projects/meal2.jpg'
 import meal3 from '../../assets/images/projects/meal3.jpg'
 import purchase1 from '../../assets/images/projects/purchase1.jpg'
 import purchase2 from '../../assets/images/projects/purchase2.jpg'
-import root1 from  '../../assets/images/projects/root1.jpg'
-import root2 from  '../../assets/images/projects/root2.jpg'
-import root3 from  '../../assets/images/projects/root3.jpg'
-import root4 from  '../../assets/images/projects/root4.jpg'
+import root1 from '../../assets/images/projects/root1.jpg'
+import root2 from '../../assets/images/projects/root2.jpg'
+import root3 from '../../assets/images/projects/root3.jpg'
+import root4 from '../../assets/images/projects/root4.jpg'
 import rootIcon from '../../assets/images/projects/icons/root.svg'
-import animalIcon from '../../assets/images/projects/icons/animal.svg' 
+import animalIcon from '../../assets/images/projects/icons/animal.svg'
 import chainyIcon from '../../assets/images/projects/icons/chainy.svg'
 import chessIcon from '../../assets/images/projects/icons/chess.svg'
 import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg'
@@ -101,16 +101,9 @@ export let Projects = function () {
         }
     ]
 
-    /*const child = { width: `100vw`, height: `100vh`, border: '1px solid green' }
-    const childLast = { width: `100vw`, height: `100vh`, border: '1px solid green', overflow: 'scroll' }
-    const parent = { width: `100vw`, height: `100vh`, border: '1px solid red' }*/
 
     return (
         <div id='projects'>
-            {/*<HorizontalScroll
-            style={parent}
-            reverseScroll
-            >*/}
             <ProjectsSection projects={projects.slice(0, 2)}
                 tittle="Trustful interfaces"
                 description="We can generate trust and an uniqueness feeling building intuitive, fast, beautiful and responsive intefaces."
@@ -128,6 +121,5 @@ export let Projects = function () {
             />
         </div>
     )
-    /*</HorizontalScroll>*/
 
 }

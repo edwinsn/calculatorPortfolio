@@ -7,6 +7,7 @@
 #contactBtns {
     display: flex;
     justify-content: flex-start;
+    margin-top: 4vh;
 }
 
 #contactBtns img {
@@ -14,9 +15,9 @@
 }
 
 #contactBtns>a, #contactBtns>button {
-    width: 10vw;
+    width: 5.5vw;
     min-width: 65px;
-    height: 6vw;
+    height:2.5vw;
     min-height: 40px;
     margin-right: 20px;
     background-color: var(--background);
@@ -30,9 +31,9 @@
     height: 45%;
 }
 
-#about .wrap>* {
+/*#about .wrap>* {
     flex-grow: 1;
-}
+}*/
 
 #about-text {
     font-size: var(--font);
@@ -54,7 +55,7 @@
     top: 100%;
     position: absolute;
     transition: top 400ms;
-    font-size: var(--small-font);
+    font-size: 1.1em;
     font-weight: bolder;
     background-color: var(--green);
 }

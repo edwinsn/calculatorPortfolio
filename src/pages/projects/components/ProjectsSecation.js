@@ -29,7 +29,7 @@ export let ProjectsSection = function ({ projects, tittle, description, tags, nu
 
 
   return (
-    <div className='project-section' style={{ ...style, ...isLast && { width: "80vw", marginRight: '20vw' } }}>
+    <div className='project-section' style={{ ...style, ...isLast && { width: "80vw" } }}>
       <p className="project-section-tittle text-white">{isDesktopView ? "What I can do" : tittle}</p>
       <div className='flex wrap projects-section-body'>
         <div className='flex projects-list centered'>

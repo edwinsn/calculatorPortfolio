@@ -49,7 +49,7 @@
 @media (max-width: 800px) {
   :root {
     --font: 1.2em;
-    --small-font: 12px;
+    --small-font: 8px;
     --h2-line-height: 15px;
     --project-height: 47vh;
     --project-btn-height: 80%;
@@ -290,6 +290,10 @@ section {
 
 .space-evenly {
   justify-content: space-evenly;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .subtitle {
