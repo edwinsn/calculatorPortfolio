@@ -70,6 +70,7 @@
 .projects-list {
   gap: 8%;
   margin: var(--project-list-margin);
+  min-width: calc(2 * var(--min-project-card-width) + 8%);
 }
 
 .section-description {

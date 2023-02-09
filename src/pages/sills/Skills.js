@@ -33,7 +33,7 @@ export default function Skills() {
             <h2 id='skills-title' className='text-white'>
                 Skills
             </h2>
-            <Tabs id='skills'>
+            <Tabs id='skills' className='w-100'>
                 {/** Content */}
                 <TabPanel >
                     <h2 className='subtitle'>

@@ -353,4 +353,8 @@ section {
 .full-screen {
   height: 100vh;
   background: 100vw;
+}
+
+.w-100 {
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */
