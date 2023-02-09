@@ -25,6 +25,7 @@ import chainyIcon from '../../assets/images/projects/icons/chainy.svg'
 import chessIcon from '../../assets/images/projects/icons/chess.svg'
 import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg'
 import mealIcon from '../../assets/images/projects/icons/meal.svg'
+import chessBackground from '../../assets/images/testuraChess.jpeg'
 
 import './projects.css'
 //import HorizontalScroll from 'react-scroll-horizontal'
@@ -42,7 +43,8 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [chainy1, chainy2, chainy3, chainy4],
             icon: chainyIcon,
-            background: 'colorChainy',
+            background: '#EBEFFB',
+            secondaryBackground: '#EBEFFB',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -53,7 +55,8 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [meal1, meal2, meal3],
             icon: mealIcon,
-            background: 'colorMealPrep',
+            background: '#F1F5FE',
+            secondaryBackground: '#F1F5FE',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -64,7 +67,8 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [purchase1, purchase2],
             icon: expensesEyesIcon,
-            background: 'colorExpenseEyes',
+            background: '#D5F2C6',
+            secondaryBackground: '#D5F2C6',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -75,7 +79,8 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [animal1, animal2, animal3, animal4],
             icon: animalIcon,
-            background: 'colorAnimalCoords',
+            background: '#F2EFE7',
+            secondaryBackground: '#F2EFE7',
             repo: "https://github.com/edwinsn/purchase-analysis",
         }, {
             tittle: "Root planner",
@@ -85,7 +90,8 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [root1, root2, root3, root4],
             icon: rootIcon,
-            background: 'colorRootPlanner',
+            background: '#FFFFFF',
+            secondaryBackground: '#FEFEFE',
             repo: "https://github.com/edwinsn/purchase-analysis",
         },
         {
@@ -96,7 +102,8 @@ export let Projects = function () {
             githubLink: "https://github.com/edwinsn/purchase-analysis",
             imgs: [chess1, chess2, chess3, chess4],
             icon: chessIcon,
-            background: 'testuraChess',
+            backgroundImage: chessBackground,
+            secondaryBackground: chessBackground,
             repo: "https://github.com/edwinsn/purchase-analysis",
         }
     ]

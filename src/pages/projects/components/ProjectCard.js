@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './projectCard.css'
-import "./assets/backgrounds.css"
 import { Carousel } from 'react-responsive-carousel';
 import arrowIcon from '../../../assets/images/deployIcon.svg'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -10,6 +9,8 @@ import ProjectDescription from './ProjectDescription';
 export default function ProjectCard({
   imgs,
   background,
+  backgroundImage,
+  secondaryBackground,
   className,
   tittle,
   icon,
@@ -33,27 +34,36 @@ export default function ProjectCard({
     </div>
   }
 
+  const style = backgroundImage ? {
+    backgroundImage: `url(${backgroundImage})`,
+  } : {
+    backgroundColor: background,
+  }
 
   return (
     <div className={'project-card column centered ' + className} >
-      <div className='card column'
-        id={background}
+      <div
+        className='card column'
+        style={style}
       >
         <input id="menu" type="checkbox" checked={on} />
-
-        <Carousel
-          emulateTouch
-          infiniteLoop showThumbs={false}
-          useKeyboardArrows
-          showStatus={false}
-          autoPlay={false}
-          className='project-carousel nonselectable cursor-pointer'
-          renderArrowPrev={(handler) => carouselArrow(handler, 'left')}
-          renderArrowNext={(handler) => carouselArrow(handler, 'right')}
-          onClickItem={() => setOn(!on)}
+        <div
+          className='project-carousel'
         >
-          {projectImgs}
-        </Carousel>
+          <Carousel
+            emulateTouch
+            infiniteLoop showThumbs={false}
+            useKeyboardArrows
+            showStatus={false}
+            autoPlay={false}
+            className='nonselectable cursor-pointer'
+            renderArrowPrev={(handler) => carouselArrow(handler, 'left')}
+            renderArrowNext={(handler) => carouselArrow(handler, 'right')}
+            onClickItem={() => setOn(!on)}
+          >
+            {projectImgs}
+          </Carousel>
+        </div>
         <ProjectDescription
           open={on}
           setOpen={setOn}
@@ -63,6 +73,7 @@ export default function ProjectCard({
           shortDescription={shortDescription}
           href={href}
           githubLink={githubLink}
+          background={secondaryBackground}
         />
       </div>
     </div>

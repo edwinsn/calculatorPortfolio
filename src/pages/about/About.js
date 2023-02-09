@@ -4,7 +4,6 @@ import cvIcon from '../../assets/images/Edwin_Sánchez-cv.svg'
 import cvIconColored from '../../assets/images/Edwin_Sánchez-cv-colored.svg'
 import ShowUp from '../components/ShowUp'
 import './about.css'
-import gitHub from '../../assets/images/githubLink.svg'
 import mailIcon from '../../assets/images/mailIcon.svg'
 import cv from "../../assets/files/Edwin's_cv(Full stack developer).pdf"
 
@@ -32,12 +31,6 @@ export let About = function () {
                         beautiful and reliable solutions that convince your <span className="highlight">clients</span>.
                     </p>
                     <div id="contactBtns">
-                        <a href="https://github.com/edwinsn"
-                            rel="noreferrer noopener"
-                            target="_blank"
-                            className="centered">
-                            <img id="github-icon" alt="edwin's githuub account" src={gitHub} />
-                        </a>
                         <button className="email centered"
                             onClick={() => { copymail(setcopy) }}>
                             <img id="mail-icon" alt="copy edwin mail" src={mailIcon} />
