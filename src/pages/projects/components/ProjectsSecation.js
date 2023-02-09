@@ -3,7 +3,15 @@ import useWindowDimensions from '../../components/useWindowDimensions'
 import './projectsSections.css'
 
 
-export let ProjectsSection = function ({ projects, tittle, description, tags, number, style, isLast }) {
+export let ProjectsSection = function ({
+  projects,
+  tittle,
+  description,
+  tags,
+  number,
+  style,
+  isLast
+}) {
 
   const { width } = useWindowDimensions()
 

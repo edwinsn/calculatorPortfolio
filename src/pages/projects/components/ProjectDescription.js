@@ -15,13 +15,19 @@ export default function ProjectDescription({
     shortDescription,
     href,
     githubLink,
+    color
 }) {
 
     const { width } = useWindowDimensions()
     const issmallView = width < 950;
 
+    const style = {
+        color,
+    }
+
     return (
         <div
+            style={style}
             className="project-body column centered"
         >
             <FontAwesomeIcon

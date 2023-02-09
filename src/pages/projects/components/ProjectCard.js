@@ -18,8 +18,8 @@ export default function ProjectCard({
   shortDescription,
   href,
   githubLink,
+  color
 }) {
-
 
   const [on, setOn] = useState(true);
 
@@ -74,6 +74,7 @@ export default function ProjectCard({
           href={href}
           githubLink={githubLink}
           background={secondaryBackground}
+          color={color}
         />
       </div>
     </div>

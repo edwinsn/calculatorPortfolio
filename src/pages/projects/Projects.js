@@ -46,6 +46,7 @@ export let Projects = function () {
             background: '#EBEFFB',
             secondaryBackground: '#EBEFFB',
             repo: "https://github.com/edwinsn/purchase-analysis",
+            color:''
         },
         {
             tittle: "Meal prep",
@@ -58,6 +59,7 @@ export let Projects = function () {
             background: '#F1F5FE',
             secondaryBackground: '#F1F5FE',
             repo: "https://github.com/edwinsn/purchase-analysis",
+            color:''
         },
         {
             tittle: "ExpenseEyes",
@@ -70,6 +72,7 @@ export let Projects = function () {
             background: '#D5F2C6',
             secondaryBackground: '#D5F2C6',
             repo: "https://github.com/edwinsn/purchase-analysis",
+            color:'#294519'
         },
         {
             tittle: "Animalcoords",
@@ -82,6 +85,7 @@ export let Projects = function () {
             background: '#F2EFE7',
             secondaryBackground: '#F2EFE7',
             repo: "https://github.com/edwinsn/purchase-analysis",
+            color:'#73684B'
         }, {
             tittle: "Root planner",
             description: "Plan and manage routes like a boss with this system.",
@@ -93,6 +97,7 @@ export let Projects = function () {
             background: '#FFFFFF',
             secondaryBackground: '#FEFEFE',
             repo: "https://github.com/edwinsn/purchase-analysis",
+            color:'#1D4F97'
         },
         {
             tittle: "Chess",
@@ -105,6 +110,7 @@ export let Projects = function () {
             backgroundImage: chessBackground,
             secondaryBackground: chessBackground,
             repo: "https://github.com/edwinsn/purchase-analysis",
+            color:'#6E4E2B'
         }
     ]
 
