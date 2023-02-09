@@ -46,7 +46,11 @@ export default function ProjectCard({
         className='card column'
         style={style}
       >
-        <input id="menu" type="checkbox" checked={on} />
+        <input
+          id="menu"
+          type="checkbox"
+          className='display-none'
+          checked={on} />
         <div
           className='project-carousel'
         >

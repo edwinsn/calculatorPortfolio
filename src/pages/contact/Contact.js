@@ -84,7 +84,7 @@ let fillMessage = function (ev, n) {
 
 let sendMessage = function (ev, setMessagesent, changeSendButton) {
   ev.preventDefault()
-  console.log("sending")
+
   changeSendButton(<LoadingCircles />)
   emailjs.sendForm('service_h1epg1j', 'template_nunwcy2', ev.target, "user_c4k3ES8RjQalUaezoM6Lz")
     .then((result) => {
@@ -93,8 +93,7 @@ let sendMessage = function (ev, setMessagesent, changeSendButton) {
       setMessagesent(true)
       setTimeout(() => {
         setMessagesent(false)
-      }, 4000)
-      //console.log(result)
+      }, 6000)
 
     }, (error) => {
       changeSendButton(<input type="submit" value="Send" key="1" />)
