@@ -39,6 +39,7 @@
     font-size: var(--font);
     flex-basis: 53%;
     max-width: 17cm;
+    flex-grow: 1;
     padding-right: var(--pading-projec-text);
 }
 

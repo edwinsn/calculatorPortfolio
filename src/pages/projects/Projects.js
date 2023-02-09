@@ -27,7 +27,6 @@ import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg
 import mealIcon from '../../assets/images/projects/icons/meal.svg'
 import chessBackground from '../../assets/images/testuraChess.jpeg'
 
-import './projects.css'
 //import HorizontalScroll from 'react-scroll-horizontal'
 import { ProjectsSection } from './components/ProjectsSecation'
 
