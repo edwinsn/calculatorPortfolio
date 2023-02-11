@@ -8,7 +8,7 @@
     justify-content: space-around;
 }
 
-#skills div>img {
+#skills div>img, #skills div>.iconSkill {
     background-color: aliceblue;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -17,6 +17,10 @@
     padding: .1em;
     box-sizing: border-box;
 }
+
+#skills div>.iconSkill {
+    margin: 0 .3em .1em .3em;
+ }
 
 #skills-title {
     align-self: flex-start;

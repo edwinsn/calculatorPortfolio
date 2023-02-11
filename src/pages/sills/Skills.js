@@ -3,22 +3,21 @@ import backendIcon from '../../assets/images/skills/backendIcon.svg'
 import frontendIcon from '../../assets/images/skills/frontendIcon.svg'
 import designIcon from '../../assets/images/skills/designIcon.svg'
 import othersIcon from '../../assets/images/skills/othersIcon.svg'
-import reactIcon from '../../assets/images/skills/react.svg'
-import htmlIcon from '../../assets/images/skills/html.svg'
-import awsIcon from '../../assets/images/skills/aws.svg'
-import cssIcon from '../../assets/images/skills/css.svg'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReact, faHtml5, faCss3Alt, faNodeJs, faAws, faFigma, faGitAlt } from '@fortawesome/free-brands-svg-icons'
+
 import figmaIcon from '../../assets/images/skills/figma.svg'
 import firebaseIcon from '../../assets/images/skills/firebase.svg'
-import gitIcon from '../../assets/images/skills/git.svg'
 import jestIcon from '../../assets/images/skills/jest.svg'
 import reactQueryIcon from '../../assets/images/skills/react-query.svg'
 import mongoIcon from '../../assets/images/skills/mongo.svg'
-import nodeIcon from '../../assets/images/skills/node.svg'
 import reduxIcon from '../../assets/images/skills/redux.svg'
 import sqlIcon from '../../assets/images/skills/sql.svg'
 import gimpIcon from '../../assets/images/skills/gimp.svg'
 
 import './skills.css'
+import "./colorSkills.css"
 import ShowUp from '../components/ShowUp'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css';
@@ -40,11 +39,11 @@ export default function Skills() {
                         Frontend
                     </h2>
                     <div>
-                        <img src={reactIcon} alt="" title='react'/>
-                        <img src={htmlIcon} alt="" title='html'/>
-                        <img src={cssIcon} alt="" title='css'/>
-                        <img src={reduxIcon} alt="" title='redux'/>
-                        <img src={reactQueryIcon} alt="" title='react query'/>
+                        <FontAwesomeIcon icon={faReact} className="iconSkill colorReact" title='react' />
+                        <FontAwesomeIcon icon={faHtml5} className="iconSkill orange" title='html' />
+                        <FontAwesomeIcon icon={faCss3Alt} className="iconSkill colorCss" title='css' />
+                        <img src={reduxIcon} alt="" title='redux' />
+                        <img src={reactQueryIcon} alt="" title='react query' />
                     </div>
                     <p>
                         React, the perfect ingredient for building amazing applications.
@@ -62,11 +61,11 @@ export default function Skills() {
                         Backend
                     </h2>
                     <div>
-                        <img src={nodeIcon} alt="" title='nodejs'/>
-                        <img src={sqlIcon} alt="" title='sql'/>
-                        <img src={awsIcon} alt="" title='aws'/>
-                        <img src={mongoIcon} alt="" title='mongodb'/>
-                        <img src={firebaseIcon} alt="" title='firebase'/>
+                        <FontAwesomeIcon icon={faNodeJs} className="iconSkill colorNode" title='nodejs' />
+                        <img src={sqlIcon} alt="" title='sql' />
+                        <FontAwesomeIcon icon={faAws} className="iconSkill colorAws" title='aws' />
+                        <img src={mongoIcon} alt="" title='mongodb' />
+                        <img src={firebaseIcon} alt="" title='firebase' />
                     </div>
 
                     <p>
@@ -86,8 +85,8 @@ export default function Skills() {
                         Design
                     </h2>
                     <div>
-                        <img src={figmaIcon} alt="" title='figma'/>
-                        <img src={gimpIcon} alt="" title='GIMP'/>
+                        <img src={figmaIcon} alt="" title='figma' />
+                        <img src={gimpIcon} alt="" title='GIMP' />
                     </div>
                     <p>
                         With Figma and GIMP in my toolbox, I bring a playful
@@ -103,8 +102,8 @@ export default function Skills() {
                         Others
                     </h2>
                     <div>
-                        <img src={gitIcon} alt="" title='git'/>
-                        <img src={jestIcon} alt="" title='jest'/>
+                        <FontAwesomeIcon icon={faGitAlt} className="iconSkill orange" title='git' />
+                        <img src={jestIcon} alt="" title='jest' />
                     </div>
                     <p>
                         Git and Jest? More like hit and the best! These tools
