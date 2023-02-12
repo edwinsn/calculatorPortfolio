@@ -4,7 +4,6 @@ import frontendIcon from '../../assets/images/skills/frontendIcon.svg'
 import designIcon from '../../assets/images/skills/designIcon.svg'
 import othersIcon from '../../assets/images/skills/othersIcon.svg'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact, faHtml5, faCss3Alt, faNodeJs, faAws, faGitAlt } from '@fortawesome/free-brands-svg-icons'
 
 import figmaIcon from '../../assets/images/skills/figma.svg'
