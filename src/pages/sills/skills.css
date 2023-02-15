@@ -1,21 +1,14 @@
-.main {
-    border: 1px solid none;
-    min-height: 500px;
-}
-
 #skills {
-    border: 1px solid none;
-    font-size: var(--font);
-    max-width: 17cm;
+    align-items: flex-end;
     color: var(--white);
-    /*flex-basis: 100%;*/
-    
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-around;*/
-    padding: 35vh 0 0vh 0;
+    font-size: var(--font);
+    height: 80vh;
+    justify-content: space-around;
+    max-width: 17cm;
+    padding: 0 0 2% 0;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 #skills div div>img,
@@ -40,24 +33,31 @@
     max-height: var(--project-section-tittle-height);
 }
 
-.react-tabs__tab {
-    display: inline-flex !important;
-    flex-direction: column;
-}
-
-#skills img {
-    background-color: none !important;
+#skills label img {
+    cursor: pointer;
     height: 2em;
     z-index: 2;
 }
 
-.react-tabs__tab--selected {
-    background-color: transparent !important;
-    border: none !important;
+/*Transicion*/
+
+
+#skills span {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .2em;
+    opacity: 0;
 }
 
-.react-tabs__tab--selected::after {
-    background-color: transparent !important;
+#skills>div>div {
+    left: 10px;
+    position: absolute;
+    top: -115vh;
+    z-index: -4;
+}
+
+#skills input~div {
+    animation: elementOut 0.3s;
 }
 
 #skills input:checked~span {
@@ -73,64 +73,8 @@
 
 }
 
-#skills span {
-    padding: .2em;
-    border-radius: 5px;
-   opacity: 0;
-}
-
-.react-tabs__tab-list {
-    border: none !important;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-/*animation for showing an image (display block) from smaller to bigger*/
-@keyframes showImg {
-    0% {
-        transform: scale(0);
-        translate: 0 -100%;
-        transform: translateY()
-    }
-
-    80% {
-        transform: scale(1.1);
-        translate: 0 -30%;
-    }
-
-    100% {
-        transform: scale(1);
-        translate: 0 -30%;
-    }
-}
-
-#skills {
-    height: 80vh;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-
-#skills input {
-    z-index: 8;
-}
-
-#skills > div > div {
-    border: 1px solid none;
-    left: 10px;
-    position: absolute;
-    top: -55vh;
-    z-index: -4;
-}
-
-#skills input~ div {
-    animation: elementOut 0.3s;
-}
-
-#skills input:checked~ div {
+#skills input:checked~div {
     animation: elementIn 0.8s;
-    
     top: 10px;
 }
 
@@ -150,8 +94,31 @@
         top: 10px;
     }
 
+    50% {
+        opacity: 0;
+    }
+
     100% {
         top: -250px;
         opacity: 0;
+    }
+}
+
+/*animation for showing an image (display block) from smaller to bigger*/
+@keyframes showImg {
+    0% {
+        transform: scale(0);
+        translate: 0 -100%;
+        transform: translateY()
+    }
+
+    80% {
+        transform: scale(1.1);
+        translate: 0 -30%;
+    }
+
+    100% {
+        transform: scale(1);
+        translate: 0 -30%;
     }
 }
