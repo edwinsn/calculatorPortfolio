@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 @font-face {
   font-family: "calc";
   src: url("./fonts/PocketCalculator-qjd.ttf") format("truetype");
 }
-
 :root {
   --animation-: 300ms;
   --background: #1D4F97;
@@ -31,12 +29,10 @@
     --project-card-width: 31vh;
     --project-card-height: 55vh;
   }
-
   .calcText {
     justify-content: flex-start;
   }
 }
-
 @media (min-width: 600px) {
   :root {
     --min-text-width: 10cm;
@@ -46,12 +42,10 @@
     --project-card-width: 16.5vw;
     --project-card-height: 26vw;
   }
-
   #calcScreen {
     align-items: center;
   }
 }
-
 @media (max-width: 800px) {
   :root {
     --font: 1.2em;
@@ -70,34 +64,23 @@
     --pixelated-face-height: 45%;
     --pixelated-face-width: 35%;
   }
-
-  @media (max-width: 360px) {
-    :root {
-      --font: 0.93em;
-    }
-  }
-
   .calcText div:nth-child(1) {
     font-size: 3.3em;
   }
-
   .calcText div:nth-child(2) {
     font-size: 1.8em;
     line-height: 0.9em;
   }
-
-  #contactBtns>button,
-  #contactBtns>a {
+  #contactBtns > button,
+  #contactBtns > a {
     border: none;
     box-shadow: 0 -1px white, 3px 1px black, -1px 0 black;
     border-radius: 5px;
   }
-
   .buttons-place {
     padding: 27px 23px;
   }
 }
-
 @media (min-width: 800px) {
   :root {
     --font: 1.3em;
@@ -115,33 +98,27 @@
     --pixelated-face-height: 95%;
     --pixelated-face-width: 20%;
   }
-
   .calcText {
     justify-content: center;
   }
-
   .calcText div:nth-child(1) {
     font-size: 7em;
     line-height: 1em;
   }
-
   .calcText div:nth-child(2),
   .calcText div:nth-child(3) {
     font-size: 2.2em;
   }
-
-  #contactBtns>button,
-  #contactBtns>a {
+  #contactBtns > button,
+  #contactBtns > a {
     border: none;
     box-shadow: 0 -1px white, 5px 3px black, -2px 0 black;
     border-radius: 5px;
   }
-
   .buttons-place {
     padding: 8vh;
   }
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -149,7 +126,6 @@ html {
 body {
   background-color: var(--background);
   margin: 0;
-  overflow-x: hidden;
 }
 
 p {
@@ -170,12 +146,10 @@ section {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
 .bold {
   margin-bottom: 0;
   font-weight: bolder;
@@ -203,16 +177,13 @@ section {
   0% {
     opacity: 0;
   }
-
   50% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 .flex {
   display: flex;
 }
@@ -238,30 +209,25 @@ section {
     top: 25px;
     opacity: 0;
   }
-
   50% {
     top: 25px;
     opacity: 0;
   }
-
   100% {
     top: 0px;
     opacity: 1;
   }
 }
-
 @keyframes get-slowly-up {
   0% {
     top: 35px;
     opacity: 0;
   }
-
   100% {
     top: 0px;
     opacity: 1;
   }
 }
-
 .get-down {
   animation: get-down 900ms;
   position: relative;
@@ -272,18 +238,15 @@ section {
     top: -12px;
     opacity: 0;
   }
-
   50% {
     top: -12px;
     opacity: 0;
   }
-
   100% {
     top: 0px;
     opacity: 1;
   }
 }
-
 .get-fastly-up {
   animation: get-fastly-up 900ms;
   position: relative;
@@ -294,18 +257,15 @@ section {
     top: 12px;
     opacity: 0;
   }
-
   50% {
     top: 12px;
     opacity: 0;
   }
-
   100% {
     top: 0px;
     opacity: 1;
   }
 }
-
 .grow-on-hover:hover {
   padding: 7px;
 }
@@ -350,7 +310,7 @@ section {
 .title {
   font-size: var(--title-font);
   -webkit-text-decoration: underline wavy;
-  text-decoration: underline wavy;
+          text-decoration: underline wavy;
   text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
@@ -401,6 +361,4 @@ section {
 
 .display-none {
   display: none;
-}
-
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
