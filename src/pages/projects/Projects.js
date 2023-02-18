@@ -10,6 +10,7 @@ import chess1 from '../../assets/images/projects/chess1.jpg'
 import chess2 from '../../assets/images/projects/chess2.jpg'
 import chess3 from '../../assets/images/projects/chess3.jpg'
 import chess4 from '../../assets/images/projects/chess4.jpg'
+import chessfile from "../../assets/files/chess.jar"
 import meal1 from '../../assets/images/projects/meal1.jpg'
 import meal2 from '../../assets/images/projects/meal2.jpg'
 import meal3 from '../../assets/images/projects/meal3.jpg'
@@ -27,7 +28,6 @@ import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg
 import mealIcon from '../../assets/images/projects/icons/meal.svg'
 import chessBackground from '../../assets/images/testuraChess.jpeg'
 
-//import HorizontalScroll from 'react-scroll-horizontal'
 import { ProjectsSection } from './components/ProjectsSecation'
 
 
@@ -38,26 +38,24 @@ export let Projects = function () {
             tittle: "Chainy Link",
             description: "Share the good stuff with one link",
             shortDescription: "Share the good stuff with one link",
-            href: "https://purchase-analysis-23370.web.app/",
-            githubLink: "https://github.com/edwinsn/purchase-analysis",
+            href: "https://chainylink.com/",
+            githubLink: "https://github.com/edwinsn/chainyLink",
             imgs: [chainy1, chainy2, chainy3, chainy4],
             icon: chainyIcon,
             background: '#EBEFFB',
             secondaryBackground: '#EBEFFB',
-            repo: "https://github.com/edwinsn/purchase-analysis",
             color:''
         },
         {
             tittle: "Meal prep",
             description: "A fresh and fun redesign of the meal prep page",
             shortDescription: "A fresh and fun redesign of the meal prep page",
-            href: "https://purchase-analysis-23370.web.app/",
-            githubLink: "https://github.com/edwinsn/purchase-analysis",
+            href: "https://www.figma.com/file/TBYin2H9WaGsnIvZUqbRE6/sprwt?node-id=0%3A1&t=R9lzms8MKfIbZdgl-1",
+            githubLink: "https://github.com/edwinsn",
             imgs: [meal1, meal2, meal3],
             icon: mealIcon,
             background: '#F1F5FE',
             secondaryBackground: '#F1F5FE',
-            repo: "https://github.com/edwinsn/purchase-analysis",
             color:''
         },
         {
@@ -70,7 +68,6 @@ export let Projects = function () {
             icon: expensesEyesIcon,
             background: '#D5F2C6',
             secondaryBackground: '#D5F2C6',
-            repo: "https://github.com/edwinsn/purchase-analysis",
             color:'#294519'
         },
         {
@@ -78,32 +75,30 @@ export let Projects = function () {
             description: "Help stray animals with just a few clicks",
             shortDescription: "Help stray animals with a few clicks",
             href: "https://petfinder-b4ec4.web.app/",
-            githubLink: "https://github.com/edwinsn/purchase-analysis",
+            githubLink: "https://github.com/edwinsn/petfinder",
             imgs: [animal1, animal2, animal3, animal4],
             icon: animalIcon,
             background: '#F2EFE7',
             secondaryBackground: '#F2EFE7',
-            repo: "https://github.com/edwinsn/purchase-analysis",
             color:'#73684B'
         }, {
             tittle: "Root planner",
             description: "Plan and manage routes like a boss with this system.",
             shortDescription: "Plan and manage routes with this system",
-            href: "https://purchase-analysis-23370.web.app/",
-            githubLink: "https://github.com/edwinsn/purchase-analysis",
+            href: "https://rootplanner.io/",
+            githubLink: "https://github.com/edwinsn",
             imgs: [root1, root2, root3, root4],
             icon: rootIcon,
             background: '#FFFFFF',
             secondaryBackground: '#FEFEFE',
-            repo: "https://github.com/edwinsn/purchase-analysis",
             color:'#1D4F97'
         },
         {
             tittle: "Chess",
             description: "A classic chess game and an AI opponent",
             shortDescription: "A chess game and an AI opponent",
-            href: "https://purchase-analysis-23370.web.app/",
-            githubLink: "https://github.com/edwinsn/purchase-analysis",
+            href: chessfile,
+            githubLink: "https://github.com/edwinsn/chess-game",
             imgs: [chess1, chess2, chess3, chess4],
             icon: chessIcon,
             backgroundImage: chessBackground,
