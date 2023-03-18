@@ -7,6 +7,7 @@ export default function Skill(
         tabIcon,
         icons,
         description,
+        position
     }
 ) {
 
@@ -14,7 +15,7 @@ export default function Skill(
     const iconsFormatted = icons.map(icon => <IconFormatted {...icon} />);
 
     return (
-        <div className='flex-column centered' >
+        <div className={`flex-column centered ${position}`} >
 
             <input
                 type="radio"

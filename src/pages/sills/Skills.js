@@ -23,6 +23,7 @@ let skillsData = [
     {
         name: "Frontend",
         tabIcon: frontendIcon,
+        position: '_1',
         icons: [
             { src: faReact, title: "react", className: "iconSkill colorReact" },
             { src: faHtml5, title: "html", className: "iconSkill orange" },
@@ -42,6 +43,7 @@ let skillsData = [
     {
         name: "Backend",
         tabIcon: backendIcon,
+        position: '_2',
         icons: [
             { src: faNodeJs, title: "nodejs", className: "iconSkill colorReact" },
             { src: sqlIcon, title: "sql", className: "iconSkill orange", isImage: true },
@@ -61,6 +63,7 @@ let skillsData = [
     {
         name: "Design",
         tabIcon: designIcon,
+        position: '_3',
         icons: [
             { src: figmaIcon, title: "figma", className: "iconSkill colorReact", isImage: true },
             { src: gimpIcon, title: "GIMP", className: "iconSkill orange", isImage: true },
@@ -75,6 +78,7 @@ let skillsData = [
     {
         name: "Others",
         tabIcon: othersIcon,
+        position: '_4',
         icons: [
             { src: faGitAlt, title: "git", className: "iconSkill colorReact" },
             { src: jestIcon, title: "jest", className: "iconSkill orange", isImage: true },
@@ -92,8 +96,10 @@ let skillsData = [
 
 export default function Skills() {
 
-    const skillsFormatted = skillsData.map(skill => <Skill {...skill} />)
+    let skillsFormatted = skillsData.map(skill => <Skill {...skill} />)
 
+    //reverse the order of the skills
+    skillsFormatted = skillsFormatted.reverse()
 
     return (
 

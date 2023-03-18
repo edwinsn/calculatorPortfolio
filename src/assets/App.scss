@@ -331,7 +331,7 @@ section {
   justify-content: space-evenly;
 }
 
-.justify-around{
+.justify-around {
   justify-content: space-around;
 }
 
@@ -393,10 +393,30 @@ section {
   background: 100vw;
 }
 
-.w-100{
+.w-100 {
   width: 100%;
 }
 
 .display-none {
   display: none;
+}
+
+._1 {
+  order: 1;
+}
+
+._2 {
+  order: 2;
+}
+
+._3 {
+  order: 3;
+}
+
+._4 {
+  order: 4;
+}
+
+._5 {
+  order: 5;
 }
