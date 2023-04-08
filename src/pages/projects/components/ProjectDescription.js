@@ -23,6 +23,7 @@ export default function ProjectDescription({
 
     const style = {
         color,
+        textDecoration: 'none',
     }
 
     return (
@@ -36,9 +37,15 @@ export default function ProjectDescription({
                 onClick={() => setOpen(prev => !prev)}
             />
             <div className='tittle-section centered'>
-                <span className='project-tittle'>
+                <a
+                    className='project-tittle'
+                    href={href}
+                    style={style}
+                    target='_blank'
+                    rel="noreferrer noopener"
+                    >
                     {tittle}
-                </span>
+                </a>
                 <img src={icon} alt='' className='project-icon' />
             </div>
             <div className='description-actions column centered'>

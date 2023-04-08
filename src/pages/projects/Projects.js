@@ -59,7 +59,7 @@ export let Projects = function () {
             color:''
         },
         {
-            tittle: "ExpenseEyes",
+            tittle: "ExpensesEyes",
             description: "Money gone missing? This web app will solve the mystery",
             shortDescription: "Money gone missing? This web app will solve the mystery",
             href: "https://purchase-analysis-23370.web.app/",
