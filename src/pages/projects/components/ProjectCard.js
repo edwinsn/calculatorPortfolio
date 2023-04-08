@@ -50,6 +50,7 @@ export default function ProjectCard({
           id="menu"
           type="checkbox"
           className='display-none'
+          readOnly
           checked={on} />
         <div
           className='project-carousel'

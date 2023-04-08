@@ -33,7 +33,7 @@ export let ProjectsSection = function ({
   //If screen width is too small center the description text
   const descriptionClass = !isMediumView ? "" : "text-centered "
 
-  const tagsList = tags.map(tag => <span className='project-tag text-white'>{tag}</span>)
+  const tagsList = tags.map(tag => <span key={`tag-${tag}`} className='project-tag text-white'>{tag}</span>)
 
 
   return (

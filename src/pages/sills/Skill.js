@@ -12,7 +12,7 @@ export default function Skill(
 ) {
 
 
-    const iconsFormatted = icons.map((icon, index) => <IconFormatted ey={`skill-${name}-icon-${index}`}  {...icon} />);
+    const iconsFormatted = icons.map((icon, index) => <IconFormatted key={`skill-${name}-icon-${index}`}  {...icon} />);
 
     return (
         <div className={`flex-column centered ${position}`} >
