@@ -12,7 +12,7 @@ export default function Skill(
 ) {
 
 
-    const iconsFormatted = icons.map(icon => <IconFormatted {...icon} />);
+    const iconsFormatted = icons.map((icon, index) => <IconFormatted ey={`skill-${name}-icon-${index}`}  {...icon} />);
 
     return (
         <div className={`flex-column centered ${position}`} >
@@ -22,8 +22,9 @@ export default function Skill(
                 name="same"
                 id={name}
                 className='display-none'
+                readOnly
                 checked={true} />
-            <label for={name} >
+            <label htmlFor={name} >
                 <img src={tabIcon} alt="" />
             </label>
             <span>

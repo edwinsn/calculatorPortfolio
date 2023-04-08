@@ -96,7 +96,7 @@ let skillsData = [
 
 export default function Skills() {
 
-    let skillsFormatted = skillsData.map(skill => <Skill {...skill} />)
+    let skillsFormatted = skillsData.map((skill, index) => <Skill key={`skill-${index}`} {...skill} />)
 
     //reverse the order of the skills
     skillsFormatted = skillsFormatted.reverse()

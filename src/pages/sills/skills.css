@@ -1,8 +1,25 @@
+@media (max-width: 600px) {
+    
+    :root{
+        --skils-height: 80vh;
+    }
+
+}
+
+@media (min-width: 600px) {
+    
+    :root{
+        --skils-height: 70vh;
+    }
+
+}
+
+
 #skills {
     align-items: flex-end;
     color: var(--white);
     font-size: var(--font);
-    height: 80vh;
+    height: var(--skils-height);
     justify-content: space-around;
     max-width: 17cm;
     padding: 0 0 2% 0;
@@ -108,7 +125,7 @@
 @keyframes showImg {
     0% {
         transform: scale(0);
-        translate: 0 -100%;
+        translate: 0 -150%;
         transform: translateY()
     }
 
