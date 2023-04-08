@@ -10,7 +10,6 @@ import chess1 from '../../assets/images/projects/chess1.jpg'
 import chess2 from '../../assets/images/projects/chess2.jpg'
 import chess3 from '../../assets/images/projects/chess3.jpg'
 import chess4 from '../../assets/images/projects/chess4.jpg'
-import chessfile from "../../assets/files/chess.jar"
 import meal1 from '../../assets/images/projects/meal1.jpg'
 import meal2 from '../../assets/images/projects/meal2.jpg'
 import meal3 from '../../assets/images/projects/meal3.jpg'
@@ -97,7 +96,7 @@ export let Projects = function () {
             tittle: "Chess",
             description: "A classic chess game and an AI opponent",
             shortDescription: "A chess game and an AI opponent",
-            href: chessfile,
+            href: 'https://wakeful-client-523.notion.site/Chess-app-f94792cd765c4492a4b856a44fc1122d',
             githubLink: "https://github.com/edwinsn/chess-game",
             imgs: [chess1, chess2, chess3, chess4],
             icon: chessIcon,
