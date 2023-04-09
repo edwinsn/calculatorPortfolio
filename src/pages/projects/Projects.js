@@ -10,9 +10,10 @@ import chess1 from '../../assets/images/projects/chess1.jpg'
 import chess2 from '../../assets/images/projects/chess2.jpg'
 import chess3 from '../../assets/images/projects/chess3.jpg'
 import chess4 from '../../assets/images/projects/chess4.jpg'
-import meal1 from '../../assets/images/projects/meal1.jpg'
-import meal2 from '../../assets/images/projects/meal2.jpg'
-import meal3 from '../../assets/images/projects/meal3.jpg'
+import billing_portal1 from '../../assets/images/projects/billing_portal_1.png'
+import billing_portal2 from '../../assets/images/projects/billing_portal_2.png'
+import billing_portal3 from '../../assets/images/projects/billing_portal_3.png'
+import billing_portal4 from '../../assets/images/projects/billing_portal_4.png'
 import purchase1 from '../../assets/images/projects/purchase1.jpg'
 import purchase2 from '../../assets/images/projects/purchase2.jpg'
 import root1 from '../../assets/images/projects/root1.jpg'
@@ -24,7 +25,7 @@ import animalIcon from '../../assets/images/projects/icons/animal.svg'
 import chainyIcon from '../../assets/images/projects/icons/chainy.svg'
 import chessIcon from '../../assets/images/projects/icons/chess.svg'
 import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg'
-import mealIcon from '../../assets/images/projects/icons/meal.svg'
+import billingIcon from '../../assets/images/projects/icons/billing_dashboard.svg'
 import chessBackground from '../../assets/images/testuraChess.jpeg'
 import ShowUp from '../components/ShowUp'
 
@@ -47,16 +48,16 @@ export let Projects = function () {
             color: ''
         },
         {
-            tittle: "Meal prep",
-            description: "A fresh and fun redesign of the meal prep page",
-            shortDescription: "A fresh and fun redesign of the meal prep page",
-            href: "https://www.figma.com/file/TBYin2H9WaGsnIvZUqbRE6/sprwt?node-id=0%3A1&t=R9lzms8MKfIbZdgl-1",
+            tittle: "Billing portal",
+            description: "Dashboard for customers and billing management",
+            shortDescription: "Dashboard for customers and billing management",
+            href: "https://wakeful-client-523.notion.site/Sprwt-dashboard-e87a190b583a4ddc932266de2868a767",
             githubLink: "https://github.com/edwinsn",
-            imgs: [meal1, meal2, meal3],
-            icon: mealIcon,
+            imgs: [billing_portal1, billing_portal2, billing_portal3, billing_portal4],
+            icon: billingIcon,
             background: '#F1F5FE',
             secondaryBackground: '#F1F5FE',
-            color: ''
+            color: '#428b68'
         },
         {
             tittle: "ExpensesEyes",
