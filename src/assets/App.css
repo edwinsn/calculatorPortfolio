@@ -204,6 +204,12 @@ section {
   position: relative;
 }
 
+.get-fastly-up {
+  animation: get-slowly-up 500ms;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+
 @keyframes get-up {
   0% {
     top: 25px;
@@ -247,11 +253,6 @@ section {
     opacity: 1;
   }
 }
-.get-fastly-up {
-  animation: get-fastly-up 900ms;
-  position: relative;
-}
-
 @keyframes get-fastly-up {
   0% {
     top: 12px;
@@ -294,6 +295,14 @@ section {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
 }
 
 .subtitle {

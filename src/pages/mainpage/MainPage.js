@@ -10,6 +10,7 @@ import portfolioIcon from '../../assets/images/portfolioIcon.svg'
 import Skills from '../sills/Skills'
 import Footer from '../footer/Footer'
 import Up from '../components/Up'
+import ShowUp from '../components/ShowUp'
 import './mainPage.css'
 
 
@@ -44,11 +45,15 @@ export let MainPage = function () {
                 </a>
             </div>
             <div className="buttons-place get-fastly-up">
-                <About />
+                    <About />
             </div>
-            <Skills />
+            <ShowUp className='w-100 flex justify-center ' isSlow={false}>
+                <Skills />
+            </ShowUp>
             <Projects />
-            <Contact />
+            <ShowUp className='w-100 flex justify-center ' isSlow={false}>
+                <Contact />
+            </ShowUp>
             <Footer />
             <Up />
         </section>

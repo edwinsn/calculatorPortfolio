@@ -26,6 +26,7 @@ import chessIcon from '../../assets/images/projects/icons/chess.svg'
 import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg'
 import mealIcon from '../../assets/images/projects/icons/meal.svg'
 import chessBackground from '../../assets/images/testuraChess.jpeg'
+import ShowUp from '../components/ShowUp'
 
 import { ProjectsSection } from './components/ProjectsSecation'
 
@@ -43,7 +44,7 @@ export let Projects = function () {
             icon: chainyIcon,
             background: '#EBEFFB',
             secondaryBackground: '#EBEFFB',
-            color:''
+            color: ''
         },
         {
             tittle: "Meal prep",
@@ -55,7 +56,7 @@ export let Projects = function () {
             icon: mealIcon,
             background: '#F1F5FE',
             secondaryBackground: '#F1F5FE',
-            color:''
+            color: ''
         },
         {
             tittle: "ExpensesEyes",
@@ -67,7 +68,7 @@ export let Projects = function () {
             icon: expensesEyesIcon,
             background: '#D5F2C6',
             secondaryBackground: '#D5F2C6',
-            color:'#294519'
+            color: '#294519'
         },
         {
             tittle: "Animalcoords",
@@ -79,7 +80,7 @@ export let Projects = function () {
             icon: animalIcon,
             background: '#F2EFE7',
             secondaryBackground: '#F2EFE7',
-            color:'#73684B'
+            color: '#73684B'
         }, {
             tittle: "Root planner",
             description: "Plan and manage routes like a boss with this system.",
@@ -90,7 +91,7 @@ export let Projects = function () {
             icon: rootIcon,
             background: '#FFFFFF',
             secondaryBackground: '#FEFEFE',
-            color:'#1D4F97'
+            color: '#1D4F97'
         },
         {
             tittle: "Chess",
@@ -103,28 +104,34 @@ export let Projects = function () {
             backgroundImage: chessBackground,
             secondaryBackground: chessBackground,
             repo: "https://github.com/edwinsn/purchase-analysis",
-            color:'#6E4E2B'
+            color: '#6E4E2B'
         }
     ]
 
 
     return (
         <div id='projects'>
-            <ProjectsSection projects={projects.slice(0, 2)}
-                tittle="Trustful interfaces"
-                description="We can generate trust and an uniqueness feeling building intuitive, fast, beautiful and responsive intefaces."
-                tags={["React", 'Css', 'Html']}
-            />
-            <ProjectsSection projects={projects.slice(2, 4)}
-                tittle="Secure systems"
-                description="If it is online it will be attacked, we can secure our systems with data encryption, authentication policies, certified data access among other techniques."
-                tags={["Privacy", 'Encryption', 'Hashing']}
-            />
-            <ProjectsSection projects={projects.slice(4, 6)}
-                tittle="Handdle complexity"
-                description="If it is online it will be attacked, we can secure our systems with data encryption, authentication policies, certified data access among other techniques."
-                tags={["Javascript", 'Java', 'A.I.']}
-            />
+            <ShowUp className='w-100 flex justify-center ' isSlow={false}>
+                <ProjectsSection projects={projects.slice(0, 2)}
+                    tittle="Trustful interfaces"
+                    description="We can generate trust and an uniqueness feeling building intuitive, fast, beautiful and responsive intefaces."
+                    tags={["React", 'Css', 'Html']}
+                />
+            </ShowUp>
+            <ShowUp className='w-100 flex justify-center ' isSlow={false}>
+                <ProjectsSection projects={projects.slice(2, 4)}
+                    tittle="Secure systems"
+                    description="If it is online it will be attacked, we can secure our systems with data encryption, authentication policies, certified data access among other techniques."
+                    tags={["Privacy", 'Encryption', 'Hashing']}
+                />
+            </ShowUp>
+            <ShowUp className='w-100 flex justify-center ' isSlow={false}>
+                <ProjectsSection projects={projects.slice(4, 6)}
+                    tittle="Handdle complexity"
+                    description="If it is online it will be attacked, we can secure our systems with data encryption, authentication policies, certified data access among other techniques."
+                    tags={["Javascript", 'Java', 'A.I.']}
+                />
+            </ShowUp>
         </div>
     )
 
