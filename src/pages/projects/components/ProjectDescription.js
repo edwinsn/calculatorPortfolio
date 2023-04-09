@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesUp } from '@cseitz/icons-duotone';
-import githubLinkIcon from '../../../assets/images/githubprojectLink.svg'
+import { ReactComponent as GithubLinkIcon } from '../../../assets/images/githubprojectLink.svg';
 import linkIcon from '../../../assets/images/goto.svg'
 import useWindowDimensions from '../../components/useWindowDimensions';
 
@@ -19,6 +19,7 @@ export default function ProjectDescription({
 }) {
 
     const { width } = useWindowDimensions()
+    const [isHovered, setIsHovered] = React.useState(false)
     const issmallView = width < 950;
 
     const style = {
@@ -43,7 +44,7 @@ export default function ProjectDescription({
                     style={style}
                     target='_blank'
                     rel="noreferrer noopener"
-                    >
+                >
                     {tittle}
                 </a>
                 <img src={icon} alt='' className='project-icon' />
@@ -57,14 +58,22 @@ export default function ProjectDescription({
                             <a href={href}
                                 className='project-link-icon'
                                 target="_blank"
+                                style={{ ...color && { background: color } }}
                                 rel="noreferrer">
                                 <img src={linkIcon} alt='' />
                             </a>
-                            <a href={githubLink}
+                            <a
+                                href={githubLink}
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => setIsHovered(false)}
                                 className="project-github-link"
                                 target="_blank"
+                                style={{
+                                    ...color && { borderColor: color },
+                                    ...color && isHovered && { background: color }
+                                }}
                                 rel="noreferrer">
-                                <img src={githubLinkIcon} alt='' />
+                                <GithubLinkIcon stroke={color || "#1D4F97"} style={{ height: '100%' }} />
                             </a>
                         </div>
                     </>

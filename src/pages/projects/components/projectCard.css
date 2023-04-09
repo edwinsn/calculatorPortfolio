@@ -145,8 +145,9 @@
     background-color: var(--background);
 }
 
-.project-github-link:hover img {
+.project-github-link:hover svg {
     filter: brightness(0) invert(100%);
+    color: #428b68;
 }
 
 .project-icon {

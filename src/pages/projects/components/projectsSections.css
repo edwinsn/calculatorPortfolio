@@ -9,6 +9,7 @@
     --project-section-body-height: calc(100% - 2*var(--project-section-tittle-height) - 2*var(--project-section-margin-top));
     --project-section-body-align-items: center;
     --project-list-margin: 3em 0;
+    --project-section-grow: 0;
   }
 }
 @media (max-width: 800px) {
@@ -23,6 +24,7 @@
     --project-section-body-align-items: center;
     --project-section-grow: 0.7;
     --project-list-margin: 0 0 0 0;
+    --project-section-margin-top: 50px;
   }
 }
 .project-tag {
@@ -39,8 +41,9 @@
 }
 
 .project-section {
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
+  margin-top: var(--project-section-margin-top);
 }
 
 .projects-section-body {
