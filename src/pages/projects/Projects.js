@@ -129,7 +129,7 @@ export let Projects = function () {
             <ShowUp className='w-100 flex justify-center ' isSlow={false}>
                 <ProjectsSection projects={projects.slice(4, 6)}
                     tittle="Handdle complexity"
-                    description="“Today’s word may be complex, but with the right tools and vision, we can handle it with ease"
+                    description="Today’s word may be complex, but with the right tools and vision, we can handle it with ease"
                     tags={["Javascript", 'Java', 'A.I.']}
                 />
             </ShowUp>
