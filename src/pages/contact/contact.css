@@ -115,7 +115,7 @@ h2 {
     color: var(--background);
 }
 
-.data input {
+.data>* {
     min-height: 0.9cm;
     flex-grow: 1;
     margin-bottom: 1px;
@@ -134,7 +134,7 @@ h2 {
     background-color: var(--green) !important;
 }
 
-.screens>textarea, .screens>div input{
+.screens>textarea, .screens>div input {
     border-radius: 5px;
     margin: 5px;
     border: none;
