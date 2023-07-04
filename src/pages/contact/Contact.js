@@ -43,8 +43,8 @@ export let Contact = function () {
           <div className="screens">
 
             <div className="data wrap">
-              <input placeholder="Name" name="name" required></input>
-              <input placeholder="Email" name="email" required></input>
+              <input placeholder="name" name="name" required></input>
+              <input placeholder="email" name="email" required></input>
             </div>
             <textarea name="message" placeholder={messagesent2 ? "... right, I'll get back to you in the next few days." : "message"} required></textarea>
 
