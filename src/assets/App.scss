@@ -178,6 +178,12 @@ section {
   font-weight: bolder;
 }
 
+.big-title {
+  font-size: var(--project-section-tittle-font);
+  max-height: var(--project-section-tittle-height);
+  color: var(--white);
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -336,11 +342,11 @@ section {
   justify-content: space-around;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
@@ -357,8 +363,6 @@ section {
 
 .title {
   font-size: var(--title-font);
-  text-decoration: underline wavy;
-  text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
 }

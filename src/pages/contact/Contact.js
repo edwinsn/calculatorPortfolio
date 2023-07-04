@@ -21,7 +21,7 @@ export let Contact = function () {
     <ShowUp className='w-70'>
       <hr />
       <div id="contact-container" className="flex">
-        <p className="title" id="contact">Contact</p>
+        <p className="big-title" id="contact">Contact</p>
         <h2 className='white'>Send me a link</h2>
         <form className="sendLikn"
           onSubmit={(ev) => { sendMessage(ev, setMessagesent1, changeSendButton1) }}>

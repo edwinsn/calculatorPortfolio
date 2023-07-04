@@ -102,7 +102,20 @@ h2 {
     background-color: rgb(228, 129, 37);
 }
 
-.data>* {
+#contact-container ::placeholder {
+    color: var(--background);
+    opacity: 1;
+}
+
+#contact-container :-ms-input-placeholder {
+    color: var(--background);
+}
+
+#contact-container ::-ms-input-placeholder {
+    color: var(--background);
+}
+
+.data input {
     min-height: 0.9cm;
     flex-grow: 1;
     margin-bottom: 1px;
@@ -117,11 +130,14 @@ h2 {
     min-height: 40vh;
 }
 
-.screens>textarea, .screens>div>* {
+#contact-container textarea, .data input {
+    background-color: var(--green) !important;
+}
+
+.screens>textarea, .screens>div input{
     border-radius: 5px;
     margin: 5px;
     border: none;
-    background-color: var(--green);
 }
 
 .screens textarea {

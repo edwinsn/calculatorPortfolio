@@ -155,6 +155,12 @@ section {
   font-weight: bolder;
 }
 
+.big-title {
+  font-size: var(--project-section-tittle-font);
+  max-height: var(--project-section-tittle-height);
+  color: var(--white);
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -318,9 +324,6 @@ section {
 
 .title {
   font-size: var(--title-font);
-  -webkit-text-decoration: underline wavy;
-          text-decoration: underline wavy;
-  text-decoration-color: aqua;
   color: #d6def8;
   margin-top: var(--margin-top-tiltte);
 }

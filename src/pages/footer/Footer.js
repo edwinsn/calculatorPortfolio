@@ -10,7 +10,7 @@ export default function Footer() {
         <div id="footer-container" className='w-70'>
             <hr />
             <p className="centered">You can reach me in:</p>
-            <div id="links" className="centered">
+            <div id="links" className="centered mb-2">
                 <a href="https://linkedin.com/in/edwin-sánchez-b044b0213"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -36,7 +36,6 @@ export default function Footer() {
                     <img src={githubIcon} alt="" />
                 </a>
             </div>
-            <p>Desingned and made by me</p>
         </div>
     )
 }

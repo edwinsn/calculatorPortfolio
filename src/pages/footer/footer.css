@@ -11,13 +11,14 @@
 }
 
 #links a {
-    background-color: aqua;
+    background-color: white;
     border-radius: 50%;
     width: var(--footer-links-width);
     height: var(--footer-links-width);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3em;
 }
 
 #links img {
