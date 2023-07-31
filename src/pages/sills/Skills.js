@@ -103,12 +103,12 @@ export default function Skills() {
 
     return (
 
-        <div className='flex-column centered w-90 full-screen' >
+        <div id="skills" className='flex-column centered w-90 full-screen' >
             <h2 id='skills-title' className='text-white'>
                 Skills
             </h2>
 
-            <div id="skills" className='flex centered'>
+            <div id="skills-list" className='flex centered'>
 
                 {skillsFormatted}
 

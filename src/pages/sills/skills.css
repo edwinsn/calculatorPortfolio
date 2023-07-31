@@ -15,7 +15,7 @@
 }
 
 
-#skills {
+#skills-list {
     align-items: flex-end;
     color: var(--white);
     font-size: var(--font);
@@ -28,8 +28,8 @@
     width: 100%;
 }
 
-#skills div div>img,
-#skills div>.iconSkill {
+#skills-list div div>img,
+#skills-list div>.iconSkill {
     background-color: aliceblue;
     align-items: flex-end;
     aspect-ratio: 1;
@@ -40,7 +40,7 @@
     box-sizing: border-box;
 }
 
-#skills div>.iconSkill {
+#skills-list div>.iconSkill {
     margin: 0 .3em .1em .3em;
 }
 
@@ -50,7 +50,7 @@
     max-height: var(--project-section-tittle-height);
 }
 
-#skills label img {
+#skills-list label img {
     cursor: pointer;
     height: 2em;
     z-index: 2;
@@ -59,38 +59,38 @@
 /*Transicion*/
 
 
-#skills span {
+#skills-list span {
     border-radius: 5px;
     cursor: pointer;
     padding: .2em;
     opacity: 0;
 }
 
-#skills>div>div {
+#skills-list>div>div {
     left: 10px;
     position: absolute;
     top: -115vh;
     z-index: -4;
 }
 
-#skills input~div {
+#skills-list input~div {
     animation: elementOut 0.3s;
 }
 
-#skills input:checked~span {
+#skills-list input:checked~span {
     animation: showImg 700ms;
     animation-fill-mode: forwards;
     z-index: 1;
 }
 
-#skills input:checked~span {
+#skills-list input:checked~span {
     background-color: var(--secundary-background);
     color: aliceblue;
     opacity: 1;
 
 }
 
-#skills input:checked~div {
+#skills-list input:checked~div {
     animation: elementIn 0.8s;
     top: 10px;
 }
