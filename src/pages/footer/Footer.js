@@ -11,7 +11,7 @@ export default function Footer() {
             <hr />
             <p className="centered">You can reach me in:</p>
             <div id="links" className="centered mb-2">
-                <a href="https://linkedin.com/in/edwin-sánchez-b044b0213"
+                <a href="https://www.linkedin.com/in/edwinsn/"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="linkedin profile">
