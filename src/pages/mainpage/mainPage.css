@@ -116,12 +116,6 @@ header {
   box-sizing: border-box;
 }
 
-#solarPanel>a:hover>img {
-  filter: invert(46%) sepia(70%) saturate(565%) hue-rotate(347deg) brightness(107%) contrast(89%);
-  filter: brightness(0) saturate(100%) invert(84%) sepia(83%) saturate(1821%) hue-rotate(102deg) brightness(110%) contrast(101%);
-}
-
-
 #solarPanel>a>img {
   height: 45%;
 }

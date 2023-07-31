@@ -17,7 +17,7 @@ export default function Nav() {
                 <a href="#projects" title="Projects" className="centered">
                     <img id="project-img" src={portfolioIcon} alt="projects link" />
                 </a>
-                <a href="#contact" title="Contact" className="centered grow-">
+                <a href="#contact" title="Contact" className="centered">
                     <img src={contactIcon} alt="contact link" />
                 </a>
             </div>
