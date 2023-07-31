@@ -310,11 +310,6 @@ section {
   }
 }
 
-.grow-on-hover:hover {
-  padding: 7px;
-
-}
-
 .highlight {
   color: aqua;
 }
@@ -432,4 +427,9 @@ section {
 
 ._5 {
   order: 5;
+}
+
+*::selection {
+  color: #1D4F97;
+  background-color: white;
 }
