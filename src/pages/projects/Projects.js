@@ -103,6 +103,7 @@ export let Projects = function () {
             imgs: [chess1, chess2, chess3, chess4],
             icon: chessIcon,
             backgroundImage: chessBackground,
+            background: '#E9BC69',
             secondaryBackground: chessBackground,
             repo: "https://github.com/edwinsn/purchase-analysis",
             color: '#6E4E2B'

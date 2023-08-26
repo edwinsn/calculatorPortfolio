@@ -24,7 +24,7 @@ export default function ProjectCard({
   const [on, setOn] = useState(true);
 
   const projectImgs = imgs?.map((img, index) => {
-    return <img key={`proyectImg-${index}`} src={img} alt='' />
+    return <img key={`proyectImg-${index}`} className='skeleton' src={img} alt='' />
   });
 
   let carouselArrow = (handler, side) => {
@@ -34,10 +34,9 @@ export default function ProjectCard({
     </div>
   }
 
-  const style = backgroundImage ? {
-    backgroundImage: `url(${backgroundImage})`,
-  } : {
+  const style = {
     backgroundColor: background,
+    ...backgroundImage && { backgroundImage: `url(${backgroundImage})` }
   }
 
   return (
