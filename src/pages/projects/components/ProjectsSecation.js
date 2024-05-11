@@ -38,7 +38,7 @@ export let ProjectsSection = function ({
 
   return (
     <div className='project-section' style={{ ...style, ...isLast && { width: "80vw" } }}>
-      <p className="project-section-tittle text-white">{isDesktopView ? "What I can do" : tittle}</p>
+      <p className="project-section-tittle text-white">{isDesktopView ? "What can I do?" : tittle}</p>
       <div className='flex wrap projects-section-body'>
         <div className='flex projects-list centered'>
           {projectsList}
