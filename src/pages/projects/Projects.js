@@ -20,10 +20,17 @@ import root1 from '../../assets/images/projects/root1.jpg'
 import root2 from '../../assets/images/projects/root2.jpg'
 import root3 from '../../assets/images/projects/root3.jpg'
 import root4 from '../../assets/images/projects/root4.jpg'
+import TA1 from '../../assets/images/projects/TA1.png'
+import TA2 from '../../assets/images/projects/TA2.png'
+import TA3 from '../../assets/images/projects/TA3.png'
+import FR1 from '../../assets/images/projects/FR1.png'
+import FR2 from '../../assets/images/projects/FR2.png'
 import rootIcon from '../../assets/images/projects/icons/root.svg'
 import animalIcon from '../../assets/images/projects/icons/animal.svg'
 import chainyIcon from '../../assets/images/projects/icons/chainy.svg'
 import chessIcon from '../../assets/images/projects/icons/chess.svg'
+import TAIcon from '../../assets/images/projects/icons/TA.svg'
+import FRIcon from '../../assets/images/projects/icons/FRIcon.svg'
 import expensesEyesIcon from '../../assets/images/projects/icons/expenseeyes.svg'
 import billingIcon from '../../assets/images/projects/icons/billing_dashboard.svg'
 import chessBackground from '../../assets/images/testuraChess.jpeg'
@@ -107,12 +114,41 @@ export let Projects = function () {
             secondaryBackground: chessBackground,
             repo: "https://github.com/edwinsn/purchase-analysis",
             color: '#6E4E2B'
+        },
+        {
+            tittle: "Tomorrows Artist",
+            description: "We help this brand grow toward a modern and compelling look",
+            shortDescription: "We help this brand to grow",
+            href: "https://tomorrows-artist.com",
+            imgs: [TA1, TA2, TA3],
+            icon: TAIcon,
+            background: '#FFFFFF',
+            secondaryBackground: '#EBEFFB',
+            color: ''
+        },
+        {
+            tittle: "Freedmans Online",
+            description: "We grow this business profit by Ab testing and improving the user experience",
+            shortDescription: "We grow this bussiness profit",
+            href: "https://www.freedmansonline.com",
+            imgs: [FR1, FR2],
+            icon: FRIcon,
+            background: '#FFFFFF',
+            secondaryBackground: '#EBEFFB',
+            color: ''
         }
     ]
 
 
     return (
         <div id='projects'>
+            <ShowUp className='w-100 flex justify-center ' isSlow={false}>
+                <ProjectsSection projects={projects.slice(6, 8)}
+                    tittle="Help you grow"
+                    description="I have worked with awesome people helping worldwide brands to grow and reach their goals."
+                    tags={["Shopify", 'Css', 'Html', "Javascript"]}
+                />
+            </ShowUp>
             <ShowUp className='w-100 flex justify-center ' isSlow={false}>
                 <ProjectsSection projects={projects.slice(0, 2)}
                     tittle="Trustful interfaces"
